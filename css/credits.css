@@ -1,0 +1,105 @@
+@font-face {
+    font-family: Oswald;
+    font-weight: bold;
+    src:
+        url(../fonts/Oswald-Bold.woff2) format(woff2),
+        url(../fonts/Oswald-Bold.woff) format(woff),
+        url(../fonts/Oswald-Bold.ttf) format(truetype);
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Inter;
+    font-weight: normal;
+    src:
+        url(../fonts/Inter-Regular.woff2) format(woff2),
+        url(../fonts/Inter-Regular.woff) format(woff),
+        url(../fonts/Inter-Regular.ttf) format(truetype);
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Inter;
+    font-weight: bold;
+    src:
+    url(../fonts/Inter-Bold.woff2) format(woff2),
+    url(../fonts/Inter-Bold.woff) format(woff),
+    url(../fonts/Inter-Bold.ttf) format(truetype);
+    font-display: swap;
+}
+
+.text-centered {text-align: center;}
+
+h1 {
+    font-size: 2.25rem;
+    font-family: Oswald;
+    text-align: center;
+    color: var(--txt-main-color);
+}
+
+h2 {
+    margin-block: 2rem;
+    font-size: 2rem;
+    color: var(--txt-secondary-color);
+    border-bottom: 1px solid rgb(200,200,200);
+}
+
+h3 {
+    margin-block: 2rem;
+    font-size: 1.5rem;
+    border-bottom: 1px solid rgb(200,200,200);
+}
+
+section:last-child {
+    margin-bottom: 3rem;
+}
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.gallery-card {
+    box-shadow: 5px 5px 3px rgb(225,225,225);
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 5px;
+    padding: 0.5rem;
+    background-color: rgb(245,245,245);
+}
+
+.gallery-card > div {
+    padding: 1rem;
+    align-self: stretch;
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+
+.gallery-card img {
+    min-height: 100%;
+    border-radius: 5px;
+    margin-inline: auto;
+}
+
+.gallery-card p {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: var(--txt-secondary-color);
+    background-color: white;
+    flex-shrink: 1;
+    margin: 0;
+    border-radius: 5px;
+}
+
+.source {
+    color: initial;
+    /* font-weight: normal; */
+    font-size: 0.8em;
+}
+

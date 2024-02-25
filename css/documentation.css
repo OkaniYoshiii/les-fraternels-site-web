@@ -1,0 +1,24 @@
+.narrow {max-width: min(100% - 4rem, 900px); margin-inline: auto;}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 250px;
+}
+
+main > :first-child {
+    grid-row: 1;
+    grid-column: 2;
+}
+
+main > :last-child {
+    grid-row: 1;
+    grid-column: 1;
+}
+
+.content-navigation ul {
+    list-style: none;
+}
+
+code {
+    background-color: rgb(200,200,200);
+}
