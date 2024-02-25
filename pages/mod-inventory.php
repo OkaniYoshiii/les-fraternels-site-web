@@ -7,9 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="OkaniYoshiii">
     <meta name="description" content="[xxxxxxxxxxxxxxxxxx] du serveur 7 Days to Die &quot;Les Fraternels&quot;">
-    <script>document.body.classList.remove('no-js');</script>
+    <script>document.documentElement.classList.remove('no-js');</script>
     <title>Mods - 60 Slots Inventory</title>
-    <link rel="icon" type="image/vnd.microsoft.icon" href="../images/compressed/FRT-Logo-30x30.ico" />
+    <link rel="icon" type="image/vnd.microsoft.icon" href="../images/logos/logo-fraternels-30x30.ico" />
     <link rel="stylesheet" href="../css/default.css">
     <link rel="stylesheet" href="../css/default-mod.css">
     <link rel="stylesheet" href="../css/mod-inventory.css">
@@ -20,10 +20,10 @@
     
 <?php include_once "../components/header.php"; ?>
     <main>
-        <section class="hero-banner text-centered" style="--mod-banner:  url(../images/compressed/7DTD-Alpha21-355x200.webp)">
+        <section class="hero-banner text-centered" style="--mod-banner:  url(../images/others/7daystodie-alpha21-533x300.webp)">
             <div class="hero-filter">
                 <div class="medium hero-title">
-                    <h1>Mod par défaut</h1>
+                    <h1>60 slots inventory</h1>
                     <p class="mod-category">Quality Of Life</p>
                 </div>
                 <div class="mod-infos">

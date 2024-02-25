@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="OkaniYoshiii">
     <meta name="description" content="Page du mod Compagnon du serveur 7 Days to Die &quot;Les Fraternels&quot;">
-    <script>document.body.classList.remove('no-js');</script>
+    <script>document.documentElement.classList.remove('no-js');</script>
     <title>Mods - Compagnon</title>
-    <link rel="icon" type="image/vnd.microsoft.icon" href="../images/compressed/FRT-Logo-30x30.ico" />
+    <link rel="icon" type="image/vnd.microsoft.icon" href="../images/logos/logo-fraternels-30x30.ico" />
     <link rel="stylesheet" href="../css/default.css">
     <link rel="stylesheet" href="../css/default-mod.css">
     <script src="../js/default.js" defer></script>
@@ -18,7 +18,7 @@
     
 <?php include_once "../components/header.php"; ?>
     <main>
-        <section class="hero-banner text-centered" style="--mod-banner: url(../../images/compagnon.webp);">
+        <section class="hero-banner text-centered" style="--mod-banner: url(../images/mods/mod-thumbnail-compagnon-730x673.webp);">
             <div class="hero-filter">
                 <div class="medium hero-title">
                     <h1>Mod Compagnon</h1>
@@ -49,10 +49,10 @@
                 <li>Des Os (50% de chance)</li>
                 <li>Un Chiot (15% de chance)</li>
             </ul>
-            <img src="/images/compagnon-4.webp" alt="">
+            <img src="/images/mods/mod-compagnon-doghouse-1920x1080.webp" width="1920" height="1080" alt="Un bloc Niche de chien dans le jeu 7 Days To Die.">
             <h3>Elevage :</h3>
             <p>Une fois recueilli, il vous faudra le nourrir. Pour cela, une recette de fabrication a été rajoutée permettant de transformer votre chiot en puissant allié pour vos combats.</p>
-            <img src="/images/compagnon-recette.webp" alt="">
+            <img src="/images/mods/mod-compagnon-recipe-880x344.webp" width="880" height="344" alt="La recette permettant de fabriquer le chien présent dans le mod.">
             <h3>Bonus attribués :</h3>
             <p>Les Bonus attribués par le Chien peuvent varier en fonction des différentes versions du Mod mais à l'heure actuelle, les bonus sont :</p>
             <ul>

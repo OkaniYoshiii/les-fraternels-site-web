@@ -6,8 +6,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mods</title>
-    <script>document.body.classList.remove('no-js');</script>
-    <link rel="icon" type="image/vnd.microsoft.icon" href="../images/compressed/FRT-Logo-30x30.ico" />
+    <script>document.documentElement.classList.remove('no-js');</script>
+    <link rel="icon" type="image/vnd.microsoft.icon" href="../images/logos/logo-fraternels-30x30.ico" />
     <link rel="stylesheet" href="../css/default.css" media="screen">
     <link rel="stylesheet" href="../css/mods.css" media="screen">
     <script src="../js/default.js" defer></script>
@@ -50,7 +50,7 @@
                     <div class="mod-infos">
                         <div class="mod-thumbnail">
                             <a href="mod-difficulty.php">
-                                <img src="../images/radiated 2.webp" alt="" width="533" height="300">
+                                <img src="../images/mods/mod-thumbnail-difficulty-1920x1080.webp" alt="" width="1920" height="1080">
                             </a>
                         </div>
                         <div>
@@ -65,7 +65,7 @@
                     <div class="mod-infos">
                         <div class="mod-thumbnail">
                             <a href="mod-compagnon.php">
-                                <img src="../images/compagnon.webp" alt="" width="533" height="300">
+                                <img src="../images/mods/mod-thumbnail-compagnon-730x673.webp" alt="" width="730" height="673">
                             </a>
                         </div>
                         <div>
@@ -80,7 +80,7 @@
                     <div class="mod-infos">
                         <div class="mod-thumbnail">
                             <a href="mod-inventory.php">
-                                <img src="../images/compressed/7DTD-Alpha21-533x300.webp" alt="" width="533" height="300">
+                                <img src="../images/others/7daystodie-alpha21-533x300.webp" alt="" width="533" height="300">
                             </a>
                         </div>
                         <div>
@@ -95,7 +95,7 @@
                     <div class="mod-infos">
                         <div class="mod-thumbnail">
                             <a href="mod-lockable-inventory.php">
-                                <img src="../images/compressed/7DTD-Alpha21-533x300.webp" alt="" width="533" height="300">
+                                <img src="../images/others/7daystodie-alpha21-533x300.webp" alt="" width="533" height="300">
                             </a>
                         </div>
                         <div>
@@ -110,7 +110,7 @@
                     <div class="mod-infos">
                         <div class="mod-thumbnail">
                             <a href="mod-trader-lobby.php">
-                                <img src="../images/compressed/7DTD-Alpha21-533x300.webp" alt="" width="533" height="300">
+                                <img src="../images/others/7daystodie-alpha21-533x300.webp" alt="" width="533" height="300">
                             </a>
                         </div>
                         <div>
@@ -125,7 +125,7 @@
                     <div class="mod-infos">
                         <div class="mod-thumbnail">
                             <a href="mod-lootbag-delay.php">
-                                <img src="../images/lootbag.webp" alt="" width="533" height="300">
+                                <img src="../images/mods/mod-thumbnail-lootbagdelay-1920x1080.webp" alt="" width="1920" height="1080">
                             </a>
                         </div>
                         <div>
@@ -140,7 +140,7 @@
                     <div class="mod-infos">
                         <div class="mod-thumbnail">
                             <a href="mod-nos-chers-bannis.php">
-                                <img src="../images/banrewind.webp" alt="" width="533" height="300">
+                                <img src="../images/mods/mod-thumbnail-banrewind-1920x1080.webp" alt="" width="1920" height="1080">
                             </a>
                         </div>
                         <div>
@@ -155,7 +155,7 @@
                     <div class="mod-infos">
                         <div class="mod-thumbnail">
                             <a href="mod-single-seed.php">
-                                <img src="../images/trees.webp" alt="" width="533" height="300">
+                                <img src="../images/mods/mod-thumbnail-single-tree-1920x1080.webp" alt="" width="1920" height="1080">
                             </a>
                         </div>
                         <div>
@@ -170,7 +170,7 @@
                     <div class="mod-infos">
                         <div class="mod-thumbnail">
                             <a href="mod-elevateur.php">
-                                <img src="../images/compressed/7DTD-Alpha21-533x300.webp" alt="" width="533" height="300">
+                                <img src="../images/others/7daystodie-alpha21-533x300.webp" alt="" width="533" height="300">
                             </a>
                         </div>
                         <div>
@@ -185,7 +185,7 @@
                     <div class="mod-infos">
                         <div class="mod-thumbnail">
                             <a href="mod-reward-vote.php">
-                                <img src="../images/compressed/7DTD-Alpha21-533x300.webp" alt="" width="533" height="300">
+                                <img src="../images/others/7daystodie-alpha21-533x300.webp" alt="" width="533" height="300">
                             </a>
                         </div>
                         <div>
@@ -200,7 +200,7 @@
                     <div class="mod-infos">
                         <div class="mod-thumbnail">
                             <a href="mod-elecfrt.php">
-                                <img src="../images/electfrt 2.webp" alt="" width="533" height="300">
+                                <img src="../images/mods/mod-thumbnail-elecfrt-1920x1080.webp" alt="" width="1920" height="1080">
                             </a>
                         </div>
                         <div>
@@ -215,7 +215,7 @@
                     <div class="mod-infos">
                         <div class="mod-thumbnail">
                             <a href="mod-transz.php">
-                                <img src="../images/compressed/7DTD-Alpha21-533x300.webp" alt="" width="533" height="300">
+                                <img src="../images/others/7daystodie-alpha21-533x300.webp" alt="" width="533" height="300">
                             </a>
                         </div>
                         <div>
@@ -230,7 +230,7 @@
                     <div class="mod-infos">
                         <div class="mod-thumbnail">
                             <a href="mod-son-foreuse.php">
-                                <img src="../images/auger.webp" alt="" width="533" height="300">
+                                <img src="../images/mods/mod-thumbnail-auger-sound-1920x1080.webp" alt="" width="1920" height="1080">
                             </a>
                         </div>
                         <div>
@@ -246,7 +246,7 @@
                     <div class="mod-infos">
                         <div class="mod-thumbnail">
                             <a href="mod-stack-munitions.php">
-                                <img src="../images/stack.webp" alt="" width="533" height="300">
+                                <img src="../images/mods/mod-thumbnail-stack-changes-1920x1080.webp" alt="" width="1920" height="1080">
                             </a>
                         </div>
                         <div>
@@ -261,7 +261,7 @@
                     <div class="mod-infos">
                         <div class="mod-thumbnail">
                             <a href="mod-refonte-mines.php">
-                                <img src="../images/stickylandmine.webp" alt="" width="533" height="300">
+                                <img src="../images/mods/mod-thumbnail-sticky-landmine-1920x1080.webp" alt="" width="1920" height="1080">
                             </a>
                         </div>
                         <div>
@@ -276,7 +276,7 @@
                     <div class="mod-infos">
                         <div class="mod-thumbnail">
                             <a href="mod-gyrocoptere.php">
-                                <img src="../images/compressed/7DTD-Alpha21-533x300.webp" alt="" width="533" height="300">
+                                <img src="../images/others/7daystodie-alpha21-533x300.webp" alt="" width="533" height="300">
                             </a>
                         </div>
                         <div>

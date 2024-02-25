@@ -38,10 +38,6 @@
     font-display: swap;
 }
 
-.no-js {
-    display: none;
-}
-
 .text-centered {
     text-align: center;
 }
@@ -91,7 +87,7 @@ section + section {
     font-weight: normal;
     color: white;
     padding-block: clamp(1rem, 2vw, 2rem);
-    background: url(../images/compressed/7DTD-Fighting-1920x1080.webp) center/cover no-repeat;
+    background: url(../images/others/7daystodie-wallpaper-fight-1920x1080.webp) center/cover no-repeat;
     background: var(--mod-banner) center/cover no-repeat;
     text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.5);
 }

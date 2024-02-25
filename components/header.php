@@ -1,7 +1,7 @@
 <header>
     <nav class="wide primary-navigation">
         <a class="icon-link" href="/index.php">
-            <img class="server-icon" src="/images/compressed/FRT-Logo-75x75.webp" width="75" height="75" alt="">
+            <img class="server-icon" src="/images/logos/logo-fraternels-75x75.webp" width="75" height="75" alt="">
             <p class="website-title">LES FRATERNELS</p>
         </a>
         <div class="header-links">

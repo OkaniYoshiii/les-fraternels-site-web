@@ -69,8 +69,6 @@ header button:hover {
 .wide {max-width: min(100vw - 2.5rem, 1400px); margin-inline: auto;}
 .ultrawide {max-width: min(100vw - 2.5rem, 1800px); margin-inline: auto;}
 
-.no-js {display: none;}
-
 /* STYLES */
 
 header *, footer * {

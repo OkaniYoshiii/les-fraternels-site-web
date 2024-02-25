@@ -1,5 +1,3 @@
-document.querySelectorAll('.no-js').forEach((element) => {element.classList.remove("no-js")});
-
 const DIFFICULTIES = {
     glaneur: {zombieDamageMult: 0.5, playerDamageMult: 2},
     aventurier: {zombieDamageMult: 0.75, playerDamageMult: 1.5},

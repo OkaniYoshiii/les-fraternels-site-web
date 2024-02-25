@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="OkaniYoshiii">
     <meta name="description" content="[xxxxxxxxxxxxxxxxxx] du serveur 7 Days to Die &quot;Les Fraternels&quot;">
-    <script>document.body.classList.remove('no-js');</script>
+    <script>document.documentElement.classList.remove('no-js');</script>
     <title>Mods - Réduction Bruit Foreuse</title>
-    <link rel="icon" type="image/vnd.microsoft.icon" href="../images/compressed/FRT-Logo-30x30.ico" />
+    <link rel="icon" type="image/vnd.microsoft.icon" href="../images/logos/logo-fraternels-30x30.ico" />
     <link rel="stylesheet" href="../css/default.css">
     <link rel="stylesheet" href="../css/default-mod.css">
     <link rel="stylesheet" href="../css/mod-son-foreuse.css">
@@ -18,7 +18,7 @@
     
 <?php include_once "../components/header.php"; ?>
     <main>
-        <section class="hero-banner text-centered" style="--mod-banner: url(../../images/auger.webp);">
+        <section class="hero-banner text-centered" style="--mod-banner: url(../images/mods/mod-thumbnail-auger-sound-1920x1080.webp);">
             <div class="hero-filter">
                 <div class="medium hero-title">
                     <h1>Réduction Bruit Foreuse</h1>
@@ -46,9 +46,9 @@
                 <h3>Fonctionnalités :</h3>
                 <p>Au vu des limitations techniques induites par le modding en server-side et suite à un <a href="https://discord.com/channels/653642303663243309/1121940937480863874/1154828788237078638" target="_blank">sondage</a> réalisé sur le Discord de la communauté, il a été decidé de réduire le son de la foreuse de la manière suivante :</p>
                 <p>Le son des outils frappant sur une surface métallique <b>lorsque le personnage est accroupi</b> a été réduit</p>
-                <img src="/images/auger-sound.webp" alt="">
+                <img src="/images/mods/mod-thumbnail-auger-sound-1920x1080.webp" width="1920" height="1080" alt="Une foreuse du jeu 7 Days To Die.">
                 <p>Le jeu Vanilla faisait déjà cela ce qui fait que la réduction passe de <b>70%</b> à <b>90%</b> en comparaison au son de base, lorsque le joueur est debout.</p>
-                <div class="sounds">
+                <!-- <div class="sounds">
                     <div class="text-centered">
                         <p>Ancien son de la foreuse :</p>
                         <audio controls src="/audio/7DTD-foreuse-pre-patch.mp3">Son de la foreuse avant la correction</audio>
@@ -57,7 +57,7 @@
                         <p>Nouveau son de la foreuse :</p>
                         <audio controls src="/audio/7DTD-foreuse-post-patch.mp3">Son de la foreuse après la correction</audio>
                     </div>
-                </div>
+                </div> -->
             </div>
         </section>
     </main>

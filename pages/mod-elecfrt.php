@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="OkaniYoshiii">
     <meta name="description" content="[xxxxxxxxxxxxxxxxxx] du serveur 7 Days to Die &quot;Les Fraternels&quot;">
-    <script>document.body.classList.remove('no-js');</script>
+    <script>document.documentElement.classList.remove('no-js');</script>
     <title>Mods - ElecFRT</title>
-    <link rel="icon" type="image/vnd.microsoft.icon" href="../images/compressed/FRT-Logo-30x30.ico" />
+    <link rel="icon" type="image/vnd.microsoft.icon" href="../images/logos/logo-fraternels-30x30.ico" />
     <link rel="stylesheet" href="../css/default.css">
     <link rel="stylesheet" href="../css/default-mod.css">
     <script src="../js/default.js" defer></script>
@@ -17,7 +17,7 @@
     
 <?php include_once "../components/header.php"; ?>
     <main>
-        <section class="hero-banner text-centered" style="--mod-banner: url(../../images/electfrt\ 2.webp);">
+        <section class="hero-banner text-centered" style="--mod-banner: url(../images/mods/mod-thumbnail-elecfrt-1920x1080.webp);">
             <div class="hero-filter">
                 <div class="medium hero-title">
                     <h1>ElecFRT</h1>
@@ -45,13 +45,13 @@
                 <h3>Fonctionnalités :</h3>
                 <p>Ce mod rajoute deux générateurs :</p>
                 <p><b>Générateur de chantier :</b></p>
-                <img src="/images/elecbdr-small.webp" alt="">
+                <img src="/images/mods/mod-elecbdr-small-engine-1234x873.webp" width="1234" height="873" alt="Générateur de chantier du mod ElecFRT.">
                 <blockquote>
                 <p>Capacité du Réservoir : 1500
                 Capacité énergétique maximale : 1500W</p>
                 </blockquote>
                 <p><b>Générateur industriel </b></p>
-                <img src="/images/elecbdr-big.webp" alt="">
+                <img src="/images/mods/mod-elecbdr-big-engine-1920x1080.webp" width="1920" height="1080" alt="Générateur industriel du mod ElecFRT.">
                 <blockquote>
                 <p>Capacité du Réservoir : 25000
                 Capacité énergétique maximale : 7500W</p>
@@ -70,13 +70,13 @@
                 <img src="/images/elecbdr-craft.webp" alt="">
                 <p>Le Bloc de Verre pare-balles est nécessaire pour la construction des Panneaux Solaires. Ce dernier nécessitait un Creuset afin de pouvoir être construit ce qui n'est désormais plus le cas.</p>
                 <div class="two-columns">
-                    <img src="/images/elecbdr-craft-3.webp" alt="">
-                    <img src="/images/elecbdr-craft-4.webp" alt="">
+                    <img src="/images/mods/mod-elecbdr-craft-3-526x344.webp" width="526" height="644" alt="Recette de fabrication d'un panneau solaire du mod ElecFRT.">
+                    <img src="/images/mods/mod-elecbdr-craft-4-527x348.webp" width="527" height="348" alt="Recette de fabrication d'un groupe solaire du mod ElecFRT.">
                 </div>
                 <p>Le mod modifie les valeurs de consommation électriques de certains pièges comme les Tourelles, les Pièges à Lames etc ... et rajoute aussi des Piquets Enflammés qui fonctionnent de la même manière que les Piquets Electriques mais qui ... enflamment quoi ^^</p>
                 <p>Les objectifs principaux du Mod sont de corser un peu la difficulté des Lunes de Sang et d'éviter que certains ne s'appuient trop sur l'électricité et les pièges pour passer la horde mais aussi afin d'augmenter la sensation d'évolution de vos bases.</p>
                 <p>⚠️ Il est recommandé de laisser 3 blocs libres entre deux piquets pour éviter toute forme de bugs</p>
-                <img src="/images/elecbdr-fence.webp" alt="">
+                <img src="/images/mods/mod-elecbdr-fence-1920x1080.webp" width="1920" height="1080" alt="Une barrière enflammée rajoutée par le mod ElecFRT.">
             </div>
         </section>
     </main>

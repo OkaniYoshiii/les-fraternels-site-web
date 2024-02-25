@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="fr">
 
-<head>
+<head class="no-js">
     <?php include_once($_SERVER['DOCUMENT_ROOT'].'/components/metadata.php'); ?>
     <meta name="description" content="Serveur francophone du jeu 7 Days To Die. Retrouvez ici nos projets, mods, informations sur le serveur ainsi que des liens vers notre Discord.">
     <meta name="keywords" content="7 Days To Die, 7DTD, FRT, serveur mulitjoueur, francophone, jeux vidéos, gaming">
-    <script>document.body.classList.remove('no-js');</script>
+    <script>document.documentElement.classList.remove('no-js');</script>
     <title>Les Fraternels</title>
-    <link rel="icon" type="image/vnd.microsoft.icon" href="/images/compressed/FRT-Logo-30x30.ico" />
+    <link rel="icon" type="image/vnd.microsoft.icon" href="/images/logos/logo-fraternels-30x30.ico" />
     <link rel="stylesheet" href="/css/default.css" media="screen">
     <link rel="stylesheet" href="/css/index.css" media="screen">
     <script src="/js/default.js" defer></script>
 </head>
 
-<body class="no-js">  
+<body>  
 
     <?php include_once ($_SERVER['DOCUMENT_ROOT']."/components/header.php"); ?>
 
@@ -28,10 +28,10 @@
                     <p>Nous essayons de vous proposer une expérience originale et unique tout en respectant une direction que nous aimerions donner au jeu. Les mods sont toujours au centre de nos reflexions et nécessitent une réflexion constante afin de créer la meilleure expérience possible. Une grande partie de leur évolution se fait grâce aux retours des joueurs, que cela soit directement en jeu ou pendant nos sessions de test.</p>
                 </div>
                 <div>
-                    <img src="/images/compressed/7DTD-Town-1440x810.webp" alt="" height="1440" width="810" srcset="
-                    /images/compressed/7DTD-Town-978x550.webp 978w,
-                    /images/compressed/7DTD-Town-756x425.webp 756w,
-                    /images/compressed/7DTD-Town-444x250.webp 444w" sizes="100vw" loading="lazy">
+                    <img src="/images/others/7daystodie-wallpaper-town-1440x810.webp" alt="" height="1440" width="810" srcset="
+                    /images/others/7daystodie-wallpaper-town-978x550.webp 978w,
+                    /images/others/7daystodie-wallpaper-town-756x425.webp 756w,
+                    /images/others/7daystodie-wallpaper-town-444x250.webp 444w" sizes="100vw" loading="lazy">
                 </div>
             </div>
             <div class="wide mods-preview">
@@ -39,41 +39,28 @@
                 <div class="wide mods-images">
                     <div>
                         <a href="/pages/mod-difficulty.php" class="legend">
-                            <img class="mod-image" src="/images/radiated 2.webp" width="533" height="300" alt="" loading="lazy">
+                            <img class="mod-image" src="/images/mods/mod-thumbnail-difficulty-1920x1080.webp" width="1920" height="1080" alt="Groupe de zombies Arlene irradiées" loading="lazy">
                             <p>Difficulté Ajustable - par OkaniYoshiii</p>
                         </a>
                     </div>
                     <div>
                         <a href="/pages/mod-compagnon.php" class="legend">
-                            <img class="mod-image" src="/images/compagnon-wide.webp" width="533" height="300" alt="" loading="lazy">
+                            <img class="mod-image" src="/images/mods/mod-thumbnail-compagnon-730x673.webp" width="730" height="673" alt="Un joueur portant armure en fer avec un chien à ses côtés." loading="lazy">
                             <p>Compagnon - par Arcueid-Gray Sage</p>
                         </a>
                     </div>
                     <div>
                         <a href="/pages/mod-elecfrt.php" class="legend">
-                            <img class="mod-image" src="/images/electfrt 2.webp" width="533" height="300" alt="" loading="lazy">
+                            <img class="mod-image" src="/images/mods/mod-thumbnail-elecfrt-1920x1080.webp" width="1920" height="1080" alt="Un ensemble de générateurs ajoutés par le mod ElecFRT placés dans un abri en béton." loading="lazy">
                             <p>ElecFRT - par Bodarn</p>
                         </a>
                     </div>
                     <div>
                         <a href="/pages/mod-elecfrt.php" class="legend">
-                            <img class="mod-image" src="/images/banrewind.webp" width="533" height="300" alt="" loading="lazy">
-                            <p>ElecFRT - par Bodarn</p>
+                            <img class="mod-image" src="/images/mods/mod-thumbnail-banrewind-1920x1080.webp" width="1920" height="1080" alt="Un groupe de 3 zombies attaquant un joueur. Les zombies ont le nom d'un joueur ayant été banni affiché au dessus de leur tête." loading="lazy">
+                            <p>BanRewind - par OkaniYoshiii</p>
                         </a>
                     </div>
-                    <div>
-                        <a href="/pages/mod-elecfrt.php" class="legend">
-                            <img class="mod-image" src="/images/electfrt 2.webp" width="533" height="300" alt="" loading="lazy">
-                            <p>ElecFRT - par Bodarn</p>
-                        </a>
-                    </div>
-                </div>
-                <div class="mods-selection">
-                    <input type="radio" name="mod-selection" id="mod-selection">
-                    <input type="radio" name="mod-selection" id="mod-selection">
-                    <input type="radio" name="mod-selection" id="mod-selection">
-                    <input type="radio" name="mod-selection" id="mod-selection">
-                    <input type="radio" name="mod-selection" id="mod-selection">
                 </div>
             </div>
         </section>
@@ -109,23 +96,23 @@
             <h2 class="medium staff-title">Une Equipe à votre écoute</h2>
             <div class="wide staff-members">
                 <figure>
-                    <img src="/images/compressed/FRT-OkaniYoshiii-331x331.webp" width="331" height="331" alt="" loading="lazy" srcset="
-                        /images/compressed/FRT-OkaniYoshiii-331x331.webp 331w,
-                        /images/compressed/FRT-OkaniYoshiii-300x300.webp 300w" sizes="(max-width: 340px) 300px, 400px">
+                    <img src="/images/staff/staff-okaniyoshiii-331x331.webp" width="331" height="331" alt="Tête du zombie nommé Arlene." loading="lazy" srcset="
+                        /images/staff/staff-okaniyoshiii-331x331.webp 331w,
+                        /images/staff/staff-okaniyoshiii-300x300.webp 300w" sizes="(max-width: 340px) 300px, 400px">
                     <figcaption><a href="#">OkaniYoshiii</a><br>Moddeur de la communauté des Fraternels et gérant du
                         site internet</figcaption>
                 </figure>
                 <figure>
-                    <img src="/images/compressed/FRT-Bodarn-432x432-small.webp" width="432" height="432" alt="" loading="lazy" srcset="
-                        /images/compressed/FRT-Bodarn-432x432-small.webp 432w,
-                        /images/compressed/FRT-Bodarn-300x300-small.webp 300w" sizes="(max-width: 340px) 300px, 400px">
+                    <img src="/images/staff/staff-bodarn-432x432.webp" width="432" height="432" alt="Tête du zombie nommé Skateboarder." loading="lazy" srcset="
+                        /images/staff/staff-bodarn-432x432.webp 432w,
+                        /images/staff/staff-bodarn-300x300.webp 300w" sizes="(max-width: 340px) 300px, 400px">
                     <figcaption><a href="#">Bodarn</a><br>Administrateur, modérateur et gérant des différents serveurs
                     </figcaption>
                 </figure>
                 <figure>
-                    <img src="/images/compressed/FRT-Anarchique-475x470.webp" width="475" height="470" alt="" loading="lazy" srcset="
-                        /images/compressed/FRT-Anarchique-475x470.webp 475w,
-                        /images/compressed/FRT-Anarchique-300x300.webp 300w" sizes="(max-width: 340px) 300px, 400px">
+                    <img src="/images/staff/staff-anarchique-475x470.webp" width="475" height="470" alt="Un personnage de Saint's Seya (les Chevaliers du Zodiaque)." loading="lazy" srcset="
+                        /images/staff/staff-anarchique-475x470.webp 475w,
+                        /images/staff/staff-anarchique-300x300.webp 300w" sizes="(max-width: 340px) 300px, 400px">
                     <figcaption><a href="#">Anarchique</a><br>Modérateur et conseiller principal de la communauté des
                         Fraternels</figcaption>
                 </figure>
@@ -148,9 +135,9 @@
                         donc pas pertinentes pour nous.</p>
                 </div>
                 <div>
-                    <img src="/images/compressed/Discord-Screenshot-956x622.webp" width="956" height="622" alt="" loading="lazy" srcset="
-                    /images/compressed/Discord-Screenshot-956x622.webp 956w,
-                    /images/compressed/Discord-Screenshot-450x293.webp 450w">
+                    <img src="/images/others/screenshot-discord-956x622.webp" width="956" height="622" alt="Une capture d'écran du serveur Discord des Fraternels." loading="lazy" srcset="
+                    /images/others/screenshot-discord-956x622.webp 956w,
+                    /images/others/screenshot-discord-450x293.webp 450w">
                 </div>
             </div>
         </section>

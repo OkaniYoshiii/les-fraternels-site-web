@@ -7,9 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="OkaniYoshiii">
     <meta name="description" content="Page du Mod &quot;Difficulté Ajustable&quot; du serveur 7 Days to Die &quot;Les Fraternels&quot;">
-    <script>document.body.classList.remove('no-js');</script>
+    <script>document.documentElement.classList.remove('no-js');</script>
     <title>Mods - Difficulté Ajustable</title>
-    <link rel="icon" type="image/vnd.microsoft.icon" href="../images/compressed/FRT-Logo-30x30.ico" />
+    <link rel="icon" type="image/vnd.microsoft.icon" href="../images/logos/logo-fraternels-30x30.ico" />
     <link rel="stylesheet" href="../css/default.css">
     <link rel="stylesheet" href="../css/default-mod.css">
     <link rel="stylesheet" href="../css/mod-difficulty.css">
@@ -21,7 +21,7 @@
     
     <?php include_once "../components/header.php"; ?>
     <main>
-        <section class="hero-banner text-centered" style="--mod-banner: url(../images/radiated\ 2.webp);">
+        <section class="hero-banner text-centered" style="--mod-banner: url(../images/mods/mod-thumbnail-difficulty-1920x1080.webp);">
             <div class="hero-filter">
                 <div class="medium hero-title">
                     <h1>Difficulté Ajustable</h1>

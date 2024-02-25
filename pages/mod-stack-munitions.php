@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="OkaniYoshiii">
     <meta name="description" content="[xxxxxxxxxxxxxxxxxx] du serveur 7 Days to Die &quot;Les Fraternels&quot;">
-    <script>document.body.classList.remove('no-js');</script>
+    <script>document.documentElement.classList.remove('no-js');</script>
     <title>Mods - Changement Stack Munitions</title>
-    <link rel="icon" type="image/vnd.microsoft.icon" href="../images/compressed/FRT-Logo-30x30.ico" />
+    <link rel="icon" type="image/vnd.microsoft.icon" href="../images/logos/logo-fraternels-30x30.ico" />
     <link rel="stylesheet" href="../css/default.css">
     <link rel="stylesheet" href="../css/default-mod.css">
     <link rel="stylesheet" href="../css/mod-stack-munitions.css">
@@ -18,7 +18,7 @@
     
 <?php include_once "../components/header.php"; ?>
     <main>
-        <section class="hero-banner text-centered" style="--mod-banner: url(../../images/stack.webp);">
+        <section class="hero-banner text-centered" style="--mod-banner: url(../images/mods/mod-thumbnail-stack-changes-1920x1080.webp);">
             <div class="hero-filter">
                 <div class="medium hero-title">
                     <h1>Changement Stack Munitions</h1>
@@ -45,7 +45,7 @@
                 <p>Le fonctionnement du système de dégâts dans 7 Days To Die est assez particulier. Ce n'est pas tant votre arme qui détermine vos dégâts mais plutôt les balles que vous utilisez. En sachant cela, cela veut dire que pour équilibrer le tout, les balles ayant le plus de puissance devraient aussi avoir un inconvénient pour contrebalancer et inversement. Et c'est tout le but du Mod : réequilibrer les différentes balles en ajustant le nombre de ces dernières que l'on peut transporter avec nous</p>
                 <h3>Fonctionnalités :</h3>
                 <p>Les stacks sont donc réglés par puissance désormais.</p>
-                <img src="/images/stack-changes.webp" alt="">
+                <img src="/images/mods/mod-stack-changes-inventory-537x343.webp" width="537" height="343" alt="Un inventaire contenant chaque type de balles du jeu ett où l'on peut voir les nouvelles valeurs pour chaque pile de munition.">
                 <p>Je vous met une comparatif des stack en dessous :</p>
             </div>
             <div class="medium tables">
