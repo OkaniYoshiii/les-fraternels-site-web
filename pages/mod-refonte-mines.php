@@ -19,7 +19,7 @@
     
 <?php include_once "../components/header.php"; ?>
     <main>
-        <section class="hero-banner text-centered" style="--mod-banner: url(../images/mods/mod-thumbnail-sticky-landmine-1920x1080.webp);">
+        <section class="hero-banner text-centered" style="--mod-banner: url(../images/mods/mod-thumbnail-sticky-landmine-min-1920x1080.webp);">
             <div class="hero-filter">
                 <div class="medium hero-title">
                     <h1>Refonte Mines Terrestres</h1>

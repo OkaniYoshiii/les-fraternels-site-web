@@ -39,25 +39,25 @@
                 <div class="wide mods-images">
                     <div>
                         <a href="/pages/mod-difficulty.php" class="legend">
-                            <img class="mod-image" src="/images/mods/mod-thumbnail-difficulty-1920x1080.webp" width="1920" height="1080" alt="Groupe de zombies Arlene irradiées" loading="lazy">
+                            <img class="mod-image" src="/images/mods/mod-thumbnail-difficulty-min-960x540.webp" width="960" height="540" alt="Groupe de zombies Arlene irradiées" loading="lazy">
                             <p>Difficulté Ajustable - par OkaniYoshiii</p>
                         </a>
                     </div>
                     <div>
                         <a href="/pages/mod-compagnon.php" class="legend">
-                            <img class="mod-image" src="/images/mods/mod-thumbnail-compagnon-730x673.webp" width="730" height="673" alt="Un joueur portant armure en fer avec un chien à ses côtés." loading="lazy">
+                            <img class="mod-image" src="/images/mods/mod-thumbnail-compagnon-min-730x673.webp" width="730" height="673" alt="Un joueur portant armure en fer avec un chien à ses côtés." loading="lazy">
                             <p>Compagnon - par Arcueid-Gray Sage</p>
                         </a>
                     </div>
                     <div>
                         <a href="/pages/mod-elecfrt.php" class="legend">
-                            <img class="mod-image" src="/images/mods/mod-thumbnail-elecfrt-1920x1080.webp" width="1920" height="1080" alt="Un ensemble de générateurs ajoutés par le mod ElecFRT placés dans un abri en béton." loading="lazy">
+                            <img class="mod-image" src="/images/mods/mod-thumbnail-elecfrt-min-960x540.webp" width="960" height="540" alt="Un ensemble de générateurs ajoutés par le mod ElecFRT placés dans un abri en béton." loading="lazy">
                             <p>ElecFRT - par Bodarn</p>
                         </a>
                     </div>
                     <div>
                         <a href="/pages/mod-elecfrt.php" class="legend">
-                            <img class="mod-image" src="/images/mods/mod-thumbnail-banrewind-1920x1080.webp" width="1920" height="1080" alt="Un groupe de 3 zombies attaquant un joueur. Les zombies ont le nom d'un joueur ayant été banni affiché au dessus de leur tête." loading="lazy">
+                            <img class="mod-image" src="/images/mods/mod-thumbnail-banrewind-min-960x540.webp" width="960" height="540" alt="Un groupe de 3 zombies attaquant un joueur. Les zombies ont le nom d'un joueur ayant été banni affiché au dessus de leur tête." loading="lazy">
                             <p>BanRewind - par OkaniYoshiii</p>
                         </a>
                     </div>

@@ -18,7 +18,7 @@
     
 <?php include_once "../components/header.php"; ?>
     <main>
-        <section class="hero-banner text-centered" style="--mod-banner: url(../images/mods/mod-thumbnail-stack-changes-1920x1080.webp);">
+        <section class="hero-banner text-centered" style="--mod-banner: url(../images/mods/mod-thumbnail-stack-changes-min-1920x1080.webp);">
             <div class="hero-filter">
                 <div class="medium hero-title">
                     <h1>Changement Stack Munitions</h1>

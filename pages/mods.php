@@ -50,7 +50,7 @@
                     <div class="mod-infos">
                         <div class="mod-thumbnail">
                             <a href="mod-difficulty.php">
-                                <img src="../images/mods/mod-thumbnail-difficulty-1920x1080.webp" alt="" width="1920" height="1080">
+                                <img src="../images/mods/mod-thumbnail-difficulty-min-960x540.webp" alt="" width="960" height="540">
                             </a>
                         </div>
                         <div>
@@ -65,7 +65,7 @@
                     <div class="mod-infos">
                         <div class="mod-thumbnail">
                             <a href="mod-compagnon.php">
-                                <img src="../images/mods/mod-thumbnail-compagnon-730x673.webp" alt="" width="730" height="673">
+                                <img src="../images/mods/mod-thumbnail-compagnon-min-730x673.webp" alt="" width="730" height="673">
                             </a>
                         </div>
                         <div>
@@ -125,7 +125,7 @@
                     <div class="mod-infos">
                         <div class="mod-thumbnail">
                             <a href="mod-lootbag-delay.php">
-                                <img src="../images/mods/mod-thumbnail-lootbagdelay-1920x1080.webp" alt="" width="1920" height="1080">
+                                <img src="../images/mods/mod-thumbnail-lootbagdelay-min-960x540.webp" alt="" width="960" height="540">
                             </a>
                         </div>
                         <div>
@@ -140,7 +140,7 @@
                     <div class="mod-infos">
                         <div class="mod-thumbnail">
                             <a href="mod-nos-chers-bannis.php">
-                                <img src="../images/mods/mod-thumbnail-banrewind-1920x1080.webp" alt="" width="1920" height="1080">
+                                <img src="../images/mods/mod-thumbnail-banrewind-min-960x540.webp" alt="" width="960" height="540">
                             </a>
                         </div>
                         <div>
@@ -155,7 +155,7 @@
                     <div class="mod-infos">
                         <div class="mod-thumbnail">
                             <a href="mod-single-seed.php">
-                                <img src="../images/mods/mod-thumbnail-single-tree-1920x1080.webp" alt="" width="1920" height="1080">
+                                <img src="../images/mods/mod-thumbnail-single-tree-min-960x540.webp" alt="" width="960" height="540">
                             </a>
                         </div>
                         <div>
@@ -200,7 +200,7 @@
                     <div class="mod-infos">
                         <div class="mod-thumbnail">
                             <a href="mod-elecfrt.php">
-                                <img src="../images/mods/mod-thumbnail-elecfrt-1920x1080.webp" alt="" width="1920" height="1080">
+                                <img src="../images/mods/mod-thumbnail-elecfrt-min-960x540.webp" alt="" width="960" height="540">
                             </a>
                         </div>
                         <div>
@@ -230,7 +230,7 @@
                     <div class="mod-infos">
                         <div class="mod-thumbnail">
                             <a href="mod-son-foreuse.php">
-                                <img src="../images/mods/mod-thumbnail-auger-sound-1920x1080.webp" alt="" width="1920" height="1080">
+                                <img src="../images/mods/mod-thumbnail-auger-sound-min-960x540.webp" alt="" width="960" height="540">
                             </a>
                         </div>
                         <div>
@@ -246,7 +246,7 @@
                     <div class="mod-infos">
                         <div class="mod-thumbnail">
                             <a href="mod-stack-munitions.php">
-                                <img src="../images/mods/mod-thumbnail-stack-changes-1920x1080.webp" alt="" width="1920" height="1080">
+                                <img src="../images/mods/mod-thumbnail-stack-changes-min-960x540.webp" alt="" width="960" height="540">
                             </a>
                         </div>
                         <div>
@@ -261,7 +261,7 @@
                     <div class="mod-infos">
                         <div class="mod-thumbnail">
                             <a href="mod-refonte-mines.php">
-                                <img src="../images/mods/mod-thumbnail-sticky-landmine-1920x1080.webp" alt="" width="1920" height="1080">
+                                <img src="../images/mods/mod-thumbnail-sticky-landmine-min-960x540.webp" alt="" width="960" height="540">
                             </a>
                         </div>
                         <div>

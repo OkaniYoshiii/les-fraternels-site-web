@@ -17,7 +17,7 @@
     
 <?php include_once "../components/header.php"; ?>
     <main>
-        <section class="hero-banner text-centered" style="--mod-banner: url(../images/mods/mod-thumbnail-elecfrt-1920x1080.webp);">
+        <section class="hero-banner text-centered" style="--mod-banner: url(../images/mods/mod-thumbnail-elecfrt-min-1920x1080.webp);">
             <div class="hero-filter">
                 <div class="medium hero-title">
                     <h1>ElecFRT</h1>

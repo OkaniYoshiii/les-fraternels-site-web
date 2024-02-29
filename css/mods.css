@@ -75,10 +75,6 @@ h3 a {
     justify-content: space-between;
 }
 
-html:not(.js-active) fieldset { 
-    display: none;
-}
-
 legend {
     font-size: 18px;
 }
@@ -137,7 +133,8 @@ section {
 }
 
 .mod-thumbnail img {
-    min-height: 100%;
+    object-fit: cover;
+    aspect-ratio: 960/540;
 }
 
 .tags {
@@ -157,12 +154,18 @@ section {
     font-weight: bold;
 }
 
-html:not(.js-active) .output {
-    display: none;
-}
-
 .mod-count {
     font-size: 1.1rem;
     color: var(--txt-secondary-color);
     font-weight: bold;
+}
+
+/* ## NO-JS */
+
+.no-js fieldset { 
+    display: none;
+}
+
+.no-js .output {
+    display: none;
 }

@@ -18,7 +18,7 @@
     
 <?php include_once "../components/header.php"; ?>
     <main>
-        <section class="hero-banner text-centered" style="--mod-banner: url(../images/mods/mod-thumbnail-compagnon-730x673.webp);">
+        <section class="hero-banner text-centered" style="--mod-banner: url(../images/mods/mod-thumbnail-compagnon-min-730x673.webp);">
             <div class="hero-filter">
                 <div class="medium hero-title">
                     <h1>Mod Compagnon</h1>
