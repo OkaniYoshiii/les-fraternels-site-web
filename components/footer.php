@@ -6,7 +6,7 @@
         </a>
         <div class="footer-links">
             <ul>
-                <li><a href="/pages/partenaires.php">Nos partenaires</a></li>
+                <!-- <li><a href="/pages/partenaires.php">Nos partenaires</a></li> -->
                 <li><a href="/pages/credits.php">Crédits</a></li>
                 <li><a href="/CGU.odt" download>Mentions Légales</a></li>
             </ul>
