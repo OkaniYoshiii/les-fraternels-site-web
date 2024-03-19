@@ -1,3 +1,5 @@
+/* FONTS */
+
 @font-face {
     font-family: Oswald;
     font-weight: bold;
@@ -38,6 +40,8 @@
     font-display: swap;
 }
 
+/* UTILITY CLASSES */
+
 .text-centered {
     text-align: center;
 }
@@ -45,6 +49,8 @@
 .hidden {
     display: none;
 }
+
+/* GENERAL STYLES */
 
 h2 {
     font-family: Oswald, Inter, sans-serif;
@@ -67,25 +73,14 @@ h3 a {
     cursor: pointer;
 }
 
+/* MAIN CONTENT */
 
-.mods-selection {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
-    gap: 2rem;
-    justify-content: space-between;
-}
-
-legend {
-    font-size: 18px;
-}
-
-.mods-selection label {
-    display: block;
-    font-size: 16px;
-}
-
-.mods-selection select {
-    font-size: 16px;
+.mods-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start; /* needed to make sticky element working*/
+    justify-content: space-evenly;
+    gap: min(5vw, 4rem);
 }
 
 section > div {
@@ -96,27 +91,71 @@ section {
     margin-block: 5rem;
 }
 
-.mods > div {
-    margin-block: 3rem;
+/* LEFT SIDEBAR (namespace: .content-sidebar) */
+
+.content-sidebar {
+    padding: 2rem 1rem;
+
+    position: sticky;
+    top: 1.5rem;
 }
 
-.mod-title {
+.content-sidebar fieldset {
+    border: none;
+}
+
+.content-sidebar hr {
+    /* display: none; */
+    border: 0;
+    margin-block: 0.5rem;
+}
+
+.content-sidebar .mods-selection-title,
+.content-sidebar .tags-selection-title {
+    width: 100%;
+
+    margin-bottom: 0.5em;
+
+    border-bottom: 2px solid grey;
+
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.content-sidebar .mods-selection,
+.content-sidebar .tags-selection {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.content-sidebar .mods-radio-container {
+    margin-left: 1rem;
+}
+
+/* RIGHT SIDEBAR (namespace: .mods) */
+
+.mods > div:not(:last-child) {
+    margin-bottom: 3rem;
+}
+
+.mods .mod-title {
     color: var(--txt-secondary-color);
     font-size: clamp(22px,3vw,27px);
     font-weight: normal;
 }
 
-.mod-name {
+.mods .mod-name {
     font-weight: bold;
 }
 
-.mod-infos {
+.mods .mod-infos {
     display: flex;
     gap: 3rem;
     flex-wrap: wrap;
 }
 
-.mod-infos > *:first-child{
+.mods .mod-infos > *:first-child{
     flex-grow: 0;
     flex-shrink: 1;
     flex-basis: 500px;
@@ -126,35 +165,35 @@ section {
     box-shadow: 5px 5px 4px rgb(200,200,200);
 }
 
-.mod-infos > *:last-child{
+.mods .mod-infos > *:last-child{
     flex-grow: 1;
     flex-shrink: 1;
     flex-basis: 400px;
 }
 
-.mod-thumbnail img {
+.mods .mod-thumbnail img {
     object-fit: cover;
     aspect-ratio: 960/540;
 }
 
-.tags {
+.mods .tags {
     color: var(--txt-secondary-color);
     font-weight: bold;
 }
 
-.mod-desc {
+.mods .mod-desc {
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 6;
     overflow: hidden;
 }
 
-.release-date {
+.mods .release-date {
     font-size: 19px;
     font-weight: bold;
 }
 
-.mod-count {
+.mods .mod-count {
     font-size: 1.1rem;
     color: var(--txt-secondary-color);
     font-weight: bold;
