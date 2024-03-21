@@ -55,28 +55,18 @@
                 </div>
                 <div class="mods">
                     <?php foreach($mods as $mod) { ?>
-                        <?php 
-                            if (empty($mod['thumbnail'])) {
-                                $mod['thumbnail'] = 'mod-thumbnail-default-533x300.webp';
-                            }
-
-                            $thumbnailPath = '../images/mods/' . $mod['thumbnail']; 
-                            $thumbnailWidth = getimagesize($thumbnailPath)[0];
-                            $thumbnailHeight = getimagesize($thumbnailPath)[1];
-                        ?>
-
                         <div class="medium">
-                            <h3 class="mod-title"><a href="<?= $mod['link']; ?>"><span class="mod-name"><?= $mod['name']; ?></span> - <?= $mod['author']; ?></a></h3>
+                            <h3 class="mod-title"><a href="<?= $mod->getLink(); ?>"><span class="mod-name"><?= $mod->getName(); ?></span> - <?= $mod->getAuthor(); ?></a></h3>
                             <div class="mod-infos">
                                 <div class="mod-thumbnail">
-                                    <a href="<?= $mod['link'];?>">
-                                        <img src="<?= $thumbnailPath ?>" alt="Une miniature du mod <?= $mod['name'];?>" width="<?= $thumbnailWidth ?>" height="<?= $thumbnailHeight ?>">
+                                    <a href="<?= $mod->getLink();?>">
+                                        <img src="<?= $mod->getThumbnail()->getPath() ?>" alt="Une miniature du mod <?= $mod->getName();?>" width="<?= $mod->getThumbnail()->getWidth() ?>" height="<?= $mod->getThumbnail()->getWidth() ?>">
                                     </a>
                                 </div>
                                 <div>
-                                    <p class="release-date">Mis en ligne le : <time datetime="<?= $mod['releaseDate']; ?>"><?= date('d/m/Y', strtotime($mod['releaseDate'])); ?></time></p>
-                                    <p>Tags : <span class="tags"><?php foreach($mod['tags'] as $tag) echo $tag . ', '; ?></span></p>
-                                    <p class="mod-desc"><?= $mod['description'] ;?></p>
+                                    <p class="release-date">Mis en ligne le : <time datetime="<?= $mod->getReleaseDate(); ?>"><?= date('d/m/Y', strtotime($mod->getReleaseDate())); ?></time></p>
+                                    <p>Tags : <span class="tags"><?php foreach($mod->getTags() as $tag) echo $tag . ', '; ?></span></p>
+                                    <p class="mod-desc"><?= $mod->getDescription() ;?></p>
                                 </div>
                             </div>
                         </div>
