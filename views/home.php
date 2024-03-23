@@ -1,16 +1,15 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" class="no-js">
 
-<head class="no-js">
+<head>
     <?php include_once($_SERVER['DOCUMENT_ROOT'].'/components/metadata.php'); ?>
     <meta name="description" content="Serveur francophone du jeu 7 Days To Die. Retrouvez ici nos projets, mods, informations sur le serveur ainsi que des liens vers notre Discord.">
-    <meta name="keywords" content="7 Days To Die, 7DTD, FRT, serveur mulitjoueur, francophone, jeux vidéos, gaming">
-    <script>document.documentElement.classList.remove('no-js');</script>
+    <meta name="keywords" content="7 Days To Die, 7DTD, FRT, serveur multijoueurs, francophone, jeux vidéos, gaming">
     <title>Les Fraternels</title>
-    <link rel="icon" type="image/vnd.microsoft.icon" href="/images/logos/logo-fraternels-30x30.ico" />
-    <link rel="stylesheet" href="/css/default.css" media="screen">
-    <link rel="stylesheet" href="/css/index.css" media="screen">
-    <script src="/js/default.js" defer></script>
+    <link rel="icon" type="image/vnd.microsoft.icon" href="images/logos/logo-fraternels-30x30.ico" />
+    <link rel="stylesheet" href="css/default.css" media="screen">
+    <link rel="stylesheet" href="css/index.css" media="screen">
+    <script src="js/default.js" defer></script>
 </head>
 
 <body>  
@@ -28,10 +27,10 @@
                     <p>Nous essayons de vous proposer une expérience originale et unique tout en respectant une direction que nous aimerions donner au jeu. Les mods sont toujours au centre de nos reflexions et nécessitent une réflexion constante afin de créer la meilleure expérience possible. Une grande partie de leur évolution se fait grâce aux retours des joueurs, que cela soit directement en jeu ou pendant nos sessions de test.</p>
                 </div>
                 <div>
-                    <img src="/images/others/7daystodie-wallpaper-town-1440x810.webp" alt="" height="1440" width="810" srcset="
-                    /images/others/7daystodie-wallpaper-town-978x550.webp 978w,
-                    /images/others/7daystodie-wallpaper-town-756x425.webp 756w,
-                    /images/others/7daystodie-wallpaper-town-444x250.webp 444w" sizes="100vw" loading="lazy">
+                    <img src="images/others/7daystodie-wallpaper-town-1440x810.webp" alt="" height="1440" width="810" srcset="
+                    images/others/7daystodie-wallpaper-town-978x550.webp 978w,
+                    images/others/7daystodie-wallpaper-town-756x425.webp 756w,
+                    images/others/7daystodie-wallpaper-town-444x250.webp 444w" sizes="100vw" loading="lazy">
                 </div>
             </div>
             <div class="wide mods-preview">

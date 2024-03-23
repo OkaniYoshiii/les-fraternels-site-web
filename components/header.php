@@ -11,9 +11,9 @@
                 <span class="burger-line"></span>
             </button>
             <ul aria-expanded="false">
-                <li><a href="/index.php">Accueil</a></li>
-                <li><a href="/pages/mods.php">Mods</a></li>
-                <li><a href="/pages/liens-utiles.php">Liens Utiles</a></li>
+                <li><a href="/">Accueil</a></li>
+                <li><a href="/mods">Mods</a></li>
+                <li><a href="/liens-utiles">Liens Utiles</a></li>
                 <!-- <li><a href="/pages/documentation.php">Outils Modding</a></li> -->
             </ul>
         </div>

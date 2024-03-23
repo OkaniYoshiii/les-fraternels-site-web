@@ -7,14 +7,21 @@ class Router {
     public function __construct() {
         $this->routes = array();
         $this->basePath = 'views/';
-        $this->defaultRoute = $this->basePath . 'home.php';
+        $this->defaultRoute = $this->basePath . '404.php';
     }
 
-    public function addRoute(string $method, string $uri, string $routePath) {
+    public function getRouteController(string $method, string $uri) {
+        if($this->hasMatchingRoute($method, $uri)) {
+            return $this->routes[$uri]['controller'];
+        }
+    }
+
+    public function addRoute(string $method, string $uri, string $routePath, string $controller) {
         $this->routes[$uri] = [
             "method" => $method,
             "uri" => $uri,
-            "routePath" => $routePath
+            "routePath" => $routePath,
+            "controller" => $controller
         ];
     }
 

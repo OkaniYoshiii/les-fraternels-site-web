@@ -3,15 +3,21 @@
 require_once 'models/Router.php';
 require_once 'controllers/Controller.php';
 
+require_once 'controllers/routing/ModsController.php';
+
 $router = new Router();
 
-$router->addRoute('GET', '/', 'home.php');
-$router->addRoute('GET', '/mods', 'mods.php');
-$router->addRoute('GET', '/mod-transz', 'mod-transz.php');
-$router->addRoute('GET', '/mod-lobby', 'mod-trader-lobby.php');
-
-$controller = new Controller($router);
+$router->addRoute('GET', '/', 'home.php', 'Controller');
+$router->addRoute('GET', '/credits', 'credits.php', 'Controller');
+$router->addRoute('GET', '/liens-utiles', 'liens-utiles.php', 'Controller');
+$router->addRoute('GET', '/mods', 'mods.php', 'ModsController');
 
 $requestMethod = $_SERVER['REQUEST_METHOD'];
 $requestUri = $_SERVER['REQUEST_URI'];
-$controller->showRequestedContent($requestMethod, $requestUri);
+
+$requestedControllerName = $router->getRouteController($requestMethod, $requestUri);
+$requestedController = new $requestedControllerName($router);
+
+// Données utilisateur ! A traiter !
+
+$requestedController->showRequestedContent($requestMethod, $requestUri);
