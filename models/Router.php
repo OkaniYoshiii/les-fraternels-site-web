@@ -1,14 +1,15 @@
 <?php 
+
+namespace Models;
+
 class Router {
     private array $routes;
-    private string $basePath;
-    private string $defaultRoute;
+    private string $defaultRoute = VIEWS_DIR . '/404.php';
 
-    public function __construct() {
-        $this->routes = array();
-        $this->basePath = 'views/';
-        $this->defaultRoute = $this->basePath . '404.php';
-    }
+    // public function __construct() {
+        // $this->routes = array();
+        // $this->defaultRoute = VIEWS_DIR . '/404.php';
+    // }
 
     public function getRouteController(string $method, string $uri) {
         if($this->hasMatchingRoute($method, $uri)) {
@@ -26,8 +27,8 @@ class Router {
     }
 
     public function getRoutePath(string $method, string $uri) {
-        if($this->hasMatchingRoute($method, $uri) && file_exists($this->basePath . $this->routes[$uri]["routePath"])) {
-            return $this->basePath . $this->routes[$uri]["routePath"];
+        if($this->hasMatchingRoute($method, $uri) && file_exists(VIEWS_DIR . $this->routes[$uri]["routePath"])) {
+            return VIEWS_DIR . $this->routes[$uri]["routePath"];
         } else {
             return $this->defaultRoute;
         }

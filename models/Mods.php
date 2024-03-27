@@ -1,5 +1,7 @@
 <?php
 
+namespace Models;
+
 class Mods {
     private array $mods;
     private string $baseThumbnailPath;
