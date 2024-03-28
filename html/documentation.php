@@ -15,7 +15,7 @@
 </head>
 <body class="no-js">
     
-    <?php include_once "../components/header.php"; ?>
+    <?php include_once COMPONENTS_DIR . "/header.php"; ?>
 
     <main>
         <nav class="content-navigation">
@@ -84,6 +84,6 @@
         </article>
     </main>
 
-    <?php include_once "../components/footer.php"; ?>
+    <?php include_once COMPONENTS_DIR . "/footer.php"; ?>
 </body>
 </html>

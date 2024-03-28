@@ -2,13 +2,13 @@
 <html lang="fr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mods</title>
-    <link rel="icon" type="image/vnd.microsoft.icon" href="images/logos/logo-fraternels-30x30.ico" />
-    <link rel="stylesheet" href="css/default.css" media="screen">
+    <?php require_once COMPONENTS_DIR . '/default-metatags.php' ?>
+    <?php require_once COMPONENTS_DIR . '/favicon.php' ?>
+    <?php require_once COMPONENTS_DIR . '/default-scripts.php' ?>
+
+    <title>Liste des Mods</title>
+    <meta name="description" content="Liste exhaustive de l'ensemble des Mods présents ou non sur la partie actuelle. Vous avez la possibilité de voir nos anciens Mods anciens que les derniers rajoutés.">
     <link rel="stylesheet" href="css/mods.css" media="screen">
-    <script src="js/default.js" defer></script>
 </head>
 
 <body data-javascript-enabled="false">

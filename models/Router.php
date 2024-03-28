@@ -4,16 +4,10 @@ namespace Models;
 
 class Router {
     private array $routes;
-    private string $defaultRoute = VIEWS_DIR . '/404.php';
-
-    // public function __construct() {
-        // $this->routes = array();
-        // $this->defaultRoute = VIEWS_DIR . '/404.php';
-    // }
 
     public function getRouteController(string $method, string $uri) {
         if($this->hasMatchingRoute($method, $uri)) {
-            return $this->routes[$uri]['controller'];
+            return $this->routes[$uri]['controller'];        
         }
     }
 
@@ -26,11 +20,11 @@ class Router {
         ];
     }
 
-    public function getRoutePath(string $method, string $uri) {
-        if($this->hasMatchingRoute($method, $uri) && file_exists(VIEWS_DIR . $this->routes[$uri]["routePath"])) {
-            return VIEWS_DIR . $this->routes[$uri]["routePath"];
+    public function getRoutePath(string $method, string $uri) : string {
+        if($this->hasMatchingRoute($method, $uri) && file_exists(HTML_DIR . $this->routes[$uri]["routePath"])) {
+            return $this->routes[$uri]['routePath'];
         } else {
-            return $this->defaultRoute;
+            return '/home-2.php';
         }
     }
 

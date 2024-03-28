@@ -1,4 +1,4 @@
 RewriteEngine On
 
 # Redirige toutes les requêtes HTTP vers index.php
-RewriteRule "^([a-zA-Z0-9\-\_\/]*)$" "index.php"
+RewriteRule "^([a-zA-Z0-9\-\_\/\.]*)$" "index.php"

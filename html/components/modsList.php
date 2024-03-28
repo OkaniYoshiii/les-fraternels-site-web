@@ -1,10 +1,10 @@
 <div class="mods">
     <?php foreach($mods as $mod) { ?>
         <div class="medium">
-            <h3 class="mod-title"><a href="<?= $mod->link ?>"><span class="mod-name"><?= $mod->name ?></span> - <?= $mod->author ?></a></h3>
+            <h3 class="mod-title"><a href="<?= $mod->uri ?>"><span class="mod-name"><?= $mod->name ?></span> - <?= $mod->author ?></a></h3>
             <div class="mod-infos">
                 <div class="mod-thumbnail">
-                    <a href="<?= $mod->link;?>">
+                    <a href="<?= $mod->uri;?>">
                         <img src="<?= $mod->thumbnail->path ?>" alt="Une miniature du mod <?= $mod->name ?>" width="<?= $mod->thumbnail->width ?>" height="<?= $mod->thumbnail->height ?>">
                     </a>
                 </div>

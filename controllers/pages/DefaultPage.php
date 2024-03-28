@@ -12,8 +12,8 @@ class DefaultPage extends PageController {
     }
 
     public function showPageContent(string $method, string $uri) {
-        $filePath = $this->router->getRoutePath($method, $uri);
+        $filename = $this->router->getRoutePath($method, $uri);
 
-        require_once $filePath;
+        require_once HTML_DIR . '/' . $filename;
     }
 }

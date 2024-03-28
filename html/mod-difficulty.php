@@ -3,25 +3,21 @@
 <html lang="fr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="OkaniYoshiii">
-    <meta name="description" content="Page du Mod &quot;Difficulté Ajustable&quot; du serveur 7 Days to Die &quot;Les Fraternels&quot;">
-    <script>document.documentElement.classList.remove('no-js');</script>
-    <title>Mods - Difficulté Ajustable</title>
-    <link rel="icon" type="image/vnd.microsoft.icon" href="../images/logos/logo-fraternels-30x30.ico" />
-    <link rel="stylesheet" href="../css/default.css">
-    <link rel="stylesheet" href="../css/default-mod.css">
-    <link rel="stylesheet" href="../css/mod-difficulty.css">
-    <script src="../js/default.js" defer></script>
-    <script src="../js/mod-difficulty.js" defer></script>
+    <?php require_once COMPONENTS_DIR . '/default-metatags.php' ?>
+    <?php require_once COMPONENTS_DIR . '/favicon.php' ?>
+    <?php require_once COMPONENTS_DIR . '/default-scripts.php' ?>
+
+    <title>Mod difficulté</title>
+    <meta name="description" content="La difficulté imposée par les réglages d'un serveur peut parfois sembler frustrante. Elle nous empêche de profiter de l'ambiance, du STAFF ou des évenements mis en place sur ce dernier tout simplement pour un simple problème de dégâts reçus et dégâts infligés. Nous avons alors essayé de vous proposer une alternative vous permettant de profiter du serveur malgré tout ! Vous aurez donc la possibilité de choisir votre propre difficulté afin de vous créer l'expérience qui vous convient le mieux.">
+    <link rel="stylesheet" href="<?= CSS_DIR ?>/default-mod.css">
+    <link rel="stylesheet" href="<?= CSS_DIR ?>/mod-difficulty.css">
 </head>
 
 <body class="no-js">
     
-    <?php include_once "../components/header.php"; ?>
+    <?php include_once COMPONENTS_DIR . "/header.php"; ?>
     <main>
-        <section class="hero-banner text-centered" style="--mod-banner: url(../images/mods/mod-thumbnail-difficulty-min-1920x1080.webp);">
+        <section class="hero-banner text-centered" style="--mod-banner: url(<?= IMG_MODS_DIR ?>/mod-thumbnail-difficulty-min-1920x1080.webp);">
             <div class="hero-filter">
                 <div class="medium hero-title">
                     <h1>Difficulté Ajustable</h1>
@@ -141,7 +137,7 @@
         </section>
     </main>
     
-<?php include_once "../components/footer.php"; ?>
+<?php include_once COMPONENTS_DIR . "/footer.php"; ?>
 </body>
 
 </html>

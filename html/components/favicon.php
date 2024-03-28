@@ -1,0 +1,1 @@
+<link rel="icon" type="image/vnd.microsoft.icon" href="images/logos/logo-fraternels-30x30.ico" />

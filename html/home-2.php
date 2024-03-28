@@ -2,20 +2,16 @@
 <html lang="fr" class="no-js">
 
 <head>
-    <?php include_once($_SERVER['DOCUMENT_ROOT'].'/components/metadata.php'); ?>
-    <meta name="description" content="Serveur francophone du jeu 7 Days To Die. Retrouvez ici nos projets, mods, informations sur le serveur ainsi que des liens vers notre Discord.">
-    <meta name="keywords" content="7 Days To Die, 7DTD, FRT, serveur multijoueurs, francophone, jeux vidéos, gaming">
     <title>Les Fraternels</title>
-    <link rel="icon" type="image/vnd.microsoft.icon" href="images/logos/logo-fraternels-30x30.ico" />
+    <meta name="description" content="Serveur francophone du jeu 7 Days To Die. Retrouvez ici nos projets, mods, informations sur le serveur ainsi que des liens vers notre Discord.">
+    <script src="js/default.js" defer></script>
     <link rel="stylesheet" href="css/default.css" media="screen">
     <link rel="stylesheet" href="css/index.css" media="screen">
-    <script src="js/default.js" defer></script>
 </head>
 
-<body>  
 
-    <?php include_once ($_SERVER['DOCUMENT_ROOT']."/components/header.php"); ?>
-
+<body>
+    <?php require_once COMPONENTS_DIR . '/header.php'; ?>
     <main>
         <section>
             <h1 class="hero-title">Le Serveur fait par<br>des joueurs, pour des<br>joueurs</h1>
@@ -27,7 +23,7 @@
                     <p>Nous essayons de vous proposer une expérience originale et unique tout en respectant une direction que nous aimerions donner au jeu. Les mods sont toujours au centre de nos reflexions et nécessitent une réflexion constante afin de créer la meilleure expérience possible. Une grande partie de leur évolution se fait grâce aux retours des joueurs, que cela soit directement en jeu ou pendant nos sessions de test.</p>
                 </div>
                 <div>
-                    <img src="images/others/7daystodie-wallpaper-town-1440x810.webp" alt="" height="1440" width="810" srcset="
+                    <img src="/images/others/7daystodie-wallpaper-town-1440x810.webp" alt="" height="1440" width="810" srcset="
                     images/others/7daystodie-wallpaper-town-978x550.webp 978w,
                     images/others/7daystodie-wallpaper-town-756x425.webp 756w,
                     images/others/7daystodie-wallpaper-town-444x250.webp 444w" sizes="100vw" loading="lazy">
@@ -97,21 +93,21 @@
                 <figure>
                     <img src="/images/staff/staff-okaniyoshiii-331x331.webp" width="331" height="331" alt="Tête du zombie nommé Arlene." loading="lazy" srcset="
                         /images/staff/staff-okaniyoshiii-331x331.webp 331w,
-                        /images/staff/staff-okaniyoshiii-300x300.webp 300w" sizes="(max-width: 340px) 300px, 400px">
+                        /images/staff/staff-okaniyoshiii-300x300.webp 300w" sizes="(max-width: 340px) 300px, 400px"/>
                     <figcaption><a href="#">OkaniYoshiii</a><br>Moddeur de la communauté des Fraternels et gérant du
                         site internet</figcaption>
                 </figure>
                 <figure>
                     <img src="/images/staff/staff-bodarn-432x432.webp" width="432" height="432" alt="Tête du zombie nommé Skateboarder." loading="lazy" srcset="
                         /images/staff/staff-bodarn-432x432.webp 432w,
-                        /images/staff/staff-bodarn-300x300.webp 300w" sizes="(max-width: 340px) 300px, 400px">
+                        /images/staff/staff-bodarn-300x300.webp 300w" sizes="(max-width: 340px) 300px, 400px"/>
                     <figcaption><a href="#">Bodarn</a><br>Administrateur, modérateur et gérant des différents serveurs
                     </figcaption>
                 </figure>
                 <figure>
                     <img src="/images/staff/staff-anarchique-475x470.webp" width="475" height="470" alt="Un personnage de Saint's Seya (les Chevaliers du Zodiaque)." loading="lazy" srcset="
                         /images/staff/staff-anarchique-475x470.webp 475w,
-                        /images/staff/staff-anarchique-300x300.webp 300w" sizes="(max-width: 340px) 300px, 400px">
+                        /images/staff/staff-anarchique-300x300.webp 300w" sizes="(max-width: 340px) 300px, 400px"/>
                     <figcaption><a href="#">Anarchique</a><br>Modérateur et conseiller principal de la communauté des
                         Fraternels</figcaption>
                 </figure>
@@ -136,14 +132,12 @@
                 <div>
                     <img src="/images/others/screenshot-discord-956x622.webp" width="956" height="622" alt="Une capture d'écran du serveur Discord des Fraternels." loading="lazy" srcset="
                     /images/others/screenshot-discord-956x622.webp 956w,
-                    /images/others/screenshot-discord-450x293.webp 450w">
+                    /images/others/screenshot-discord-450x293.webp 450w"/>
                 </div>
             </div>
         </section>
     </main>
-
-    <?php include_once ($_SERVER['DOCUMENT_ROOT']."/components/footer.php"); ?>
-
+    <?php require_once COMPONENTS_DIR . '/footer.php' ?>
 </body>
 
 </html>

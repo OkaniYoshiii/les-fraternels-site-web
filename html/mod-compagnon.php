@@ -16,7 +16,7 @@
 
 <body class="no-js">
     
-<?php include_once "../components/header.php"; ?>
+<?php include_once COMPONENTS_DIR . "/header.php"; ?>
     <main>
         <section class="hero-banner text-centered" style="--mod-banner: url(../images/mods/mod-thumbnail-compagnon-min-730x673.webp);">
             <div class="hero-filter">
@@ -66,7 +66,7 @@
         </section>
     </main>
     
-<?php include_once "../components/footer.php"; ?>
+<?php include_once COMPONENTS_DIR . "/footer.php"; ?>
 </body>
 
 </html>
