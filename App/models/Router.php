@@ -4,27 +4,18 @@ namespace Models;
 
 class Router {
     private array $routes;
-    private string $basePath;
 
-    public function addRoute(string $method, string $uri, string $filename) {
+    public function addRoute(string $method, string $uri, string $filename, string $controller = null) {
         $this->routes[$uri] = [
             "method" => $method,
             "uri" => $uri,
-            "filename" => $filename
+            "filename" => $filename,
+            "controller" => $controller
         ];
     }
 
-    public function getRouteFilename(string $method, string $uri) {
-        if($this->hasMatchingRoute($method, $uri) && file_exists(HTML_CONTENT_DIR . $this->routes[$uri]["filename"])) {
-            return HTML_CONTENT_DIR . $this->routes[$uri]["filename"];
-        } else {
-            if(!$this->hasMatchingRoute($method, $uri)) {
-                $error = 'hasMatchingRoute a renvoyé false.';
-            } else if(!file_exists(HTML_CONTENT_DIR . $this->routes[$uri]["filename"])) {
-                $error = 'Le fichier : ' . HTML_CONTENT_DIR . $this->routes[$uri]["filename"] . ' n\'existe pas';
-            }
-            throw new \Exception('La route ' . $uri . ' ayant pour REQUEST_METHOD ' . $method . ' n\'a pas été identifiée : ' . $error);
-        }
+    public function getCurrentRoute() : array {
+        return ($this->hasMatchingRoute($_SERVER['REQUEST_METHOD'], $_SERVER['REQUEST_URI'])) ? $this->routes[$_SERVER['REQUEST_URI']] : null ;
     }
 
     private function hasMatchingRoute(string $method, string $uri) : bool {

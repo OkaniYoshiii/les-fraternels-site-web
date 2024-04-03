@@ -1,16 +1,21 @@
 <?php
 
 class Thumbnail {
-    private string $filename;
+    private string|null $source;
+    private string $defaultSource = 'mod-thumbnail-default-533x300.webp';
+    private array $dimensions;
     private int $width;
     private int $height;
 
-    public function __construct(string $filename) {
-        $this->filename = $filename;
+    public function __construct(string|null $source) {
+        $this->source = (!is_null($source)) ? IMG_MODS_DIR . '/' . $source : IMG_MODS_DIR . '/' . $this->defaultSource;
+        $this->dimensions = getimagesize($this->source);
+        $this->width = $this->dimensions[0];
+        $this->height = $this->dimensions[1];
     }
 
-    public function getFilename() {
-        return $this->filename;
+    public function getSource() {
+        return $this->source;
     }
     public function getWidth() {
         return $this->width;

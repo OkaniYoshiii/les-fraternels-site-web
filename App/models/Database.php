@@ -3,7 +3,7 @@
 require_once ENTITIES_DIR . '/Mod.php';
 
 class Database {
-    private PDO $pdo;
+    private PDO|null $pdo;
 
     public function __construct(string $host, string $dbName, string $username, string $password) {
         $this->verifyIdentifiers($username, $password);
@@ -18,14 +18,20 @@ class Database {
     }
 
     public function getMods() : array {
-        var_dump($this->pdo);
-        $query = 'SELECT * FROM mods';
+        $query = 'SELECT mods.name, mods.description, mods.uri, mods.release_date, authors.name AS author, thumbnails.filename AS thumbnail_name, GROUP_CONCAT(tags.name) AS tags, mods.is_used FROM `mods_tags`
+        JOIN tags ON mods_tags.tag_id = tags.id
+        JOIN mods ON mods_tags.mod_id = mods.id
+        LEFT JOIN thumbnails ON thumbnail_id = thumbnails.id
+        JOIN authors ON author_id = authors.id
+        GROUP BY mods.name;';
         $statement = $this->pdo->query($query);
-        // $mods = $statement->fetchObject('Mod');
         $mods = [];
         while ($mod = $statement->fetchObject('Mod')) {
             $mods[] = $mod;
         }
+
+        $this->pdo = null;
+        $statement = null;
 
         return $mods;
     }

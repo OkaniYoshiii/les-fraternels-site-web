@@ -2,7 +2,7 @@
 
 namespace Controllers;
 
-class PageController {
+class DefaultController {
     private object $router;
 
     public function __construct(object $router) {

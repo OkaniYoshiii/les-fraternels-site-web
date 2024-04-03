@@ -6,14 +6,12 @@
     <?php include_once HTML_HEAD_DIR . '/default-scripts.php'; ?>
     <?php include_once HTML_HEAD_DIR . '/favicon.php'; ?>
     <title>Nos Mods</title>
-    <link rel="stylesheet" href="../css/mods.css" media="screen">
-    <script src="../js/default.js" defer></script>
-    <script src="../js/mods.js" defer></script>
+    <link rel="stylesheet" href="<?= CSS_DIR ?>/mods.css" media="screen">
 </head>
 
 <body data-javascript-enabled="false">
-    
-    <?php include_once HTML_DIR . "/header.php"; ?>
+
+<?php require_once HTML_DIR . "/header.php"; ?>
     <main>
         <section>
             <h2 class="medium text-centered visually-hidden">Nos Mods</h2>
@@ -51,11 +49,11 @@
                 <div class="mods">
                     <?php foreach($mods as $mod) { ?>
                         <div class="medium">
-                            <h3 class="mod-title"><a href="<?= $mod->getLink(); ?>"><span class="mod-name"><?= $mod->getName(); ?></span> - <?= $mod->getAuthor(); ?></a></h3>
+                            <h3 class="mod-title"><a href="<?= $mod->getUri(); ?>"><span class="mod-name"><?= $mod->getName(); ?></span> - <?= $mod->getAuthor(); ?></a></h3>
                             <div class="mod-infos">
                                 <div class="mod-thumbnail">
-                                    <a href="<?= $mod->getLink();?>">
-                                        <img src="<?= $mod->getThumbnail()->getPath() ?>" alt="Une miniature du mod <?= $mod->getName();?>" width="<?= $mod->getThumbnail()->getWidth() ?>" height="<?= $mod->getThumbnail()->getWidth() ?>">
+                                    <a href="<?= $mod->getUri();?>">
+                                        <img src="<?= $mod->getThumbnail()->getSource() ?>" alt="Une miniature du mod <?= $mod->getName();?>" width="<?= $mod->getThumbnail()->getWidth() ?>" height="<?= $mod->getThumbnail()->getWidth() ?>">
                                     </a>
                                 </div>
                                 <div>
@@ -70,8 +68,8 @@
             </div>
         </section>
     </main>
-    
-<?php include_once "../components/footer.php"; ?>
+<?php require_once HTML_DIR . "/footer.php"; ?>
+
 </body>
 
 </html>

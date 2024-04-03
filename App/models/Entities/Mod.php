@@ -3,50 +3,58 @@
 require_once ENTITIES_DIR . '/Thumbnail.php';
 
 class Mod {
-    private int $id;
-    private int $is_used;
     private string $name;
-    private string $uri;
-    private string $link;
-    private string $author_id;
-    private int | null $thumbnail_id;
-    private string $release_date;
     private string $description;
-    private array $tags;
+    private string $uri;
+    private string $release_date;
+    private string $author;
+    private string|null $thumbnail_name;
+    private Thumbnail $thumbnail;
+    private string|array $tags;
+    private int $is_used;
 
-    public function __construct(){
-        
+    public function __construct() {
+        $this->tags = explode(',', $this->tags);
+        $this->thumbnail = new Thumbnail($this->thumbnail_name);
     }
 
-    // public function __construct(string $name, string $link, string $author, string $thumbnailName, DateTime $releaseDate, string $description, array $tags) {
-    //     $this->name = $name;
-    //     $this->link = $link;
-    //     $this->author = $author;
-    //     $this->thumbnail = new Thumbnail($thumbnailName);
-    //     $this->releaseDate = $releaseDate;
-    //     $this->description = $description;
-    //     $this->tags = $tags;
-    // }
+    public function getName()
+    {
+        return $this->name;
+    }
 
-    // public function getName() {
-    //     return $this->name;
-    // }
-    // public function getLink() {
-    //     return $this->link;
-    // }
-    // public function getAuhtor() {
-    //     return $this->author;
-    // }
-    // public function getThumbnail() {
-    //     return $this->thumbnail;
-    // }
-    // public function getReleaseDate() {
-    //     return $this->releaseDate;
-    // }
-    // public function getDescription() {
-    //     return $this->description;
-    // }
-    // public function getTags() {
-    //     return $this->tags;
-    // }
+    public function getDescription()
+    {
+        return $this->description;
+    }
+
+    public function getUri()
+    {
+        return $this->uri;
+    }
+
+    public function getReleaseDate()
+    {
+        return $this->release_date;
+    }
+
+    public function getAuthor()
+    {
+        return $this->author;
+    }
+
+    public function getThumbnail()
+    {
+        return $this->thumbnail;
+    }
+
+    public function getTags()
+    {
+        return $this->tags;
+    }
+
+    public function getIsUsed()
+    {
+        return $this->is_used;
+    }
 }
