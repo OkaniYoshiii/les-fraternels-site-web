@@ -30,13 +30,22 @@ class Database {
             $mods[] = $mod;
         }
 
-        $this->pdo = null;
         $statement = null;
 
         return $mods;
     }
 
+    public function getTags() {
+        $query = 'SELECT tags.name FROM tags;';
+        $statement = $this->pdo->query($query);
+        $tags = $statement->fetchAll(PDO::FETCH_COLUMN);
+
+        $statement = null;
+
+        return $tags;
+    }
+
     public function closeConnection() {
-        // A implémenter pour couper la connection à la db
+        $this->pdo = null;
     }
 }

@@ -41,6 +41,10 @@
                             <div class="mods-radio-container">
                                 <input type="radio" name="all-tags" id="all-tags" checked>
                                 <label for="all-mods">Tous les tags</label>
+                                <?php foreach($tags as $tag) { ?>
+                                    <input type="radio" name="tag-<?= $tag ?>" id="tag-<?= $tag ?>">
+                                    <label for="all-mods"><?= $tag ?></label>
+                                <?php } ?>
                             </div>
                         </div>
                     </fieldset>
