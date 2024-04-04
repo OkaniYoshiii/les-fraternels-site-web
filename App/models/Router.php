@@ -15,7 +15,7 @@ class Router {
     }
 
     public function getCurrentRoute() : array {
-        return ($this->hasMatchingRoute($_SERVER['REQUEST_METHOD'], $_SERVER['REQUEST_URI'])) ? $this->routes[$_SERVER['REQUEST_URI']] : null ;
+        return ($this->hasMatchingRoute($_SERVER['REQUEST_METHOD'], explode('?',$_SERVER['REQUEST_URI'])[0])) ? $this->routes[explode('?',$_SERVER['REQUEST_URI'])[0]] : null ;
     }
 
     private function hasMatchingRoute(string $method, string $uri) : bool {

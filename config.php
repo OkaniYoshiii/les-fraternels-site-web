@@ -2,6 +2,8 @@
 
 declare(strict_types=1);
 
+$errors = [];
+
 // Need to be changed whenever you send this in production
 define('DEVMODE', true);
 
