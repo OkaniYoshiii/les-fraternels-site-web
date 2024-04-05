@@ -23,7 +23,7 @@
         <?php } ?>
         <section>
             <h2 class="medium text-centered visually-hidden">Nos Mods</h2>
-            <div class="mods-content ultrawide">
+            <div class="mods-content wide">
                 <div class="content-sidebar">
                     <form action="/mods" method="get">
                         <fieldset class="medium">
@@ -50,16 +50,18 @@
                                 <div class="mods-radio-container">
                                     <input type="radio" name="tags" id="all-tags" value="all" <?= ((!isset($_GET['tags'])) || ($_GET['tags'] === 'all') || !in_array($_GET['tags'], $tags)) ? 'checked' : '' ?> >
                                     <label for="all-mods">Tous les tags</label>
-                                    <?php foreach($tags as $tag) { ?>
+                                </div>
+                                <?php foreach($tags as $tag) { ?>
+                                    <div class="mods-radio-container">
                                         <input type="radio" name="tags" id="tag-<?= $tag ?>" value="<?= $tag ?>" <?= (isset($_GET['tags']) && $_GET['tags'] === $tag) ? 'checked' : '' ?>>
                                         <label for="all-mods"><?= $tag ?></label>
-                                    <?php } ?>
-                                </div>
+                                    </div>
+                                <?php } ?>
                             </div>
                         </fieldset>
                         <input type="submit" value="Filter">
                     </form>
-                    <p class="output">Résultats : <span class="mod-count"></span></p>
+                    <p class="output">Résultats : <span class="mod-count"><?= count($mods) ?></span></p>
                 </div>
                 <div class="mods">
                     <?php foreach($mods as $mod) { ?>

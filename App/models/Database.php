@@ -36,7 +36,7 @@ class Database {
     }
 
     public function queryFilteredMods() : array {
-        if(empty($_GET['activated-mods']) || empty($_GET['tags'])) {
+        if((isset($_GET['activated-mods']) && isset($_GET['tags'])) && (empty($_GET['activated-mods']) || empty($_GET['tags']))) {
             $GLOBALS['errors'][] = 'Les filtres renseignées ne sont pas corrects. Affichage de l\'ensemble des Mods';
         }
 
@@ -59,7 +59,7 @@ class Database {
             $queryFilter2 = 'HAVING INSTR(tags, :tag); ';
         }
 
-        $query = 'SELECT mods.name, mods.description, mods.uri, mods.release_date, authors.name AS author, thumbnails.filename AS thumbnail_name, GROUP_CONCAT(tags.name) AS tags, mods.is_used FROM `mods_tags`
+        $query = 'SELECT mods.id, mods.name, mods.description, mods.uri, mods.release_date, authors.name AS author, thumbnails.filename AS thumbnail_name, GROUP_CONCAT(tags.name) AS tags, mods.is_used FROM `mods_tags`
         JOIN tags ON mods_tags.tag_id = tags.id
         JOIN mods ON mods_tags.mod_id = mods.id
         LEFT JOIN thumbnails ON thumbnail_id = thumbnails.id
@@ -91,6 +91,24 @@ class Database {
         $statement = null;
 
         return $tags;
+    }
+
+    public function getModByUri(string $uri) : Mod {
+        $query = 'SELECT mods.name, authors.name, GROUP_CONCAT(tags.name) AS tags, mods.release_date, mods.description, thumbnails.filename AS thumbnail_name FROM mods.tags
+        JOIN tags ON mods_tags.tag_id = tags.id
+        JOIN mods ON mods_tags.mod_id = mods.id
+        LEFT JOIN thumbnails ON thumbnail_id = thumbnails.id
+        JOIN authors ON author_id = authors.id
+        WHERE mods.uri = :uri
+        GROUP BY mods.id';;
+
+        $statement = $this->pdo->prepare($query);
+        $statement->bindParam(':uri',$uri);
+        $statement->execute();
+
+        $mod = $statement->fetchObject('Mod');
+
+        return $mod;
     }
 
     public function closeConnection() {
