@@ -94,13 +94,13 @@ class Database {
     }
 
     public function getModByUri(string $uri) : Mod {
-        $query = 'SELECT mods.name, authors.name, GROUP_CONCAT(tags.name) AS tags, mods.release_date, mods.description, thumbnails.filename AS thumbnail_name FROM mods.tags
+        $query = 'SELECT mods.name, authors.name AS author, GROUP_CONCAT(tags.name) AS tags, mods.release_date, mods.description, thumbnails.filename AS thumbnail_name FROM mods_tags
         JOIN tags ON mods_tags.tag_id = tags.id
         JOIN mods ON mods_tags.mod_id = mods.id
         LEFT JOIN thumbnails ON thumbnail_id = thumbnails.id
         JOIN authors ON author_id = authors.id
         WHERE mods.uri = :uri
-        GROUP BY mods.id';;
+        GROUP BY mods.id;';
 
         $statement = $this->pdo->prepare($query);
         $statement->bindParam(':uri',$uri);

@@ -2,11 +2,9 @@
 
 namespace Controllers;
 
-use ModsController;
-
 require_once CONTROLLERS_DIR . '/DefaultController.php';
 require_once CONTROLLERS_DIR . '/ModsController.php';
-
+require_once CONTROLLERS_DIR . '/SingleModController.php';
 
 class CoreController {
     private object $router;

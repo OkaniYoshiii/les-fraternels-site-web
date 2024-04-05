@@ -17,7 +17,6 @@ class Mod {
     public function __construct() {
         $this->tags = explode(',', $this->tags);
         $this->thumbnail = new Thumbnail($this->thumbnail_name);
-        $this->uri = '/mod?id=' . $this->id;
     }
 
     public function getName()

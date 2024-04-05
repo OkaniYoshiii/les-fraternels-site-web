@@ -1,45 +1,19 @@
 
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="OkaniYoshiii">
-    <meta name="description" content="[xxxxxxxxxxxxxxxxxx] du serveur 7 Days to Die &quot;Les Fraternels&quot;">
-    <script>document.documentElement.classList.remove('no-js');</script>
+    <?php include_once HTML_HEAD_DIR . '/metadata.php'; ?>
+    <?php include_once HTML_HEAD_DIR . '/default-scripts.php'; ?>
+    <?php include_once HTML_HEAD_DIR . '/favicon.php'; ?>
     <title>Mods - Lootbag Delay</title>
-    <link rel="icon" type="image/vnd.microsoft.icon" href="../images/logos/logo-fraternels-30x30.ico" />
-    <link rel="stylesheet" href="../css/default.css">
-    <link rel="stylesheet" href="../css/default-mod.css">
-    <script src="../js/default.js" defer></script>
+    <link rel="stylesheet" href="<?= CSS_DIR ?>/default-mod.css">
 </head>
 
 <body class="no-js">
     
-<?php include_once "../components/header.php"; ?>
+<?php require_once HTML_DIR . "/header.php"; ?>
     <main>
-        <section class="hero-banner text-centered" style="--mod-banner: url(../images/mods/mod-thumbnail-lootbagdelay-min-1920x1080.webp);">
-            <div class="hero-filter">
-                <div class="medium hero-title">
-                    <h1>Lootbag Delay</h1>
-                    <p class="mod-category">Quality Of Life</p>
-                </div>
-                <div class="mod-infos">
-                    <div class="medium mod-infos-wrapper">
-                        <div class="mod-info">
-                            <p>Auteur: <span>OkaniYoshiii</span></p>
-                        </div>
-                        <div class="mod-info">
-                            <p>Date de publication: <span><time datetime="2023-07-19">19/07/2023</time></span></p>
-                        </div>
-                        <div class="mod-info">
-                            <p>Version actuelle: <span>1.0.0</span></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <?php require_once TEMPLATE_PARTS_DIR . '/single-mod-banner.php'; ?>
         <section>
             <div class="narrow">
                 <h2 id="description">Description</h2>
@@ -49,8 +23,7 @@
             </div>
         </section>
     </main>
-    
-<?php include_once "../components/footer.php"; ?>
-</body>
+<?php require_once HTML_DIR . "/footer.php"; ?>
 
+</body>
 </html>

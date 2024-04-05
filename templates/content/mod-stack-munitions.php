@@ -2,50 +2,25 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="OkaniYoshiii">
-    <meta name="description" content="[xxxxxxxxxxxxxxxxxx] du serveur 7 Days to Die &quot;Les Fraternels&quot;">
-    <script>document.documentElement.classList.remove('no-js');</script>
+    <?php include_once HTML_HEAD_DIR . '/metadata.php'; ?>
+    <?php include_once HTML_HEAD_DIR . '/default-scripts.php'; ?>
+    <?php include_once HTML_HEAD_DIR . '/favicon.php'; ?>
     <title>Mods - Changement Stack Munitions</title>
-    <link rel="icon" type="image/vnd.microsoft.icon" href="../images/logos/logo-fraternels-30x30.ico" />
-    <link rel="stylesheet" href="../css/default.css">
-    <link rel="stylesheet" href="../css/default-mod.css">
-    <link rel="stylesheet" href="../css/mod-stack-munitions.css">
-    <script src="../js/default.js" defer></script>
+    <link rel="stylesheet" href="<?= CSS_DIR ?>/default-mod.css">
+    <link rel="stylesheet" href="<?= CSS_DIR ?>/mod-stack-munitions.css">
 </head>
 <body class="no-js">
     
-<?php include_once "../components/header.php"; ?>
+<?php require_once HTML_DIR . "/header.php"; ?>
     <main>
-        <section class="hero-banner text-centered" style="--mod-banner: url(../images/mods/mod-thumbnail-stack-changes-min-1920x1080.webp);">
-            <div class="hero-filter">
-                <div class="medium hero-title">
-                    <h1>Changement Stack Munitions</h1>
-                    <p class="mod-category">Equilibrage</p>
-                </div>
-                <div class="mod-infos">
-                    <div class="medium mod-infos-wrapper">
-                        <div class="mod-info">
-                            <p>Auteur: <span>OkaniYoshiii</span></p>
-                        </div>
-                        <div class="mod-info">
-                            <p>Date de publication: <span><time datetime="2023-09-26">26/09/2023</time></span></p>
-                        </div>
-                        <div class="mod-info">
-                            <p>Version actuelle: <span>1.0.0</span></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <?php require_once TEMPLATE_PARTS_DIR . '/single-mod-banner.php'; ?>
         <section>
             <div class="narrow">
                 <h2>Description</h2>
                 <p>Le fonctionnement du système de dégâts dans 7 Days To Die est assez particulier. Ce n'est pas tant votre arme qui détermine vos dégâts mais plutôt les balles que vous utilisez. En sachant cela, cela veut dire que pour équilibrer le tout, les balles ayant le plus de puissance devraient aussi avoir un inconvénient pour contrebalancer et inversement. Et c'est tout le but du Mod : réequilibrer les différentes balles en ajustant le nombre de ces dernières que l'on peut transporter avec nous</p>
                 <h3>Fonctionnalités :</h3>
                 <p>Les stacks sont donc réglés par puissance désormais.</p>
-                <img src="/images/mods/mod-stack-changes-inventory-537x343.webp" width="537" height="343" alt="Un inventaire contenant chaque type de balles du jeu ett où l'on peut voir les nouvelles valeurs pour chaque pile de munition.">
+                <img src="<?= IMG_MODS_DIR ?>/mod-stack-changes-inventory-537x343.webp" width="537" height="343" alt="Un inventaire contenant chaque type de balles du jeu ett où l'on peut voir les nouvelles valeurs pour chaque pile de munition.">
                 <p>Je vous met une comparatif des stack en dessous :</p>
             </div>
             <div class="medium tables">
@@ -129,8 +104,8 @@
                 </table>
             </div>
         </section>
-    </main>
-    
-<?php include_once "../components/footer.php"; ?>
+    </main> 
+<?php require_once HTML_DIR . "/footer.php"; ?>
+
 </body>
 </html>

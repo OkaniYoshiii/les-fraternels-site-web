@@ -2,42 +2,17 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="OkaniYoshiii">
-    <meta name="description" content="[xxxxxxxxxxxxxxxxxx] du serveur 7 Days to Die &quot;Les Fraternels&quot;">
-    <script>document.documentElement.classList.remove('no-js');</script>
+    <?php include_once HTML_HEAD_DIR . '/metadata.php'; ?>
+    <?php include_once HTML_HEAD_DIR . '/default-scripts.php'; ?>
+    <?php include_once HTML_HEAD_DIR . '/favicon.php'; ?>
     <title>Mods - Trader Lobby</title>
-    <link rel="icon" type="image/vnd.microsoft.icon" href="../images/logos/logo-fraternels-30x30.ico" />
-    <link rel="stylesheet" href="../css/default.css">
-    <link rel="stylesheet" href="../css/default-mod.css">
-    <script src="../js/default.js" defer></script>
+    <link rel="stylesheet" href="<?= CSS_DIR ?>/default-mod.css">
 </head>
 <body class="no-js">
     
-<?php include_once "../components/header.php"; ?>
+<?php require_once HTML_DIR . "/header.php"; ?>
     <main>
-        <section class="hero-banner text-centered" style="--mod-banner:  url(../images/others/7daystodie-alpha21-533x300.webp)">
-            <div class="hero-filter">
-                <div class="medium hero-title">
-                    <h1>Trader Lobby</h1>
-                    <p class="mod-category">Equilibrage, Marchands</p>
-                </div>
-                <div class="mod-infos">
-                    <div class="medium mod-infos-wrapper">
-                        <div class="mod-info">
-                            <p>Auteur: <span>OkaniYoshiii</span></p>
-                        </div>
-                        <div class="mod-info">
-                            <p>Date de publication: <span><time datetime="2023-06-30">30/06/2023</time></span></p>
-                        </div>
-                        <div class="mod-info">
-                            <p>Version actuelle: <span>1.0.0</span></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <?php require_once TEMPLATE_PARTS_DIR . '/single-mod-banner.php'; ?>
         <section class="narrow">
             <h2>Description</h2>
             <p>Avec l'arrivée du Lobby créé par majoritairement par Bodarn et aidé par quelques membres de la communauté, est arrivé un nouveau problème : avec 3 Marchands présents dans le Lobby, il était alors possible de faire des quêtes de manière infinie en variant les différents Marchands ce qui permettait une montée en expérience accrue qui ne convient pas à la vision que nous avons du jeu. Les joueurs avaient aussi tendance a se regrouper tout autour du Lobby crééant des problèmes avec le spawn de zombies et rendant une bonne partie de la carte innexploitée. Il a donc été décidé de réguler ça en modifiant les Marchands du Lobby pour que ces derniers ne puissent plus fournir de Quêtes.</p>
@@ -45,7 +20,7 @@
             <p>Empêche les Marchands de proposer des Quêtes afin d'éviter des montées en expérience trop élevées et éviter un regroupement trop important de joueur autour du Lobby.</p>
         </section>
     </main>
-    
-<?php include_once "../components/footer.php"; ?>
+<?php require_once HTML_DIR . "/footer.php"; ?>
+
 </body>
 </html>

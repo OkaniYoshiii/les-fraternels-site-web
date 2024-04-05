@@ -2,43 +2,18 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="OkaniYoshiii">
-    <meta name="description" content="[xxxxxxxxxxxxxxxxxx] du serveur 7 Days to Die &quot;Les Fraternels&quot;">
-    <script>document.documentElement.classList.remove('no-js');</script>
+    <?php include_once HTML_HEAD_DIR . '/metadata.php'; ?>
+    <?php include_once HTML_HEAD_DIR . '/default-scripts.php'; ?>
+    <?php include_once HTML_HEAD_DIR . '/favicon.php'; ?>
     <title>Mods - Réduction Bruit Foreuse</title>
-    <link rel="icon" type="image/vnd.microsoft.icon" href="../images/logos/logo-fraternels-30x30.ico" />
-    <link rel="stylesheet" href="../css/default.css">
-    <link rel="stylesheet" href="../css/default-mod.css">
-    <link rel="stylesheet" href="../css/mod-son-foreuse.css">
-    <script src="../js/default.js" defer></script>
+    <link rel="stylesheet" href="<?= CSS_DIR ?>/default-mod.css">
+    <link rel="stylesheet" href="<?= CSS_DIR ?>/mod-son-foreuse.css">
 </head>
 <body class="no-js">
     
-<?php include_once "../components/header.php"; ?>
+<?php require_once HTML_DIR . "/header.php"; ?>
     <main>
-        <section class="hero-banner text-centered" style="--mod-banner: url(../images/mods/mod-thumbnail-auger-sound-min-1920x1080.webp);">
-            <div class="hero-filter">
-                <div class="medium hero-title">
-                    <h1>Réduction Bruit Foreuse</h1>
-                    <p class="mod-category">Quality Of Life</p>
-                </div>
-                <div class="mod-infos">
-                    <div class="medium mod-infos-wrapper">
-                        <div class="mod-info">
-                            <p>Auteur: <span>OkaniYoshiii</span></p>
-                        </div>
-                        <div class="mod-info">
-                            <p>Date de publication: <span><time datetime="2023-09-26">26/09/2023</time></span></p>
-                        </div>
-                        <div class="mod-info">
-                            <p>Version actuelle: <span>1.0.0</span></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <?php require_once TEMPLATE_PARTS_DIR . '/single-mod-banner.php'; ?>
         <section>
             <div class="narrow">
                 <h2>Description</h2>
@@ -46,7 +21,7 @@
                 <h3>Fonctionnalités :</h3>
                 <p>Au vu des limitations techniques induites par le modding en server-side et suite à un <a href="https://discord.com/channels/653642303663243309/1121940937480863874/1154828788237078638" target="_blank">sondage</a> réalisé sur le Discord de la communauté, il a été decidé de réduire le son de la foreuse de la manière suivante :</p>
                 <p>Le son des outils frappant sur une surface métallique <b>lorsque le personnage est accroupi</b> a été réduit</p>
-                <img src="/images/mods/mod-thumbnail-auger-sound-min-1920x1080.webp" width="1920" height="1080" alt="Une foreuse du jeu 7 Days To Die.">
+                <img src="<?= IMG_MODS_DIR ?>/mod-thumbnail-auger-sound-min-1920x1080.webp" width="1920" height="1080" alt="Une foreuse du jeu 7 Days To Die.">
                 <p>Le jeu Vanilla faisait déjà cela ce qui fait que la réduction passe de <b>70%</b> à <b>90%</b> en comparaison au son de base, lorsque le joueur est debout.</p>
                 <!-- <div class="sounds">
                     <div class="text-centered">
@@ -61,7 +36,7 @@
             </div>
         </section>
     </main>
-    
-<?php include_once "../components/footer.php"; ?>
+<?php require_once HTML_DIR . "/footer.php"; ?>
+
 </body>
 </html>

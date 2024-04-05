@@ -4,3 +4,5 @@ RewriteEngine On
 RewriteRule "^mods$" "index.php"
 RewriteRule "^liens-utiles$" "index.php"
 RewriteRule "^credits$" "index.php"
+
+RewriteRule "^mod-[A-Za-z-]+" "index.php"
