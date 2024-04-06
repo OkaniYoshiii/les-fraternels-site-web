@@ -6,7 +6,6 @@
         </a>
         <div class="footer-links">
             <ul>
-                <li><a href="/credits">Crédits</a></li>
                 <li><a href="/CGU.odt" download>Mentions Légales</a></li>
             </ul>
         </div>

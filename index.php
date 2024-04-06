@@ -10,7 +10,6 @@ $router = new Router();
 $router->addRoute('GET', '/', '/home.php');
 $router->addRoute('GET', '/mods', '/mods.php', 'ModsController');
 $router->addRoute('GET', '/liens-utiles', '/liens-utiles.php');
-$router->addRoute('GET', '/credits', '/credits.php');
 
 $router->addRoute('GET', '/mod-compagnon', '/mod-compagnon.php','SingleModController');
 $router->addRoute('GET', '/mod-difficulty', '/mod-difficulty.php','SingleModController');
