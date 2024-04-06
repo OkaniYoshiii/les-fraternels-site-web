@@ -19,32 +19,32 @@ class Mod {
         $this->thumbnail = new Thumbnail($this->thumbnail_name);
     }
 
-    public function getName()
+    public function getName() : string
     {
-        return $this->name;
+        return htmlspecialchars($this->name);
     }
 
-    public function getDescription()
+    public function getDescription() : string
     {
-        return $this->description;
+        return htmlspecialchars($this->description);
     }
 
-    public function getUri()
+    public function getUri() : string
     {
-        return $this->uri;
+        return htmlspecialchars($this->uri);
     }
 
-    public function getReleaseDate()
+    public function getReleaseDate() : string
     {
-        return $this->release_date;
+        return htmlspecialchars($this->release_date);
     }
 
-    public function getAuthor()
+    public function getAuthor() : string
     {
-        return $this->author;
+        return htmlspecialchars($this->author);
     }
 
-    public function getThumbnail()
+    public function getThumbnail() : Thumbnail
     {
         return $this->thumbnail;
     }

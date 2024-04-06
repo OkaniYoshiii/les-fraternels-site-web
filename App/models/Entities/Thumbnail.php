@@ -14,13 +14,18 @@ class Thumbnail {
         $this->height = $this->dimensions[1];
     }
 
-    public function getSource() {
-        return $this->source;
+    public function getSource() : string
+    {
+        return htmlspecialchars($this->source);
     }
-    public function getWidth() {
+    
+    public function getWidth() : int 
+    {
         return $this->width;
     }
-    public function getHeight() {
+    
+    public function getHeight() : int 
+    {
         return $this->height;
     }
 }
