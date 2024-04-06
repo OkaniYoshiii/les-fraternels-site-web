@@ -6,7 +6,7 @@
         </a>
         <div class="footer-links">
             <ul>
-                <li><a href="/CGU.odt" download>Mentions Légales</a></li>
+                <li><a href="<?= ASSETS_DIR ?>/CGU.odt" download>Mentions Légales</a></li>
             </ul>
         </div>
     </div>

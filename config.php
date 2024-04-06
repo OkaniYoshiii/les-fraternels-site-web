@@ -23,5 +23,6 @@ define('IMG_MODS_DIR',IMG_DIR . '/mods');
 define('IMG_OTHERS_DIR',IMG_DIR . '/others');
 define('IMG_STAFF_DIR',IMG_DIR . '/staff');
 
-define('CSS_DIR','assets/css');
-define('JS_DIR','assets/js');
+define('ASSETS_DIR','assets');
+define('CSS_DIR',ASSETS_DIR . '/css');
+define('JS_DIR',ASSETS_DIR . '/js');
