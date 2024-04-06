@@ -1,0 +1,5 @@
+node_modules/
+*.ts
+original-images/
+package-lock.json
+package.json
