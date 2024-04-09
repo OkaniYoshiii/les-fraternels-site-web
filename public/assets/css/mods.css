@@ -96,7 +96,7 @@ section {
 .content-sidebar {
     flex-grow: 0;
     flex-shrink: 1;
-    flex-basis: 350px;
+    flex-basis: max-content;
     padding: 2rem 1rem;
 
     /* position: sticky;
