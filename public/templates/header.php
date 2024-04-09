@@ -5,7 +5,7 @@
             <p class="website-title">LES FRATERNELS</p>
         </a>
         <div class="header-links">
-            <button class="hamburger" data-expanded="false">
+            <button class="hamburger" data-expanded="false" aria-label="Ouvrir le menu de navigation">
                 <span class="burger-line"></span>
                 <span class="burger-line"></span>
                 <span class="burger-line"></span>
