@@ -26,15 +26,3 @@ define('IMG_STAFF_DIR',IMG_DIR . '/staff');
 define('ASSETS_DIR','assets');
 define('CSS_DIR',ASSETS_DIR . '/css');
 define('JS_DIR',ASSETS_DIR . '/js');
-
-// Database credentials (DEV)
-define('DB_HOST', 'localhost');
-define('DB_NAME', 'mods_db');
-define('DB_USER', 'root');
-define('DB_PWD', '');
-
-// Database credentials (PROD)
-// define('DB_HOST', 'localhost');
-// define('DB_NAME', 'u547807080_mods_db');
-// define('DB_USER', 'u547807080_I78AyjIn');
-// define('DB_PWD', '*yTmaY+v^U5');
