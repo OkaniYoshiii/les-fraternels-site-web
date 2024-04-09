@@ -106,4 +106,25 @@ class Database {
     public function closeConnection() {
         $this->pdo = null;
     }
+
+    public function queryPrimaryModsByReleaseDate() {
+        $query = 'SELECT mods.name, mods.description, mods.uri, mods.release_date, authors.name AS author, thumbnails.filename AS thumbnail_name, GROUP_CONCAT(tags.name) AS tags, mods.is_used FROM `mods_tags`
+        JOIN tags ON mods_tags.tag_id = tags.id
+        JOIN mods ON mods_tags.mod_id = mods.id
+        LEFT JOIN thumbnails ON thumbnail_id = thumbnails.id
+        JOIN authors ON author_id = authors.id
+        WHERE mods.is_used = 1 AND mods.is_main_mod = 1
+        GROUP BY mods.name
+        ORDER BY release_date
+        LIMIT 3;';
+        $statement = $this->pdo->query($query);
+        $mods = [];
+        while ($mod = $statement->fetchObject('Mod')) {
+            $mods[] = $mod;
+        }
+
+        $statement = null;
+
+        return $mods;
+    }
 }

@@ -36,13 +36,16 @@
             <div class="wide mods-preview">
                 <p class="highlighted">Retrouvez ici certains de nos Mods principaux :</p>
                 <div class="wide mods-images">
+                <?php foreach($mods as $mod) { ?>
                     <div>
-                        <a href="/mod-difficulty" class="legend">
-                            <img class="mod-image" src="<?= IMG_MODS_DIR; ?>/mod-thumbnail-difficulty-min-960x540.webp" width="960" height="540" alt="Groupe de zombies Arlene irradiées" loading="lazy">
-                            <p>Difficulté Ajustable - par OkaniYoshiii</p>
+                        <a href="<?= $mod->getUri() ?>" class="legend">
+                            <img class="mod-image" src="<?= $mod->getThumbnail()->getSource() ?>" width="<?= $mod->getThumbnail()->getWidth() ?>" height="<?= $mod->getThumbnail()->getHeight() ?>" alt="" loading="lazy">
+                            <p><?= $mod->getName()?> - par <?= $mod->getAuthor(); ?></p>
                         </a>
                     </div>
-                    <div>
+                    <?php } ?>
+                    
+                    <!-- <div>
                         <a href="/mod-compagnon" class="legend">
                             <img class="mod-image" src="<?= IMG_MODS_DIR; ?>/mod-thumbnail-compagnon-min-730x673.webp" width="730" height="673" alt="Un joueur portant armure en fer avec un chien à ses côtés." loading="lazy">
                             <p>Compagnon - par Arcueid-Gray Sage</p>
@@ -59,7 +62,7 @@
                             <img class="mod-image" src="<?= IMG_MODS_DIR; ?>/mod-thumbnail-banrewind-min-960x540.webp" width="960" height="540" alt="Un groupe de 3 zombies attaquant un joueur. Les zombies ont le nom d'un joueur ayant été banni affiché au dessus de leur tête." loading="lazy">
                             <p>BanRewind - par OkaniYoshiii</p>
                         </a>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </section>

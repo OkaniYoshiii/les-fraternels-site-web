@@ -3,6 +3,7 @@
 namespace Controllers;
 
 require_once CONTROLLERS_DIR . '/DefaultController.php';
+require_once CONTROLLERS_DIR . '/HomeController.php';
 require_once CONTROLLERS_DIR . '/ModsController.php';
 require_once CONTROLLERS_DIR . '/SingleModController.php';
 

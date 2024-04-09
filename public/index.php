@@ -7,7 +7,7 @@ require_once CONTROLLERS_DIR . '/CoreController.php';
 
 $router = new Router();
 
-$router->addRoute('GET', '/', '/home.php');
+$router->addRoute('GET', '/', '/home.php', 'HomeController');
 $router->addRoute('GET', '/mods', '/mods.php', 'ModsController');
 $router->addRoute('GET', '/liens-utiles', '/liens-utiles.php');
 
