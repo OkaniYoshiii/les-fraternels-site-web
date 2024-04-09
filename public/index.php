@@ -1,6 +1,6 @@
 <?php
 
-require_once 'config.php';
+require_once '../config.php';
 
 require_once MODELS_DIR . '/Router.php';
 require_once CONTROLLERS_DIR . '/CoreController.php';

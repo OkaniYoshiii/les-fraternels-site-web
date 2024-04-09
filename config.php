@@ -7,8 +7,8 @@ $errors = [];
 // Need to be changed whenever you send this in production
 define('DEVMODE', true);
 
-define('CONTROLLERS_DIR','App/controllers');
-define('MODELS_DIR','App/models');
+define('CONTROLLERS_DIR','../App/controllers');
+define('MODELS_DIR','../App/models');
 define('ENTITIES_DIR', MODELS_DIR . '/Entities');
 
 define('HTML_DIR', 'templates');

@@ -4,4 +4,6 @@ RewriteEngine On
 RewriteRule "^mods$" "index.php"
 RewriteRule "^liens-utiles$" "index.php"
 
+RewriteRule "^CGU.odt$" "assets/CGU.odt"
+
 RewriteRule "^mod-[A-Za-z-]+" "index.php"
