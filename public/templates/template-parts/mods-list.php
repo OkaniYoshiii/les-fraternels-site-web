@@ -10,9 +10,8 @@
             <div>
                 <p class="release-date">Mis en ligne le : <time datetime="<?= $mod->getReleaseDate(); ?>"><?= date('d/m/Y', strtotime($mod->getReleaseDate())); ?></time></p>
                 <p>Tags :
-                    <span class="tags">
-                        <?php foreach($mod->getTags() as $tag) echo $tag . ', '; ?>
-                    </span></p>
+                    <?php require TEMPLATE_PARTS_DIR . '/tags-list.php'; ?>
+                </p>
                 <p class="mod-desc"><?= $mod->getDescription() ;?></p>
             </div>
         </div>

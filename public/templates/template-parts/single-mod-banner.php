@@ -3,9 +3,7 @@
         <div class="medium hero-title">
             <h1><?= $mod->getName() ?></h1>
             <p class="mod-category">
-                <?php foreach($mod->getTags() as $tag) { ?>
-                    <?= $tag . ', ' ?>
-                <?php } ?>
+                <?php require TEMPLATE_PARTS_DIR . '/tags-list.php'; ?>
             </p>
         </div>
         <div class="mod-infos">
