@@ -6,6 +6,8 @@
     <?php include_once HTML_HEAD_DIR . '/default-scripts.php'; ?>
     <?php include_once HTML_HEAD_DIR . '/favicon.php'; ?>
     <title>Mods - Changement Stack Munitions</title>
+    <meta name="description" content="<?= $mod->getDescription() ?>">
+    <meta name="keywords" content="7 Days To Die, 7DTD, FRT, Mods, Stack, Munitions, Quantité de munitions">
     <link rel="stylesheet" href="<?= CSS_DIR ?>/default-mod.css">
     <link rel="stylesheet" href="<?= CSS_DIR ?>/mod-stack-munitions.css">
 </head>

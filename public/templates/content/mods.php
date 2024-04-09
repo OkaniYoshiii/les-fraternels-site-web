@@ -6,6 +6,8 @@
     <?php include_once HTML_HEAD_DIR . '/default-scripts.php'; ?>
     <?php include_once HTML_HEAD_DIR . '/favicon.php'; ?>
     <title>Nos Mods</title>
+    <meta name="description" content="Vous pourrez retrouver tout nos Mods actuellement utilisés ou non sur le serveur. L'ensemble des Mods que nous mettons en place sur le server sont server-side, ce qui signifie qu'ils ne nécessitent aucun téléchargement.">
+    <meta name="keywords" content="7 Days To Die, 7DTD, FRT, Mods, Server-side">
     <link rel="stylesheet" href="<?= CSS_DIR ?>/mods.css" media="screen">
 </head>
 
@@ -64,26 +66,7 @@
                     <p class="output">Résultats : <span class="mod-count"><?= count($mods) ?></span></p>
                 </div>
                 <div class="mods">
-                    <?php foreach($mods as $mod) { ?>
-                        <div class="medium">
-                            <h3 class="mod-title"><a href="<?= $mod->getUri(); ?>"><span class="mod-name"><?= $mod->getName(); ?></span> - <?= $mod->getAuthor(); ?></a></h3>
-                            <div class="mod-infos">
-                                <div class="mod-thumbnail">
-                                    <a href="<?= $mod->getUri();?>">
-                                        <img src="<?= $mod->getThumbnail()->getSource() ?>" alt="Une miniature du mod <?= $mod->getName();?>" width="<?= $mod->getThumbnail()->getWidth() ?>" height="<?= $mod->getThumbnail()->getWidth() ?>">
-                                    </a>
-                                </div>
-                                <div>
-                                    <p class="release-date">Mis en ligne le : <time datetime="<?= $mod->getReleaseDate(); ?>"><?= date('d/m/Y', strtotime($mod->getReleaseDate())); ?></time></p>
-                                    <p>Tags :
-                                        <span class="tags">
-                                            <?php foreach($mod->getTags() as $tag) echo $tag . ', '; ?>
-                                        </span></p>
-                                    <p class="mod-desc"><?= $mod->getDescription() ;?></p>
-                                </div>
-                            </div>
-                        </div>
-                    <?php } ?>
+                    <?php require_once TEMPLATE_PARTS_DIR . '/mods-list.php' ?>
                 </div>
             </div>
         </section>

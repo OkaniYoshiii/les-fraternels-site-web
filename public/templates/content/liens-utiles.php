@@ -5,6 +5,8 @@
     <?php include_once HTML_HEAD_DIR . '/default-scripts.php'; ?>
     <?php include_once HTML_HEAD_DIR . '/favicon.php'; ?>
     <title>Liens Utiles</title>
+    <meta name="description" content="Retrouvez ici tout les liens vers nos différentes plateformes comme Discord, TopServeurs, 7DaysToDieServer ou encore les liens vers nos livempas.">
+    <meta name="keywords" content="7 Days To Die, 7DTD, FRT, Livemap, Site de vote, Discord">
     <link rel="stylesheet" href="<?= CSS_DIR ?>/liens-utiles.css">
 </head>
 <body data-javascript-enabled="false">

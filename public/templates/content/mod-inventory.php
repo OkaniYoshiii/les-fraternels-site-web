@@ -7,6 +7,8 @@
     <?php include_once HTML_HEAD_DIR . '/default-scripts.php'; ?>
     <?php include_once HTML_HEAD_DIR . '/favicon.php'; ?>
     <title>Mods - 60 Slots Inventory</title>
+    <meta name="description" content="<?= $mod->getDescription() ?>">
+    <meta name="keywords" content="7 Days To Die, 7DTD, FRT, Mods, Mod, Inventaire, Slots d'inventaire">
     <link rel="stylesheet" href="<?= CSS_DIR ?>/default-mod.css">
     <link rel="stylesheet" href="<?= CSS_DIR ?>/mod-inventory.css">
 </head>

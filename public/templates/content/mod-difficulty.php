@@ -7,6 +7,8 @@
     <?php include_once HTML_HEAD_DIR . '/default-scripts.php'; ?>
     <?php include_once HTML_HEAD_DIR . '/favicon.php'; ?>
     <title>Mods - Difficulté Ajustable</title>
+    <meta name="description" content="<?= $mod->getDescription() ?>">
+    <meta name="keywords" content="7 Days To Die, 7DTD, FRT, Mods, Mod, Difficulté, Choix de la difficulté">
     <link rel="stylesheet" href="<?= CSS_DIR ?>/default-mod.css">
     <link rel="stylesheet" href="<?= CSS_DIR ?>/mod-difficulty.css">
     <script src="<?= JS_DIR ?>/mod-difficulty.js" defer></script>

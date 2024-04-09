@@ -7,6 +7,8 @@
     <?php include_once HTML_HEAD_DIR . '/default-scripts.php'; ?>
     <?php include_once HTML_HEAD_DIR . '/favicon.php'; ?>
     <title>Mods - Refonte Mines Terrestres</title>
+    <meta name="description" content="<?= $mod->getDescription() ?>">
+    <meta name="keywords" content="7 Days To Die, 7DTD, FRT, Mods, Mod, Mines terrestres, Mines collantes">
     <link rel="stylesheet" href="<?= CSS_DIR ?>/default-mod.css">
 </head>
 

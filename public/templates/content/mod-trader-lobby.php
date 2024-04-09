@@ -6,6 +6,8 @@
     <?php include_once HTML_HEAD_DIR . '/default-scripts.php'; ?>
     <?php include_once HTML_HEAD_DIR . '/favicon.php'; ?>
     <title>Mods - Trader Lobby</title>
+    <meta name="description" content="<?= $mod->getDescription() ?>">
+    <meta name="keywords" content="7 Days To Die, 7DTD, FRT, Mods, Traders, Marchands, Lobby">
     <link rel="stylesheet" href="<?= CSS_DIR ?>/default-mod.css">
 </head>
 <body class="no-js">

@@ -7,6 +7,8 @@
     <?php include_once HTML_HEAD_DIR . '/default-scripts.php'; ?>
     <?php include_once HTML_HEAD_DIR . '/favicon.php'; ?>
     <title>Mods - Lockable Inventory Slots</title>
+    <meta name="description" content="<?= $mod->getDescription() ?>">
+    <meta name="keywords" content="7 Days To Die, 7DTD, FRT, Mods, Mod, Inventaire, Vérouillage d'inventaire">
     <link rel="stylesheet" href="<?= CSS_DIR ?>/default-mod.css">
 </head>
 
