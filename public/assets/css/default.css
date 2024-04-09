@@ -28,7 +28,6 @@ a:hover{
 }
 
 img {
-    width: auto;
     height: auto;
     display: block;
     max-width: 100%;
@@ -115,6 +114,7 @@ header button:hover {
 }
 
 .server-icon {
+    width: auto;
     max-height: clamp(2rem, 5vw, 3rem);
     aspect-ratio: 1;
 }
