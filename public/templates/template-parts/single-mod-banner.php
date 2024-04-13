@@ -1,4 +1,4 @@
-<section class="hero-banner text-centered" style="--mod-banner: url(<?= '/' . $mod->getThumbnail()->getSource() ?>);">
+<section class="hero-banner text-centered" style="--mod-banner: url(<?= $mod->getThumbnail()->getSource() ?>);">
     <div class="hero-filter">
         <div class="medium hero-title">
             <h1><?= $mod->getName() ?></h1>
