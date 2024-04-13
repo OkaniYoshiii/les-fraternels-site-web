@@ -8,7 +8,7 @@
     <title>Mods - Compagnon</title>
     <meta name="description" content="<?= $mod->getDescription() ?>">
     <meta name="keywords" content="7 Days To Die, 7DTD, FRT, Mods, Mod, Compagnon, Mod chien">
-    <link rel="stylesheet" href="<?= CSS_DIR ?>/default-mod.css">
+    <link rel="stylesheet" href="<?= SITE_URL . CSS_DIR ?>/default-mod.css">
 </head>
 
 <body data-javascript-enabled="false">
@@ -25,10 +25,10 @@
                 <li>Des Os (50% de chance)</li>
                 <li>Un Chiot (15% de chance)</li>
             </ul>
-            <img src="<?= IMG_MODS_DIR ?>/mod-compagnon-doghouse-1920x1080.webp" width="1920" height="1080" alt="Un bloc Niche de chien dans le jeu 7 Days To Die.">
+            <img src="<?= SITE_URL . IMG_MODS_DIR ?>/mod-compagnon-doghouse-1920x1080.webp" width="1920" height="1080" alt="Un bloc Niche de chien dans le jeu 7 Days To Die.">
             <h3>Elevage :</h3>
             <p>Une fois recueilli, il vous faudra le nourrir. Pour cela, une recette de fabrication a été rajoutée permettant de transformer votre chiot en puissant allié pour vos combats.</p>
-            <img src="<?= IMG_MODS_DIR ?>/mod-compagnon-recipe-880x344.webp" width="880" height="344" alt="La recette permettant de fabriquer le chien présent dans le mod.">
+            <img src="<?= SITE_URL . IMG_MODS_DIR ?>/mod-compagnon-recipe-880x344.webp" width="880" height="344" alt="La recette permettant de fabriquer le chien présent dans le mod.">
             <h3>Bonus attribués :</h3>
             <p>Les Bonus attribués par le Chien peuvent varier en fonction des différentes versions du Mod mais à l'heure actuelle, les bonus sont :</p>
             <ul>
