@@ -2,7 +2,7 @@
 
 class Thumbnail {
     private string|null $source;
-    private string $defaultSource = 'mod-thumbnail-default-533x300.webp';
+    private string $defaultSource = 'mod-thumbnail-default-800x450.webp';
     private array $dimensions;
     private int $width;
     private int $height;
