@@ -63,7 +63,6 @@ a:hover{
 header, footer {
     background-color: var(--bg-color);
 
-    text-align: center;
     font-size: clamp(0.8rem, 1.5vw, 1rem);
     font-weight: bold;
     color: white;
@@ -71,8 +70,8 @@ header, footer {
     padding-block: 0.75rem;
 }
 
-header button:hover {
-    text-decoration: underline;
+header {
+    position: relative;
 }
 
 /* UTILITY CLASSES */
@@ -162,7 +161,13 @@ header button:hover {
     border: 0;
 }
 
-@media screen and (max-width: 800px) {    
+@media screen and (max-width: 800px) {   
+    body:has(.header-links ul:where([data-expanded="true"])) {
+        overflow-y: scroll;
+        position: fixed;
+        width: 100%;
+    }
+
    .hamburger {
         --hamburger-gap: 0.25rem;
 
@@ -182,44 +187,37 @@ header button:hover {
         height: 0.25rem;
         background-color: white;
         border-radius: 10px;
-        transition: opacity 400ms, transform 600ms ease-out;
+        transition: opacity 250ms, transform 600ms ease-out;
     }
 
-   button:where([data-expanded="true"]) .burger-line:first-child {
+   button:where([aria-expanded="true"]) .burger-line:first-child {
         transform: translateY(calc(var(--line-height) + var(--hamburger-gap))) rotate(225deg);
     }
 
-   button:where([data-expanded="true"]) .burger-line:nth-child(2) {
+   button:where([aria-expanded="true"]) .burger-line:nth-child(2) {
         opacity: 0;
     }
 
-   button:where([data-expanded="true"]) .burger-line:last-child {
+   button:where([aria-expanded="true"]) .burger-line:last-child {
         transform: translateY(calc(var(--line-height) * -1 - var(--hamburger-gap))) rotate(-225deg);
     }
 
    .header-links ul {
+        display: none;
+
         position: absolute;
-        inset: 0 0 auto 0;
-        z-index: 999;
+        inset: 100% 0 auto 0;
+        height: 100vh;
 
-        flex-direction: column;
-        justify-content: space-around;
+        padding: 1.75rem;
 
-        padding-top: 4rem;
-        padding-bottom: 2rem;
-
-        background-color: rgba(0, 0, 0, 0.9);
-        clip-path: circle(0% at 100% 0%);
-
-        transition: clip-path 500ms ease-in-out 10ms;
+        background-color: var(--bg-color);
     }
 
-   .header-links li {
-        padding-block: 0.75rem;
-        border-block: 2px solid white;
-    }
-
-   .header-links ul:where([aria-expanded="true"]) {
-        clip-path: circle(150% at 100% 0%);
+   .header-links ul:where([data-expanded="true"]) {
+       display: flex;
+       flex-direction: column;
+       row-gap: 1rem;
+       justify-content: start;
     }
 }
