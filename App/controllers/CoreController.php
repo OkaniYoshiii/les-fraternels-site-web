@@ -32,8 +32,8 @@ class CoreController {
                 $name = $variable['name'];
                 $$name = $variable['value'];
             }
-
-            require_once HTML_CONTENT_DIR . $this->currentRoute['filename'];
         }
+
+        require_once HTML_CONTENT_DIR . $this->currentRoute['filename'];
     }
 }
