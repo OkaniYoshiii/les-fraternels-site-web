@@ -33,11 +33,11 @@
                                 <legend class="mods-selection-title">Filtrer par utilisation</legend>
                                 <div class="mods-selection">
                                     <div class="mods-radio-container">
-                                        <input type="radio" name="activated-mods" id="all-mods" value="all" <?= ((!isset($_GET['activated-mods'])) || ($_GET['activated-mods'] === 'all') || !in_array($_GET['activated-mods'], $tags)) ? 'checked' : '' ?> >
+                                        <input type="radio" name="activated-mods" id="all-mods" value="all" <?= (isset($_GET['activated-mods']) && $_GET['activated-mods'] === 'all') ? 'checked' : '' ?> >
                                         <label for="all-mods">Tous les mods</label>
                                     </div>
                                     <div class="mods-radio-container">
-                                        <input type="radio" name="activated-mods" id="actived-mods" value="activated" <?= (isset($_GET['activated-mods']) && $_GET['activated-mods'] === 'activated') ? 'checked' : '' ?>>
+                                        <input type="radio" name="activated-mods" id="actived-mods" value="activated" <?= ((!isset($_GET['activated-mods'])) || ($_GET['activated-mods'] === 'activated')) ? 'checked' : '' ?>>
                                         <label for="active-mods">Utilisés sur la partie en cours</label>
                                     </div>
                                     <div class="mods-radio-container">

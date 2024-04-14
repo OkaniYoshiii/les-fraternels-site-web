@@ -34,7 +34,7 @@ class Database {
 
         $queryFilter = '';
         $queryFilter2 = '';
-        if(isset($_GET['activated-mods']) && isset($_GET['tags']) && $_GET['tags'] !== "all") {
+        if(isset($_GET['activated-mods'])) {
             switch ($_GET['activated-mods']) {
                 case 'all':
                     $queryFilter = '';
@@ -48,6 +48,11 @@ class Database {
                 default :
                     $queryFilter = '';    
             }
+        } else {
+            $queryFilter = 'WHERE mods.is_used = 1 ';
+        }
+
+        if(isset($_GET['tags']) && $_GET['tags'] !== "all") {
             $queryFilter2 = 'HAVING INSTR(tags, :tag); ';
         }
 
