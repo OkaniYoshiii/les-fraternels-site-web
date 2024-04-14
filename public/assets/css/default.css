@@ -1,6 +1,6 @@
-/* GENERALITES */
+/* TRANSITION DE PAGES */
 
-body::before {
+/* body::before {
     content: "";
     position: absolute;
     z-index: 10000;
@@ -12,7 +12,9 @@ body::before {
 
 body[data-loaded="true"]::before {
     clip-path: rect(0px 0px 100% 0%);
-}
+} */
+
+/* GENERALITES */
 
 html {
     --bg-color: #710000;

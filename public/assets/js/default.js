@@ -1,7 +1,6 @@
 // Page transition
 
-document.body.dataset.loaded = "true";
-
+// document.body.dataset.loaded = "true";
 
 // Hamburger menu
 
