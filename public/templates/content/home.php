@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="<?= SITE_URL . CSS_DIR; ?>/index.css" media="screen">
 </head>
 
-<body>  
+<body data-loaded="false">  
 
     <?php include_once HTML_DIR . '/header.php'; ?>
 

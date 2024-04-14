@@ -1,5 +1,19 @@
 /* GENERALITES */
 
+body::before {
+    content: "";
+    position: absolute;
+    z-index: 10000;
+    inset: 0;
+    clip-path: rect(0px 0px 100% 100%);
+    transition: clip-path 1000ms ease-in-out;
+    background-color: white;
+}
+
+body[data-loaded="true"]::before {
+    clip-path: rect(0px 0px 100% 0%);
+}
+
 html {
     --bg-color: #710000;
     

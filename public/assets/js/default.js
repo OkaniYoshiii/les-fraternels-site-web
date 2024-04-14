@@ -1,3 +1,8 @@
+// Page transition
+
+document.body.dataset.loaded = "true";
+
+
 // Hamburger menu
 
 const HAMBURGER_MENU = document.querySelector('.header-links button');
