@@ -18,6 +18,8 @@ define('HTML_HEAD_DIR', HTML_DIR . '/head');
 define('HTML_CONTENT_DIR',HTML_DIR . '/content');
 define('TEMPLATE_PARTS_DIR', HTML_DIR . '/template-parts');
 
+define('ERR_404_FILE', HTML_CONTENT_DIR . '/404.php');
+
 define('IMG_DIR', 'assets/images'); 
 define('IMG_LOGOS_DIR',IMG_DIR . '/logos');
 define('IMG_BRANDS_DIR',IMG_DIR . '/brands');

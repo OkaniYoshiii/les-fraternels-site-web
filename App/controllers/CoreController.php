@@ -9,7 +9,7 @@ require_once CONTROLLERS_DIR . '/SingleModController.php';
 
 class CoreController {
     private object $router;
-    private array $currentRoute;
+    private array|null $currentRoute;
 
     public function __construct(object $router) {
         $this->router = $router;
@@ -17,6 +17,13 @@ class CoreController {
     }
 
     public function render() {
+        if(is_null($this->currentRoute)) {
+            http_response_code(404);
+            require_once ERR_404_FILE;
+
+            die();
+        }
+
         if(!is_null($this->currentRoute['controller'])) {
             $controller = new $this->currentRoute['controller']();
 
@@ -25,8 +32,8 @@ class CoreController {
                 $name = $variable['name'];
                 $$name = $variable['value'];
             }
+
+            require_once HTML_CONTENT_DIR . $this->currentRoute['filename'];
         }
-        
-        require_once HTML_CONTENT_DIR . $this->currentRoute['filename'];
     }
 }
