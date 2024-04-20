@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <?php include_once HTML_HEAD_DIR . '/metadata.php'; ?>
-    <?php include_once HTML_HEAD_DIR . '/default-scripts.php'; ?>
-    <?php include_once HTML_HEAD_DIR . '/favicon.php'; ?>
+    <?php require_once HTML_HEAD_DIR . '/metadata.php'; ?>
+    <?php require_once HTML_HEAD_DIR . '/default-scripts.php'; ?>
+    <?php require_once HTML_HEAD_DIR . '/favicon.php'; ?>
     <title>Mods - <?= $mod->getName() ?></title>
     <meta name="description" content="<?= $mod->getDescription() ?>">
     <meta name="keywords" content="7 Days To Die, 7DTD, FRT, Mods, Stack, Munitions, Quantité de munitions">

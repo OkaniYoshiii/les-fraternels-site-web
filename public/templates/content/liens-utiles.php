@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <?php include_once HTML_HEAD_DIR . '/metadata.php'; ?>
-    <?php include_once HTML_HEAD_DIR . '/default-scripts.php'; ?>
-    <?php include_once HTML_HEAD_DIR . '/favicon.php'; ?>
+    <?php require_once HTML_HEAD_DIR . '/metadata.php'; ?>
+    <?php require_once HTML_HEAD_DIR . '/default-scripts.php'; ?>
+    <?php require_once HTML_HEAD_DIR . '/favicon.php'; ?>
     <title>Liens Utiles</title>
     <meta name="description" content="Retrouvez ici tout les liens vers nos différentes plateformes comme Discord, TopServeurs, 7DaysToDieServer ou encore les liens vers nos livempas.">
     <meta name="keywords" content="7 Days To Die, 7DTD, FRT, Livemap, Site de vote, Discord">

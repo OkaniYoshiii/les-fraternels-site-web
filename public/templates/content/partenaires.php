@@ -17,7 +17,7 @@
 
 <body class="no-js">
 
-    <?php include_once "components/header.php"; ?>
+    <?php require_once "components/header.php"; ?>
 
     <main>
         <section>
@@ -92,7 +92,7 @@
         </section>
     </main>
     
-    <?php include_once "components/footer.php"; ?>
+    <?php require_once "components/footer.php"; ?>
 
 </body>
 <link rel="stylesheet" href="Page-Partenaires/CSS/main-defer.css">

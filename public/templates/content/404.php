@@ -2,9 +2,9 @@
 <html lang="fr">
 
 <head class="no-js">
-    <?php include_once HTML_HEAD_DIR . '/metadata.php'; ?>
-    <?php include_once HTML_HEAD_DIR . '/default-scripts.php'; ?>
-    <?php include_once HTML_HEAD_DIR . '/favicon.php'; ?>
+    <?php require_once HTML_HEAD_DIR . '/metadata.php'; ?>
+    <?php require_once HTML_HEAD_DIR . '/default-scripts.php'; ?>
+    <?php require_once HTML_HEAD_DIR . '/favicon.php'; ?>
 
     <title>Erreur 404 - Page introuvable</title>
     <link rel="stylesheet" href="<?= SITE_URL . CSS_DIR ?>/404.css">
@@ -12,7 +12,7 @@
 
 <body>  
 
-    <?php include_once HTML_DIR . '/header.php'; ?>
+    <?php require_once HTML_DIR . '/header.php'; ?>
 
     <main>
         <section class="medium">
@@ -49,7 +49,7 @@
         </section>
     </main>
 
-    <?php include_once HTML_DIR . '/footer.php' ?>
+    <?php require_once HTML_DIR . '/footer.php' ?>
 
 </body>
 
