@@ -5,4 +5,3 @@ package-lock.json
 package.json
 *.sql
 db_config.php
-mods_db.sql
