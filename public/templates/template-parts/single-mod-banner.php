@@ -2,9 +2,7 @@
     <div class="hero-filter">
         <div class="medium hero-title">
             <h1><?= $mod->getName() ?></h1>
-            <p class="mod-category">
-                <?php require TEMPLATE_PARTS_DIR . '/tags-list.php'; ?>
-            </p>
+            <?php require TEMPLATE_PARTS_DIR . '/tags-list.php'; ?>
         </div>
         <div class="mod-infos">
             <div class="medium mod-infos-wrapper">
