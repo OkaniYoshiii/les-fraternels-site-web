@@ -1,11 +1,10 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<?php include_once HTML_HEAD_DIR . '/metadata.php'; ?>
+    <?php include_once HTML_HEAD_DIR . '/metadata.php'; ?>
     <?php include_once HTML_HEAD_DIR . '/default-scripts.php'; ?>
     <?php include_once HTML_HEAD_DIR . '/favicon.php'; ?>
-    <title>Mods - Elevateur quantique</title>
+    <title>Mods - <?= $mod->getName() ?></title>
     <meta name="description" content="<?= $mod->getDescription() ?>">
     <meta name="keywords" content="7 Days To Die, 7DTD, FRT, Mods, Mod, Elevateur quantique, Elevateur, Ascenseur">
     <link rel="stylesheet" href="<?= SITE_URL . CSS_DIR ?>/default-mod.css">
