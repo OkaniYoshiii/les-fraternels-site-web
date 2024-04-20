@@ -19,7 +19,7 @@
         <section>
             <div class="narrow">
                 <h2>Description</h2>
-                <p>Au vu de tout les moyens investis pour maintenir le serveur à flot, il est important pour nous que nous ayons toujours une bonne base de joueurs. Il faut donc pour cela rendre le serveur attrayant et unique afin de fidéliser la communauté mais aussi tenter de ramener de nouvelles personnes constamment afin de remplacer les anciens joueurs ayant quitté le serveur. Pour cela, le meilleur moyen est le vote, système très simple permettant aux joueurs de voter pour le serveur sur des sites internet dédié et améliorant le référencement de notre serveur. Sauf que ce n'est pas nous qui votons, c'est vous ! Et pour vous remercier, en plus d'essayer d'améliorer la qualité du serveur de manière régulière, nous avons décidé de vous récompenser pour votre investissement en fonction de vos votes.</p>
+                <p class="mod-description"><?= $mod->getDescription(); ?></p>
                 <h3>Fonctionnalités :</h3>
                 <p>Le système de récompenses pour les votes est divisé en deux parties :</p>
                 <ul>

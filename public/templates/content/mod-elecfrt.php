@@ -18,7 +18,7 @@
         <section>
             <div class="narrow">
                 <h2>Description</h2>
-                <p>Notre volonté pour le jeu est de créer une expérience immersive et donc, par extension, un peu difficile comme pourrait l'être une vraie survie dans une période post-apocalyptique. Pour cela, nous voulons aussi que tout ne soit pas facilement accessible et que parfois, vous soyez obligé de jouer avec une forme de contrainte incitant à faire des choix. Pour les hordes, nous avons décidé de changer le fonctionnement des générateurs afin de rendre le tout plus gourmand tout en offrant des possibilités d'amélioration de ces derniers.</p>
+                < <p class="mod-description"><?= $mod->getDescription(); ?></p>
                 <h3>Fonctionnalités :</h3>
                 <p>Ce mod rajoute deux générateurs :</p>
                 <p><b>Générateur de chantier :</b></p>

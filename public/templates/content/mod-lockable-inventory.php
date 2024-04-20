@@ -20,7 +20,7 @@
         <section>
             <div class="narrow">
                 <h2 id="description">Description</h2>
-                <p>7 Days To Die possède de nombreux items, objets et armes que l'on doit souvent transporter avec nous et transférer dans nos lieux de stockage. Cette étape de tri et de rangement peut sembler parfois fastidieuse mais nécessaire, nous souhaitons donc y passer le moins de temps possible. Pour cela, KhainesGB a développé un Mod permettant de faciliter le rangement de notre inventaire en permettant de vider tout notre inventaire tout en conservant les items que l'on juge nécessaire de garder tout le temps avec nous.</p>
+                <p class="mod-description"><?= $mod->getDescription(); ?></p>
                 <h3>Fonctionnlités :</h3>
                 <p>Ce mod vous permet de verrouiler des emplacements d'inventaire, que cela soit pour votre personnage ou bien pour vos véhicules. Vérouiller des emplacements d'inventaire permet de les protéger du tri automatique et de les empêcher de pouvoir être transferrés lorsque l'on utilise le bouton "Vider tout l'inventaire".</p>
                 <h3>Fonctionnement :</h3>

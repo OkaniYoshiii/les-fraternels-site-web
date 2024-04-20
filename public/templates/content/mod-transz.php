@@ -18,7 +18,7 @@
         <section>
             <div class="narrow">
                 <h2>Description</h2>
-                <p>Suite à la création du Lobby et son implémentation dans le serveur, nous avons été exposé à un problème majeur : comment les joueurs peuvent-ils se regrouper au Lobby si ces derniers se trouvent à des bouts opposés de la carte ? Certains serveurs proposent des systèmes de téléportation grâce à des commandes mais cela n'était pas de notre goût, notamment car ceci casse complétement l'immersion. Il a donc fallu trouver un moyen de transporter les joueurs  rapidement vers le Lobby tout en rendant le tout cohérent. Un système de bus était alors la solution toute trouvée !</p>
+                <p class="mod-description"><?= $mod->getDescription(); ?></p>
                 <h3>Fonctionnalités :</h3>
                 <p>Disseminés sur différents points de la carte, des arrêts de bus permettent de vous transporter d'un Biome spécifique jusqu'au Lobby instantanément.</p>
                 <p>Pour cela, il vous suffit de vous placer sur le <b>banc de gauche d'un arrêt de bus</b> et vous serez téléportés directement vers le Lobby.</p>

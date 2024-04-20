@@ -19,7 +19,7 @@
         <section>
             <div class="narrow">
                 <h2>Description</h2>
-                <p>Pour les mineurs, pas besoin de détailler à quel point ce Mod peut vous sauver d'une future perte d'audition. Pour les autres, sachez que le minage dans 7 Days To Die est presque une étape obligatoire dans la progression du jeu. Cela peut être très long et fastidieux en début de partie mais le meilleur moment pour miner est celui où l'on débloque la Foreuse. Cette dernière nous facilite grandement la vie mais a tendance a très vite devenir une source de douleur auditive à force de l'utiliser au point où certains joueurs préfèrent la Pioche. Suite aux nombreuses plaintes de la part de la communauté concernant cette dernières, il a donc été décidé de faire quelque chose ...</p>
+                <p class="mod-description"><?= $mod->getDescription(); ?></p>
                 <h3>Fonctionnalités :</h3>
                 <p>Au vu des limitations techniques induites par le modding en server-side et suite à un <a href="https://discord.com/channels/653642303663243309/1121940937480863874/1154828788237078638" target="_blank">sondage</a> réalisé sur le Discord de la communauté, il a été decidé de réduire le son de la foreuse de la manière suivante :</p>
                 <p>Le son des outils frappant sur une surface métallique <b>lorsque le personnage est accroupi</b> a été réduit</p>

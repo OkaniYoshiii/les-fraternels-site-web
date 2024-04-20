@@ -20,7 +20,7 @@
         <section>
             <div class="narrow">
                 <h2>Description</h2>
-                <p>Les mines terrestres ont toujours été considérées comme étant l'un des pièges les moins efficaces de 7 Days To Die. Elles sont à usage unique, sont couteuses et tuent généralement peu de zombie à chaque explosion. Or, elles ont une propriété qui n'est pas suffisament exploitée par le jeu de base : pouvoir être explosées à distance par des tirs ou des coup en mêlée. Et c'est là toute la philosphie de ce Mod : transformer les Mines terrestres en petites charges explosives activables à distance. Cela encouragera des nouvelles manières d'appréhender les Hordes tout en offrant de nouvelles possibilités pour se défendre.</p>
+                <p class="mod-description"><?= $mod->getDescription(); ?></p>
                 <img src="<?= SITE_URL . IMG_MODS_DIR ?>/mod-landmines-1920x1080.webp" width="1920" height="1080" alt="Un abri en béton avec des mines terrestres placées sur le plafond et sur les murs.">
                 <h3>Fonctionnalités :</h3>
                 <p>Les modification apportées aux mines terrestres sont les suivantes :</p>

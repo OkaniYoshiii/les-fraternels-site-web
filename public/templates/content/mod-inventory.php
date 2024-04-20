@@ -21,7 +21,7 @@
         <section>
             <div class="narrow">
                 <h2 id="description">Description</h2>
-                <p>L'inventaire Vanilla de 7 Days To Die est relativement petit comparé à tout ce que le jeu nous balance à la figure. Entre les différentes ressources, les armes, les munitions, soins, nourriture et j'en passe, l'inventaire se remplit vite. Les poches aident beaucoup mais cela n'est pas suffisant, notamment en début de partie ou les bidouilles s'amassent très rapidement !</p>
+                <p class="mod-description"><?= $mod->getDescription(); ?></p>
                 <p>ShoudenKalferas a compris cela et nous propose ici un Mod permettant de grandement augmenter la place présente dans notre inventaire.</p>
                 <h3>Feature :</h3>
                 <p>Les emplacements d'inventaire passent de <b>45 Slots</b> à <b>60 Slots</b></p>
