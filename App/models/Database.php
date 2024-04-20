@@ -27,41 +27,40 @@ class Database {
         return $mods;
     }
 
-    public function queryFilteredMods() : array {
-        if((isset($_GET['activated-mods']) && isset($_GET['tags'])) && (empty($_GET['activated-mods']) || empty($_GET['tags']))) {
+    public function queryFilteredMods(string $filter) : array {
+        if($this->unrecognizedURLParameters()) {
             $GLOBALS['errors'][] = 'Les filtres renseignées ne sont pas corrects. Affichage de l\'ensemble des Mods';
         }
 
-        $queryFilter = '';
-        $queryFilter2 = '';
-        if(isset($_GET['activated-mods'])) {
-            switch ($_GET['activated-mods']) {
-                case 'all':
-                    $queryFilter = '';
-                    break;
-                case 'activated':
-                    $queryFilter = 'WHERE mods.is_used = 1 ';
-                    break;
-                case 'deactivated':
-                    $queryFilter = 'WHERE mods.is_used = 0 ';
-                    break;
-                default :
-                    $queryFilter = '';    
-            }
-        } else {
-            $queryFilter = 'WHERE mods.is_used = 1 ';
+        $queryFilter = $queryFilter2 = '';
+
+        $filter = (isset($_GET['activated-mods'])) ? $_GET['activated-mods'] : $filter;
+
+        switch ($filter) {
+            case 'all':
+                $queryFilter = '';
+                break;
+            case 'activated':
+                $queryFilter = 'WHERE mods.is_used = 1 ';
+                break;
+            case 'deactivated':
+                $queryFilter = 'WHERE mods.is_used = 0 ';
+                break;
+            default :
+                $queryFilter = '';    
         }
 
-        if(isset($_GET['tags']) && $_GET['tags'] !== "all") {
+
+        if(isset($_GET['tags']) && $_GET['tags'] !== 'all') {
             $queryFilter2 = 'HAVING INSTR(tags, :tag); ';
         }
 
         $query = 'SELECT mods.id, mods.name, mods.description, mods.uri, mods.release_date, authors.name AS author, thumbnails.filename AS thumbnail_name, GROUP_CONCAT(tags.name) AS tags, mods.is_used FROM `mods_tags`
-        JOIN tags ON mods_tags.tag_id = tags.id
-        JOIN mods ON mods_tags.mod_id = mods.id
-        LEFT JOIN thumbnails ON thumbnail_id = thumbnails.id
-        JOIN authors ON author_id = authors.id ' . 
-        $queryFilter . 'GROUP BY mods.name ' . $queryFilter2 . ';';        
+                    JOIN tags ON mods_tags.tag_id = tags.id
+                    JOIN mods ON mods_tags.mod_id = mods.id
+                    LEFT JOIN thumbnails ON thumbnail_id = thumbnails.id
+                    JOIN authors ON author_id = authors.id ' . 
+                    $queryFilter . 'GROUP BY mods.name ' . $queryFilter2 . ';';        
         
         if(isset($_GET['tags']) && $_GET['tags'] !== 'all') {
             $statement = $this->pdo->prepare($query);
@@ -78,6 +77,10 @@ class Database {
         $statement = null;
 
         return $mods;
+    }
+
+    private function unrecognizedURLParameters() {
+        return ((isset($_GET['activated-mods']) && isset($_GET['tags'])) && (empty($_GET['activated-mods']) || empty($_GET['tags'])));
     }
 
     public function queryTags() : array {

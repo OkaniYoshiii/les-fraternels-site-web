@@ -33,16 +33,16 @@
                                 <legend class="mods-selection-title">Filtrer par utilisation</legend>
                                 <div class="mods-selection">
                                     <div class="mods-radio-container">
-                                        <input type="radio" name="activated-mods" id="all-mods" value="all" <?= (isset($_GET['activated-mods']) && $_GET['activated-mods'] === 'all') ? 'checked' : '' ?> >
+                                        <input type="radio" name="activated-mods" id="all-mods" value="all" <?= ((!isset($_GET['activated-mods']) && $checkboxesDefaultValues['mods'] === 'all') || (isset($_GET['activated-mods']) && $_GET['activated-mods'] === 'all')) ? 'checked' : '' ?> >
                                         <label for="all-mods">Tous les mods</label>
                                     </div>
                                     <div class="mods-radio-container">
-                                        <input type="radio" name="activated-mods" id="actived-mods" value="activated" <?= ((!isset($_GET['activated-mods'])) || ($_GET['activated-mods'] === 'activated')) ? 'checked' : '' ?>>
-                                        <label for="active-mods">Utilisés sur la partie en cours</label>
+                                        <input type="radio" name="activated-mods" id="activated-mods" value="activated" <?= ((!isset($_GET['activated-mods']) && $checkboxesDefaultValues['mods'] === 'activated') || (isset($_GET['activated-mods']) && $_GET['activated-mods'] === 'activated')) ? 'checked' : '' ?>>
+                                        <label for="activated-mods">Utilisés sur la partie en cours</label>
                                     </div>
                                     <div class="mods-radio-container">
-                                        <input type="radio" name="activated-mods" id="disactived-mods" value="deactivated" <?= (isset($_GET['activated-mods']) && $_GET['activated-mods'] === 'deactivated') ? 'checked' : '' ?>>
-                                        <label for="disactived-mods">Désactivés</label>
+                                        <input type="radio" name="activated-mods" id="deactived-mods" value="deactivated" <?= ((!isset($_GET['activated-mods']) && $checkboxesDefaultValues['mods'] === 'activated') || (isset($_GET['activated-mods']) && $_GET['activated-mods'] === 'deactivated')) ? 'checked' : '' ?>>
+                                        <label for="deactived-mods">Désactivés</label>
                                     </div>
                                 </div>
                             </fieldset>
@@ -51,12 +51,12 @@
                                 <div class="tags-selection">
                                     <div class="mods-radio-container">
                                         <input type="radio" name="tags" id="all-tags" value="all" <?= ((!isset($_GET['tags'])) || ($_GET['tags'] === 'all') || !in_array($_GET['tags'], $tags)) ? 'checked' : '' ?> >
-                                        <label for="all-mods">Tous les tags</label>
+                                        <label for="all-tags">Tous les tags</label>
                                     </div>
                                     <?php foreach($tags as $tag) { ?>
                                         <div class="mods-radio-container">
                                             <input type="radio" name="tags" id="tag-<?= $tag ?>" value="<?= $tag ?>" <?= (isset($_GET['tags']) && $_GET['tags'] === $tag) ? 'checked' : '' ?>>
-                                            <label for="all-mods"><?= $tag ?></label>
+                                            <label for="tag-<?= $tag ?>"><?= $tag ?></label>
                                         </div>
                                     <?php } ?>
                                 </div>
