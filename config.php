@@ -2,6 +2,15 @@
 
 declare(strict_types=1);
 
+// set_exception_handler('redirectTo404Page');
+
+function redirectTo404Page(Throwable $exception = null) {
+    http_response_code(404);
+    require_once ERR_404_FILE;
+    die();
+}
+
+
 $errors = [];
 
 define('SITE_URL', 'http://localhost/public/');
@@ -9,8 +18,9 @@ define('SITE_URL', 'http://localhost/public/');
 // Need to be changed whenever you send this in production
 define('DEVMODE', true);
 
-define('CONTROLLERS_DIR', '../App/controllers');
-define('MODELS_DIR', '../App/models');
+define('APP_DIR', '../App');
+define('CONTROLLERS_DIR', APP_DIR . '/controllers');
+define('MODELS_DIR', APP_DIR . '/models');
 define('ENTITIES_DIR', MODELS_DIR . '/Entities');
 
 define('HTML_DIR', 'templates');

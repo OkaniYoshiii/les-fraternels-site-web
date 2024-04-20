@@ -1,22 +1,31 @@
 <?php
 
-class Router {
-    private array $routes;
+class Router
+{
+    private stdClass $routes;
+    private string $requestMethod;
+    private string $requestUri;
 
-    public function addRoute(string $method, string $uri, string $filename, string $controller = null) {
-        $this->routes[$uri] = [
-            "method" => $method,
-            "uri" => $uri,
-            "filename" => $filename,
-            "controller" => $controller
-        ];
+    public function __construct()
+    {
+        $this->requestMethod = $_SERVER['REQUEST_METHOD'];
+        $this->requestUri = $_SERVER['REQUEST_URI'];
     }
 
-    public function getCurrentRoute() : array | null {
-        return ($this->hasMatchingRoute($_SERVER['REQUEST_METHOD'], explode('?',($_SERVER['REQUEST_URI']))[0])) ? $this->routes[explode('?',$_SERVER['REQUEST_URI'])[0]] : null ;
+    public function setRoutes(string $routes_file_path)
+    {
+        if (!file_exists($routes_file_path)) {
+            throw new Exception($routes_file_path . ' is not a valid path.');
+        }
+
+        if(!empty($this->routes)) {
+            throw new Exception('Router->routes cannot be defined multiple times.');
+        }
+
+        $this->routes = json_decode(file_get_contents($routes_file_path));
     }
 
-    private function hasMatchingRoute(string $method, string $uri) : bool {
-        return (array_key_exists($uri, $this->routes) && $this->routes[$uri]["method"] === $method);
+    public function getCurrentRoute() : stdClass|null {
+        return $this->routes->{$this->requestMethod}->{$this->requestUri} ?? null;
     }
 }
