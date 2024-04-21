@@ -9,7 +9,7 @@ class Router
     public function __construct()
     {
         $this->requestMethod = $_SERVER['REQUEST_METHOD'];
-        $this->requestUri = $_SERVER['REQUEST_URI'];
+        $this->requestUri = explode('?',$_SERVER['REQUEST_URI'])[0];
     }
 
     public function setRoutes(string $routes_file_path)

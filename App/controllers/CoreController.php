@@ -12,7 +12,7 @@ require_once CONTROLLERS_DIR . '/SingleModController.php';
 class CoreController {
     private stdClass|null $currentRoute;
 
-    public function __construct(stdClass $currentRoute) {
+    public function __construct(stdClass|null $currentRoute) {
         $this->currentRoute = $currentRoute;
     }
 
