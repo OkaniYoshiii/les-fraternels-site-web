@@ -18,6 +18,7 @@
         "/mods/son-foreuse": {"template_name": "/mod-son-foreuse.php", "controller": "SingleModController"},
         "/mods/stack-munitions": {"template_name": "/mod-stack-munitions.php", "controller": "SingleModController"},
         "/mods/trader-lobby": {"template_name": "/mod-trader-lobby.php", "controller": "SingleModController"},
-        "/mods/transz": {"template_name": "/mod-transz.php", "controller": "SingleModController"}
+        "/mods/transz": {"template_name": "/mod-transz.php", "controller": "SingleModController"},
+        "/mods/agf-hud": {"template_name": "/mod-agf-hud.php", "controller": "SingleModController"}
     }
 }

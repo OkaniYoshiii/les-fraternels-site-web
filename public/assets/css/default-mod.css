@@ -116,6 +116,15 @@ section + section {
     color: var(--txt-main-color);
 }
 
+.hero-title .tags {
+    text-shadow: none;
+    color: var(--txt-main-color);
+    font-weight: bold;
+    padding: 0.25rem 2rem;
+    font-size: clamp(1.2rem, 2vw, 1.5rem);
+    background-color: rgba(0,0,0,0.65);
+}
+
 .mod-infos {
     padding-block: 1.5rem;
     background-color: rgba(0, 0, 0, 0.80);
