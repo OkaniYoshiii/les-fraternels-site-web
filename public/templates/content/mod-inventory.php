@@ -12,7 +12,7 @@
 </head>
 
 <body class="no-js">
-    
+        
 <?php require_once HTML_DIR . "/header.php"; ?>
     <main>
     <?php require_once TEMPLATE_PARTS_DIR . '/single-mod-banner.php'; ?>

@@ -223,6 +223,22 @@ section {
     font-weight: bold;
 }
 
+.mod .is-used,
+.mod .is-not-used {
+    padding: 0.5rem 1rem;
+    border-radius: 12px;
+    color: white;
+    font-weight: bold;
+}
+
+.mod .is-used {
+    background-color: green;
+}
+
+.mod .is-not-used {
+    background-color: red;
+}
+
 /* ## NO-JS */
 
 .no-js fieldset { 

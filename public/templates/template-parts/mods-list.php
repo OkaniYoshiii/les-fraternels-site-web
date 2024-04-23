@@ -7,6 +7,11 @@
             </a>
             <div>
                 <p class="release-date">Mis en ligne le : <time datetime="<?= $mod->getReleaseDate(); ?>"><?= date('d/m/Y', strtotime($mod->getReleaseDate())); ?></time></p>
+                <?php if($mod->getIsUsed() === 1) { ?>
+                    <span class="is-used">Utilisé sur le serveur</span>
+                <?php } else { ?>
+                    <span class="is-not-used">Désactivé pour le moment</span>
+                <?php } ?>
                 <p>Tags :
                     <?php require TEMPLATE_PARTS_DIR . '/tags-list.php'; ?>
                 </p>

@@ -15,14 +15,6 @@
 
 <?php require_once HTML_DIR . "/header.php"; ?>
     <main>
-        <?php if(!empty($GLOBALS['errors'])) { ?>
-            <section class="medium errors">
-                <h2>Erreurs</h2>
-                <?php foreach($GLOBALS['errors'] as $error) { ?>
-                    <p><?= $error ?></p>
-                <?php } ?>
-            </section>
-        <?php } ?>
         <section>
             <h2 class="medium text-centered visually-hidden">Nos Mods</h2>
             <div class="mods-content wide">

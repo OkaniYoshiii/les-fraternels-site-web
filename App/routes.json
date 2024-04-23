@@ -22,6 +22,7 @@
         "/mods/agf-hud": {"template_name": "/mod-agf-hud.php", "controller": "SingleModController"},
         "/mods/info-panel": {"template_name": "/mod-info-panel.php", "controller": "SingleModController"},
         "/mods/kha21-food-and-water-bar": {"template_name": "/mod-kha-21.php", "controller": "SingleModController"},
-        "/mods/more-eggs": {"template_name": "/mod-more-eggs.php", "controller": "SingleModController"}
+        "/mods/more-eggs": {"template_name": "/mod-more-eggs.php", "controller": "SingleModController"},
+        "/mods/picasso": {"template_name": "/mod-picasso.php", "controller": "SingleModController"}
     }
 }
