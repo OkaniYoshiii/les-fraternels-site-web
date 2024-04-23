@@ -66,6 +66,7 @@ h3 {
     font-weight: bold;
     color: var(--txt-main-color);
     margin-top: 0;
+    margin-bottom: 1rem;
 }
 
 h3 a {
@@ -83,12 +84,8 @@ h3 a {
     gap: min(5vw, 4rem);
 }
 
-section > div {
-    margin: 4rem auto;
-}
-
 section {
-    margin-block: 5rem;
+    margin-block: clamp(1.5rem, 4vw,5rem);
 }
 
 /* LEFT SIDEBAR (namespace: .content-sidebar) */
@@ -100,8 +97,10 @@ section {
 
     white-space: nowrap;
 
+    box-sizing: border-box;
+
     background-color: #f0f0f0;
-    padding: 2rem;
+    padding: clamp(1rem, 2.5vw, 2rem) clamp(0.5rem, 2.5vw, 2rem);
 }
 
 .content-sidebar .mods-filters {
@@ -134,6 +133,11 @@ section {
     font-weight: bold;
 }
 
+.content-sidebar .mods-selection,
+.content-sidebar .tags-selection {
+    font-size: clamp(0.7rem, 3vw ,1rem)
+}
+
 .content-sidebar .mods-selection {
     display: flex;
     flex-direction: column;
@@ -146,10 +150,6 @@ section {
     gap: 0.5rem;
 }
 
-.content-sidebar .mods-radio-container {
-    margin-left: 1rem;
-}
-
 /* RIGHT SIDEBAR (namespace: .mods) */
 
 .mods {
@@ -159,12 +159,12 @@ section {
 }
 
 .mods > div:not(:last-child) {
-    margin-bottom: 3rem;
+    margin-bottom: clamp(1rem, 4vw, 3rem);
 }
 
 .mods .mod-title {
     color: var(--txt-secondary-color);
-    font-size: clamp(22px,3vw,27px);
+    font-size: clamp(1.35rem, 5vw, 1.7rem);
     font-weight: normal;
 }
 
@@ -175,14 +175,16 @@ section {
 .mods .mod-infos {
     display: flex;
     align-items: center;
-    gap: 0.5rem 3rem;
-    flex-wrap: nowrap;
+    gap: 2rem 3rem;
+    flex-wrap: wrap;
 }
 
 .mods .mod-infos > *:first-child{
     flex-grow: 0;
     flex-shrink: 0;
-    flex-basis: 450px;
+    flex-basis: 500px;
+
+    max-width: 100%;
 
     margin-inline: auto;
     border-radius: 3px;
@@ -192,7 +194,7 @@ section {
 .mods .mod-infos > *:last-child{
     flex-grow: 1;
     flex-shrink: 1;
-    flex-basis: auto;
+    flex-basis: 250px;
 }
 
 .mods .mod-thumbnail img {
@@ -213,7 +215,8 @@ section {
 }
 
 .mods .release-date {
-    font-size: 19px;
+    margin-top: 0;
+    font-size: clamp(0.9rem,3vw,1.2rem);
     font-weight: bold;
 }
 
