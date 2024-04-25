@@ -9,6 +9,7 @@
     <meta name="description" content="Vous pourrez retrouver tout nos Mods actuellement utilisés ou non sur le serveur. L'ensemble des Mods que nous mettons en place sur le server sont server-side, ce qui signifie qu'ils ne nécessitent aucun téléchargement.">
     <meta name="keywords" content="7 Days To Die, 7DTD, FRT, Mods, Server-side">
     <link rel="stylesheet" href="<?= SITE_URL . CSS_DIR ?>/mods.css" media="screen">
+    <script src="<?= SITE_URL . JS_DIR ?>/mods.js" defer></script>
 </head>
 
 <body data-javascript-enabled="false">
