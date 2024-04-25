@@ -1,9 +1,9 @@
-<?php foreach($mods as $mod) { ?>
+<?php foreach($mods as $index => $mod) { ?>
     <div class="medium mod">
         <h3 class="mod-title"><a href="<?= $mod->getUri(); ?>"><span class="mod-name"><?= $mod->getName(); ?></span> - <?= $mod->getAuthor(); ?></a></h3>
         <div class="mod-infos">
             <a class="mod-thumbnail" href="<?= $mod->getUri();?>">
-                <img src="<?= SITE_URL . $mod->getThumbnail()->getSource() ?>" alt="Une miniature du mod <?= $mod->getName();?>" width="<?= $mod->getThumbnail()->getWidth() ?>" height="<?= $mod->getThumbnail()->getWidth() ?>">
+                <img src="<?= SITE_URL . $mod->getThumbnail()->getSource() ?>" alt="Une miniature du mod <?= $mod->getName();?>" width="<?= $mod->getThumbnail()->getWidth() ?>" height="<?= $mod->getThumbnail()->getWidth() ?>" <?php if($index > 4) : ?>loading="lazy"<?php endif; ?>>
             </a>
             <div>
                 <p class="release-date">Mis en ligne le : <time datetime="<?= $mod->getReleaseDate(); ?>"><?= date('d/m/Y', strtotime($mod->getReleaseDate())); ?></time></p>
