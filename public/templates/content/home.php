@@ -17,8 +17,11 @@
     <?php require_once HTML_DIR . '/header.php'; ?>
 
     <main>
-        <section>
-            <h1 class="hero-title">Le Serveur fait par<br>des joueurs, pour des<br>joueurs</h1>
+        <section class="hero-banner">
+            <h1 class="hero-banner__title">Le Serveur fait par<br>des joueurs, pour des<br>joueurs</h1>
+            <img class="hero-banner__img" src="<?= SITE_URL . IMG_OTHERS_DIR ?>/screenshot-lobby-2-1920x1080.webp" alt="" width="1920" height="1080" srcset="
+            <?= SITE_URL . IMG_OTHERS_DIR ?>/screenshot-lobby-2-1920x1080.webp 1920w,
+            <?= SITE_URL . IMG_OTHERS_DIR ?>/screenshot-lobby-2-960x540.webp 960w" sizes="100vw">
         </section>
         <section>
             <div class="medium mods-intro">
@@ -30,7 +33,7 @@
                     <img src="<?= SITE_URL . IMG_OTHERS_DIR; ?>/7daystodie-wallpaper-town-1440x810.webp" alt="" height="1440" width="810" srcset="
                     <?= SITE_URL . IMG_OTHERS_DIR; ?>/7daystodie-wallpaper-town-978x550.webp 978w,
                     <?= SITE_URL . IMG_OTHERS_DIR; ?>/7daystodie-wallpaper-town-756x425.webp 756w,
-                    <?= SITE_URL . IMG_OTHERS_DIR; ?>/7daystodie-wallpaper-town-444x250.webp 444w" sizes="100vw" loading="lazy">
+                    <?= SITE_URL . IMG_OTHERS_DIR; ?>/7daystodie-wallpaper-town-444x250.webp 444w" sizes="100vw">
                 </div>
             </div>
             <div class="wide mods-preview">

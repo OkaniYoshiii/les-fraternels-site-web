@@ -1,15 +1,6 @@
 # Redirige toutes les requêtes HTTP vers index.php
 RewriteEngine On
 
-# RewriteRule "^mods$" "index.php"
-# RewriteRule "^liens-utiles$" "index.php"
-# RewriteRule "^CGU.odt$" "assets/CGU.odt"
-# RewriteRule "^mod-[A-Za-z-]+" "index.php"
-
-# RewriteCond %{REQUEST_FILENAME} -f
-# RewriteCond %{REQUEST_FILENAME} -d
-# RewriteRule "^(.+)$" "-"
-
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule "^(.+)$" "index.php"

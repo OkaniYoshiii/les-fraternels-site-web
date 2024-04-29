@@ -10,10 +10,14 @@ function redirectTo404Page(Throwable $exception = null) {
     die();
 }
 
+if($_SERVER['SERVER_NAME'] === 'localhost') {
+    define('SITE_URL', 'http://localhost/public/');
+} else {
+    define('SITE_URL', 'https://lesfraternels.fr/public/');
+}
 
 $errors = [];
 
-define('SITE_URL', 'http://localhost/public/');
 
 // Need to be changed whenever you send this in production
 define('DEVMODE', true);
