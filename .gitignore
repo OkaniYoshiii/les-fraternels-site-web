@@ -6,3 +6,4 @@ package.json
 *.sql
 db_config.php
 *.htaccess
+*.htpasswd
