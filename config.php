@@ -10,10 +10,20 @@ function redirectTo404Page(Throwable $exception = null) {
     die();
 }
 
-if($_SERVER['SERVER_NAME'] === 'localhost') {
-    define('SITE_URL', 'http://localhost/public/');
-} else {
-    define('SITE_URL', 'https://lesfraternels.fr/public/');
+switch ($_SERVER['SERVER_NAME']) {
+    case 'localhost':
+        define('SITE_URL', 'http://localhost/public/');
+        break;
+    case 'dev.lesfraternels.fr':
+        define('SITE_URL', 'http://dev.lesfraternels.fr/public/');
+        break;
+    case 'lesfraternels.fr':
+        define('SITE_URL', 'http://lesfraternels.fr/lesfraternels.fr/public/');
+        break;
+    
+    default:
+        define('SITE_URL', 'http://localhost/public/');
+        break;
 }
 
 $errors = [];
