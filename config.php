@@ -10,8 +10,6 @@ function redirectTo404Page(Throwable $exception = null) {
     die();
 }
 
-define('SITE_URL', 'http://localhost/public/');
-
 $errors = [];
 
 // Need to be changed whenever you send this in production
