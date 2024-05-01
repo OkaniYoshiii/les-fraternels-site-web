@@ -52,6 +52,10 @@
 
 /* GENERAL STYLES */
 
+body {
+    overflow-x: hidden;
+}
+
 h2 {
     font-family: Oswald, Inter, sans-serif;
     font-size: clamp(30px,5vw,44px);
