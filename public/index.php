@@ -3,11 +3,11 @@
 require_once '../site_config.php';
 require_once '../config.php';
 
-require_once MODELS_DIR . '/Router.php';
-require_once CONTROLLERS_DIR . '/CoreController.php';
+require_once '../App/objects/Autoloader.php';
+Autoloader::register();
 
 $router = new Router();
-$router->setRoutes(APP_DIR . '/routes.json');
+$router->setRoutes('../config/routes.config.json');
 $currentRoute = $router->getCurrentRoute();
 
 $core = new Controllers\CoreController($currentRoute);

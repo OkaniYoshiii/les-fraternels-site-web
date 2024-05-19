@@ -46,7 +46,7 @@
                             <p><?= $mod->getName()?> - par <?= $mod->getAuthor(); ?></p>
                         </a>
                     </div>
-                    <?php } ?>
+                <?php } ?>
                 </div>
             </div>
         </section>

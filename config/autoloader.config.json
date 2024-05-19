@@ -1,0 +1,6 @@
+[
+    "App/controllers",
+    "App/models",
+    "App/models/Entities",
+    "App/objects"
+]

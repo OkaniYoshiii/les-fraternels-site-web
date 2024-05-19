@@ -1,0 +1,14 @@
+{
+    "ROOT_DIR": "../",
+    "APP_DIR": "../App",
+    "CONTROLLERS_DIR": "../App/controllers",
+    "MODELS_DIR": "../App/models",
+    "ENTITIES_DIR": "../App/models/Entities",
+    "OBJECTS_DIR": "../App/objects",
+    "ASSETS_DIR": "assets",
+    "CSS_DIR": "assets/css",
+    "JS_DIR": "assets/js",
+    "IMG_DIR": "assets/images",
+    "TEMPLATES_DIR": "templates",
+    "TEMPLATE_PARTS_DIR": "templates/template_parts"
+}
