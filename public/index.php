@@ -1,15 +1,23 @@
 <?php
 
-require_once '../site_config.php';
-require_once '../config.php';
+// CONFIG
+require_once '../config/config.global.php';
 
-require_once '../App/objects/Autoloader.php';
+// AUTOLOADER
+require_once APP_DIR . '/Autoloader.php';
 Autoloader::register();
 
-$router = new Router();
-$router->setRoutes('../config/routes.config.json');
-$currentRoute = $router->getCurrentRoute();
+// REQUEST CONSTANT
+require_once '../src/objects/Request.php';
 
-$core = new Controllers\CoreController($currentRoute);
+use App\Objects\Request;
+define('REQUEST', (array) new Request());
 
-$core->render();
+// CURRENT ROUTE CONSTANT
+use App\Router;
+
+$router = new Router('../config/routes.json');
+define('ROUTE', $router->getCurrentRoute());
+
+// CONTROLLERS AUTOINSTANCIATION
+$core = new Core();

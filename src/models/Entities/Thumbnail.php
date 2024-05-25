@@ -8,10 +8,15 @@ class Thumbnail {
     private int $height;
 
     public function __construct(string|null $source) {
-        $this->source = (!is_null($source)) ? IMG_MODS_DIR . '/' . $source : IMG_MODS_DIR . '/' . $this->defaultSource;
+        $this->setSource($source);
         $this->dimensions = getimagesize($this->source);
         $this->width = $this->dimensions[0];
         $this->height = $this->dimensions[1];
+    }
+
+    private function setSource($source)
+    {
+        $this->source = (!is_null($source)) ? IMG_DIR . '/mods/' . $source : IMG_DIR . '/mods/' . $this->defaultSource;
     }
 
     public function getSource() : string
