@@ -153,6 +153,8 @@ section {
 /* RIGHT SIDEBAR (namespace: .mods) */
 
 .mods {
+    overflow-x: hidden;
+
     flex-grow: 1000;
     flex-shrink: 1;
     flex-basis: 800px;
