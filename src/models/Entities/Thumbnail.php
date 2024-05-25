@@ -16,7 +16,7 @@ class Thumbnail {
 
     private function setSource($source)
     {
-        $this->source = (!is_null($source)) ? IMG_DIR . '/mods/' . $source : IMG_DIR . '/mods/' . $this->defaultSource;
+        $this->source = (!is_null($source)) ? IMG_DIR . '/' . $source : IMG_DIR . '/' . $this->defaultSource;
     }
 
     public function getSource() : string

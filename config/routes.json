@@ -1,7 +1,7 @@
 [
     {"method": "GET", "uri": "/", "template_file": "/home.php", "controller": "HomeController"},
     {"method": "GET", "uri": "/mods", "template_file": "/mods.php", "controller": "ModsController"},
-    {"method": "GET", "uri": "/liens-utiles", "template_file": "/liens-utiles.php", "controller": "DefaultController"},
+    {"method": "GET", "uri": "/liens-utiles", "template_file": "/liens-utiles.php", "controller": "default"},
     {"method": "GET", "uri": "/mods/compagnon", "template_file": "/mod-compagnon.php", "controller": "SingleModController"},
     {"method": "GET", "uri": "/mods/difficulty", "template_file": "/mod-difficulty.php", "controller": "SingleModController"},
     {"method": "GET", "uri": "/mods/elecfrt", "template_file": "/mod-elecfrt.php", "controller": "SingleModController"},

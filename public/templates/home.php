@@ -2,9 +2,9 @@
 <html lang="fr">
 
 <head class="no-js">
-    <?php require_once HTML_HEAD_DIR . '/metadata.php'; ?>
-    <?php require_once HTML_HEAD_DIR . '/default-scripts.php'; ?>
-    <?php require_once HTML_HEAD_DIR . '/favicon.php'; ?>
+    <?php require_once TEMPLATE_PARTS_DIR . '/metadata.php'; ?>
+    <?php require_once TEMPLATE_PARTS_DIR . '/default-scripts.php'; ?>
+    <?php require_once TEMPLATE_PARTS_DIR . '/favicon.php'; ?>
 
     <title>Les Fraternels</title>
     <meta name="description" content="Serveur francophone du jeu 7 Days To Die. Retrouvez ici nos projets, mods, informations sur le serveur ainsi que des liens vers notre Discord.">
@@ -14,14 +14,14 @@
 
 <body data-loaded="false">  
 
-    <?php require_once HTML_DIR . '/header.php'; ?>
+    <?php require_once TEMPLATE_DIR . '/header.php'; ?>
 
     <main>
         <section class="hero-banner">
             <h1 class="hero-banner__title">Le Serveur fait par<br>des joueurs, pour des<br>joueurs</h1>
-            <img class="hero-banner__img" src="<?= SITE_URL . IMG_OTHERS_DIR ?>/screenshot-lobby-2-1920x1080.webp" alt="" width="1920" height="1080" srcset="
-            <?= SITE_URL . IMG_OTHERS_DIR ?>/screenshot-lobby-2-1920x1080.webp 1920w,
-            <?= SITE_URL . IMG_OTHERS_DIR ?>/screenshot-lobby-2-960x540.webp 960w" sizes="100vw">
+            <img class="hero-banner__img" src="<?= SITE_URL . IMG_DIR ?>/screenshot-lobby-2-1920x1080.webp" alt="" width="1920" height="1080" srcset="
+            <?= SITE_URL . IMG_DIR ?>/screenshot-lobby-2-1920x1080.webp 1920w,
+            <?= SITE_URL . IMG_DIR ?>/screenshot-lobby-2-960x540.webp 960w" sizes="100vw">
         </section>
         <section>
             <div class="medium mods-intro">
@@ -30,10 +30,10 @@
                     <p>Nous essayons de vous proposer une expérience originale et unique tout en respectant une direction que nous aimerions donner au jeu. Les mods sont toujours au centre de nos reflexions et nécessitent une réflexion constante afin de créer la meilleure expérience possible. Une grande partie de leur évolution se fait grâce aux retours des joueurs, que cela soit directement en jeu ou pendant nos sessions de test.</p>
                 </div>
                 <div>
-                    <img src="<?= SITE_URL . IMG_OTHERS_DIR; ?>/7daystodie-wallpaper-town-1440x810.webp" alt="" height="1440" width="810" srcset="
-                    <?= SITE_URL . IMG_OTHERS_DIR; ?>/7daystodie-wallpaper-town-978x550.webp 978w,
-                    <?= SITE_URL . IMG_OTHERS_DIR; ?>/7daystodie-wallpaper-town-756x425.webp 756w,
-                    <?= SITE_URL . IMG_OTHERS_DIR; ?>/7daystodie-wallpaper-town-444x250.webp 444w" sizes="100vw">
+                    <img src="<?= SITE_URL . IMG_DIR; ?>/7daystodie-wallpaper-town-1440x810.webp" alt="" height="1440" width="810" srcset="
+                    <?= SITE_URL . IMG_DIR; ?>/7daystodie-wallpaper-town-978x550.webp 978w,
+                    <?= SITE_URL . IMG_DIR; ?>/7daystodie-wallpaper-town-756x425.webp 756w,
+                    <?= SITE_URL . IMG_DIR; ?>/7daystodie-wallpaper-town-444x250.webp 444w" sizes="100vw">
                 </div>
             </div>
             <div class="wide mods-preview">
@@ -82,23 +82,23 @@
             <h2 class="medium staff-title">Une Equipe à votre écoute</h2>
             <div class="wide staff-members">
                 <figure>
-                    <img src="<?= SITE_URL . IMG_STAFF_DIR; ?>/staff-okaniyoshiii-331x331.webp" width="331" height="331" alt="Tête du zombie nommé Arlene." loading="lazy" srcset="
-                        <?= SITE_URL . IMG_STAFF_DIR; ?>/staff-okaniyoshiii-331x331.webp 331w,
-                        <?= SITE_URL . IMG_STAFF_DIR; ?>/staff-okaniyoshiii-300x300.webp 300w" sizes="(max-width: 340px) 300px, 400px">
+                    <img src="<?= SITE_URL . IMG_DIR; ?>/staff-okaniyoshiii-331x331.webp" width="331" height="331" alt="Tête du zombie nommé Arlene." loading="lazy" srcset="
+                        <?= SITE_URL . IMG_DIR; ?>/staff-okaniyoshiii-331x331.webp 331w,
+                        <?= SITE_URL . IMG_DIR; ?>/staff-okaniyoshiii-300x300.webp 300w" sizes="(max-width: 340px) 300px, 400px">
                     <figcaption><a href="#">OkaniYoshiii</a><br>Moddeur de la communauté des Fraternels et gérant du
                         site internet</figcaption>
                 </figure>
                 <figure>
-                    <img src="<?= SITE_URL . IMG_STAFF_DIR; ?>/staff-bodarn-432x432.webp" width="432" height="432" alt="Tête du zombie nommé Skateboarder." loading="lazy" srcset="
-                        <?= SITE_URL . IMG_STAFF_DIR; ?>/staff-bodarn-432x432.webp 432w,
-                        <?= SITE_URL . IMG_STAFF_DIR; ?>/staff-bodarn-300x300.webp 300w" sizes="(max-width: 340px) 300px, 400px">
+                    <img src="<?= SITE_URL . IMG_DIR; ?>/staff-bodarn-432x432.webp" width="432" height="432" alt="Tête du zombie nommé Skateboarder." loading="lazy" srcset="
+                        <?= SITE_URL . IMG_DIR; ?>/staff-bodarn-432x432.webp 432w,
+                        <?= SITE_URL . IMG_DIR; ?>/staff-bodarn-300x300.webp 300w" sizes="(max-width: 340px) 300px, 400px">
                     <figcaption><a href="#">Bodarn</a><br>Administrateur, modérateur et gérant des différents serveurs
                     </figcaption>
                 </figure>
                 <figure>
-                    <img src="<?= SITE_URL . IMG_STAFF_DIR; ?>/staff-anarchique-475x470.webp" width="475" height="470" alt="Un personnage de Saint's Seya (les Chevaliers du Zodiaque)." loading="lazy" srcset="
-                        <?= SITE_URL . IMG_STAFF_DIR; ?>/staff-anarchique-475x470.webp 475w,
-                        <?= SITE_URL . IMG_STAFF_DIR; ?>/staff-anarchique-300x300.webp 300w" sizes="(max-width: 340px) 300px, 400px">
+                    <img src="<?= SITE_URL . IMG_DIR; ?>/staff-anarchique-475x470.webp" width="475" height="470" alt="Un personnage de Saint's Seya (les Chevaliers du Zodiaque)." loading="lazy" srcset="
+                        <?= SITE_URL . IMG_DIR; ?>/staff-anarchique-475x470.webp 475w,
+                        <?= SITE_URL . IMG_DIR; ?>/staff-anarchique-300x300.webp 300w" sizes="(max-width: 340px) 300px, 400px">
                     <figcaption><a href="#">Anarchique</a><br>Modérateur et conseiller principal de la communauté des
                         Fraternels</figcaption>
                 </figure>
@@ -121,15 +121,15 @@
                         donc pas pertinentes pour nous.</p>
                 </div>
                 <div>
-                    <img src="<?= SITE_URL . IMG_OTHERS_DIR; ?>/screenshot-discord-956x622.webp" width="956" height="622" alt="Une capture d'écran du serveur Discord des Fraternels." loading="lazy" srcset="
-                    <?= SITE_URL . IMG_OTHERS_DIR; ?>/screenshot-discord-956x622.webp 956w,
-                    <?= SITE_URL . IMG_OTHERS_DIR; ?>/screenshot-discord-450x293.webp 450w">
+                    <img src="<?= SITE_URL . IMG_DIR; ?>/screenshot-discord-956x622.webp" width="956" height="622" alt="Une capture d'écran du serveur Discord des Fraternels." loading="lazy" srcset="
+                    <?= SITE_URL . IMG_DIR; ?>/screenshot-discord-956x622.webp 956w,
+                    <?= SITE_URL . IMG_DIR; ?>/screenshot-discord-450x293.webp 450w">
                 </div>
             </div>
         </section>
     </main>
 
-    <?php require_once HTML_DIR . '/footer.php' ?>
+    <?php require_once TEMPLATE_DIR . '/footer.php' ?>
 
 </body>
 

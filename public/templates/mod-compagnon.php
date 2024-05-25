@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <?php require_once HTML_HEAD_DIR . '/metadata.php'; ?>
-    <?php require_once HTML_HEAD_DIR . '/default-scripts.php'; ?>
-    <?php require_once HTML_HEAD_DIR . '/favicon.php'; ?>
+    <?php require_once TEMPLATE_PARTS_DIR . '/metadata.php'; ?>
+    <?php require_once TEMPLATE_PARTS_DIR . '/default-scripts.php'; ?>
+    <?php require_once TEMPLATE_PARTS_DIR . '/favicon.php'; ?>
     <title>Mods - <?= $mod->getName() ?></title>
     <meta name="description" content="<?= $mod->getDescription() ?>">
     <meta name="keywords" content="7 Days To Die, 7DTD, FRT, Mods, Mod, Compagnon, Mod chien">
@@ -11,7 +11,7 @@
 </head>
 
 <body data-javascript-enabled="false">
-<?php require_once HTML_DIR . "/header.php"; ?>
+<?php require_once TEMPLATE_DIR . "/header.php"; ?>
     <main>
         <?php require_once TEMPLATE_PARTS_DIR . '/single-mod-banner.php'; ?>
         <section class="narrow">
@@ -40,7 +40,7 @@
             <p>Vous pourrez retrouver le Mod sur le Site "7 Days To Die Mods" à l'adresse suivante : <br><br><a href="https://7daystodiemods.com/blewbarry-pup/" target="_blank">https://7daystodiemods.com/blewbarry-pup/</a></p>
         </section>
     </main>
-<?php require_once HTML_DIR . "/footer.php"; ?>
+<?php require_once TEMPLATE_DIR . "/footer.php"; ?>
 </body>
 
 </html>

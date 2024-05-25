@@ -1,7 +1,7 @@
 <header>
     <nav class="wide primary-navigation">
         <a class="icon-link" href="/">
-            <img class="server-icon" src="<?= SITE_URL . IMG_LOGOS_DIR; ?>/logo-fraternels-75x75.webp" width="75" height="75" alt="">
+            <img class="server-icon" src="<?= SITE_URL . IMG_DIR; ?>/logo-fraternels-75x75.webp" width="75" height="75" alt="">
             <p class="website-title">LES FRATERNELS</p>
         </a>
         <div class="header-links">

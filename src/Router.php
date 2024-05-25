@@ -30,7 +30,6 @@ class Router
 
             $currentRoute = $route;
         }
-        var_dump($currentRoute);
         return $currentRoute ?? null;
     }
 }

@@ -2,9 +2,9 @@
 <html lang="fr">
 
 <head class="no-js">
-    <?php require_once HTML_HEAD_DIR . '/metadata.php'; ?>
-    <?php require_once HTML_HEAD_DIR . '/default-scripts.php'; ?>
-    <?php require_once HTML_HEAD_DIR . '/favicon.php'; ?>
+    <?php require_once TEMPLATE_PARTS_DIR . '/metadata.php'; ?>
+    <?php require_once TEMPLATE_PARTS_DIR . '/default-scripts.php'; ?>
+    <?php require_once TEMPLATE_PARTS_DIR . '/favicon.php'; ?>
 
     <title>Erreur 404 - Page introuvable</title>
     <link rel="stylesheet" href="<?= SITE_URL . CSS_DIR ?>/404.css">
@@ -12,7 +12,7 @@
 
 <body>  
 
-    <?php require_once HTML_DIR . '/header.php'; ?>
+    <?php require_once TEMPLATE_DIR . '/header.php'; ?>
 
     <main>
         <section class="medium">
@@ -20,7 +20,7 @@
                 <h1 class="hero__title">Erreur 404 - Page introuvable</h1>
                 <p class="hero__subtitle"><span>Rebrouse chemin étranger !</span><br>Je crois que tu t'es trompé d'adresse. Recule, et on ne te fera aucun mal.</p>
             </div>
-            <img src="<?= SITE_URL . IMG_OTHERS_DIR ?>/screenshot-7daystodie-hordenight-1600x900.webp" width="1600" height="900" alt="Une capture d'écran du jeu 7 Days To Die où des joueurs pointent leurs armes vers un autre joueur lors d'une nuit de horde.">
+            <img src="<?= SITE_URL . IMG_DIR ?>/screenshot-7daystodie-hordenight-1600x900.webp" width="1600" height="900" alt="Une capture d'écran du jeu 7 Days To Die où des joueurs pointent leurs armes vers un autre joueur lors d'une nuit de horde.">
             <p>Il semblerait que la page que vous recherchez est introuvable sur notre site ... Désolé pour vous, mais peut-être que l'on la créera dans le futur qui sais ? N'hésitez pas à nous faire vos propositions sur Discord !</p>
             <p>En attendant, pourquoi pas aller voir des pages qui existent ? Peut être que vous cherchiez :</p>
             <ul>
@@ -49,7 +49,7 @@
         </section>
     </main>
 
-    <?php require_once HTML_DIR . '/footer.php' ?>
+    <?php require_once TEMPLATE_DIR . '/footer.php' ?>
 
 </body>
 

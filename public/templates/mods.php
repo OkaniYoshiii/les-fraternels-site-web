@@ -2,9 +2,9 @@
 <html lang="fr">
 
 <head>
-    <?php require_once HTML_HEAD_DIR . '/metadata.php'; ?>
-    <?php require_once HTML_HEAD_DIR . '/default-scripts.php'; ?>
-    <?php require_once HTML_HEAD_DIR . '/favicon.php'; ?>
+    <?php require_once TEMPLATE_PARTS_DIR . '/metadata.php'; ?>
+    <?php require_once TEMPLATE_PARTS_DIR . '/default-scripts.php'; ?>
+    <?php require_once TEMPLATE_PARTS_DIR . '/favicon.php'; ?>
     <title>Nos Mods</title>
     <meta name="description" content="Vous pourrez retrouver tout nos Mods actuellement utilisés ou non sur le serveur. L'ensemble des Mods que nous mettons en place sur le server sont server-side, ce qui signifie qu'ils ne nécessitent aucun téléchargement.">
     <meta name="keywords" content="7 Days To Die, 7DTD, FRT, Mods, Server-side">
@@ -14,7 +14,7 @@
 
 <body data-javascript-enabled="false">
 
-<?php require_once HTML_DIR . "/header.php"; ?>
+<?php require_once TEMPLATE_DIR . "/header.php"; ?>
     <main>
         <section>
             <h2 class="medium text-centered visually-hidden">Nos Mods</h2>
@@ -65,7 +65,7 @@
             </div>
         </section>
     </main>
-<?php require_once HTML_DIR . "/footer.php"; ?>
+<?php require_once TEMPLATE_DIR . "/footer.php"; ?>
 
 </body>
 
