@@ -83,6 +83,7 @@ section:not(:first-child), section > div {
     inset: 0;
 
     height: 100%;
+    width: 100%;
 }
 
 .hero-banner__title {
