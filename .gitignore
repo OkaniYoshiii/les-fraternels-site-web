@@ -2,10 +2,11 @@ node_modules/
 *.ts
 original-images/
 package-lock.json
-package.json
+composer.lock
 *.sql
 site_config.php
 db_config.php
 site_config.php
 *.htaccess
 *.htpasswd
+vendor

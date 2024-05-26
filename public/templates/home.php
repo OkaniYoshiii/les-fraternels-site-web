@@ -92,16 +92,38 @@
                     <img src="<?= SITE_URL . IMG_DIR; ?>/staff-bodarn-432x432.webp" width="432" height="432" alt="Tête du zombie nommé Skateboarder." loading="lazy" srcset="
                         <?= SITE_URL . IMG_DIR; ?>/staff-bodarn-432x432.webp 432w,
                         <?= SITE_URL . IMG_DIR; ?>/staff-bodarn-300x300.webp 300w" sizes="(max-width: 340px) 300px, 400px">
-                    <figcaption><a href="#">Bodarn</a><br>Administrateur, modérateur et gérant des différents serveurs
-                    </figcaption>
+                    <figcaption><a href="#">Bodarn</a><br>Administrateur des différents serveurs</figcaption>
                 </figure>
                 <figure>
                     <img src="<?= SITE_URL . IMG_DIR; ?>/staff-anarchique-475x470.webp" width="475" height="470" alt="Un personnage de Saint's Seya (les Chevaliers du Zodiaque)." loading="lazy" srcset="
                         <?= SITE_URL . IMG_DIR; ?>/staff-anarchique-475x470.webp 475w,
                         <?= SITE_URL . IMG_DIR; ?>/staff-anarchique-300x300.webp 300w" sizes="(max-width: 340px) 300px, 400px">
-                    <figcaption><a href="#">Anarchique</a><br>Modérateur et conseiller principal de la communauté des
-                        Fraternels</figcaption>
+                    <figcaption><a href="#">Anarchique</a><br>Modérateur</figcaption>
                 </figure>
+                {# <figure>
+                    <img src="<?= SITE_URL . IMG_DIR; ?>" width="" height="" alt="" loading="lazy" srcset="
+                        <?= SITE_URL . IMG_DIR; ?>,
+                        <?= SITE_URL . IMG_DIR; ?>" sizes="(max-width: 340px) 300px, 400px">
+                    <figcaption><a href="#">Lonemash</a><br>Organisateur d'évenements</figcaption>
+                </figure>
+                <figure>
+                    <img src="<?= SITE_URL . IMG_DIR; ?>" width="" height="" alt="" loading="lazy" srcset="
+                        <?= SITE_URL . IMG_DIR; ?>,
+                        <?= SITE_URL . IMG_DIR; ?>" sizes="(max-width: 340px) 300px, 400px">
+                    <figcaption><a href="#">Taido</a><br>Guide</figcaption>
+                </figure>
+                <figure>
+                    <img src="<?= SITE_URL . IMG_DIR; ?>" width="" height="" alt="" loading="lazy" srcset="
+                        <?= SITE_URL . IMG_DIR; ?>,
+                        <?= SITE_URL . IMG_DIR; ?>" sizes="(max-width: 340px) 300px, 400px">
+                    <figcaption><a href="#">LeNantais</a><br>Builder</figcaption>
+                </figure>
+                <figure>
+                    <img src="<?= SITE_URL . IMG_DIR; ?>" width="" height="" alt="" loading="lazy" srcset="
+                        <?= SITE_URL . IMG_DIR; ?>,
+                        <?= SITE_URL . IMG_DIR; ?>" sizes="(max-width: 340px) 300px, 400px">
+                    <figcaption><a href="#">LynxDarkray</a><br>Builder</figcaption>
+                </figure> #}
             </div>
             <div class="wide staff-responses">
                 <div>
