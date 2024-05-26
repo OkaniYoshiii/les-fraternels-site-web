@@ -87,8 +87,6 @@ section:not(:first-child), section > div {
 }
 
 .hero-banner__title {
-    
-
     color: white;
     text-shadow: 0 0 15px rgba(0,0,0,0.5);
     text-align: center;

@@ -29,11 +29,11 @@
                     <h3>Live map N°1</h3>
                     <img src="<?= SITE_URL . IMG_DIR ?>/livemap-1-1878x932.webp" width="1878" height="932" alt="">
                     <p>Cette carte permet de vous localiser en temps réel, de voir l'heure et le jour du serveur, afficher le nombre de joueurs actuellement connectés et permet de voir l'emplacement de vos zones de revendication.</p>
-                    <p>Vous pourrez la retrouver à l'adresse suivante : <a href="http://176.57.168.125:8142/" target="_blank" rel="noopener">http://176.57.168.125:8142/</a></p>
+                    <p>Vous pourrez la retrouver à l'adresse suivante : <a href="http://176.57.160.22:8082/" target="_blank" rel="noopener">http://176.57.160.22:8082/</a></p>
                     <h3>Live map N°2</h3>
                     <img src="<?= SITE_URL . IMG_DIR ?>/livemap-2-1880x933.webp" width="1880" height="933" alt="">
                     <p>Cette deuxième carte quant à elle permet principalement de déterminer l'emplacement de vos véhicules lorsque ces derniers sont victimes d'un bug ou que vous les avez perdus pour n'importe quelle raison que ce soit.</p>
-                    <p>Vous pourrez la retrouver à l'adresse suivante : <a href="http://176.57.168.125:8143/" target="_blank" rel="noopener">http://176.57.168.125:8143/</a></p>
+                    <p>Vous pourrez la retrouver à l'adresse suivante : <a href="http://176.57.160.22:8133/" target="_blank" rel="noopener">http://176.57.160.22:8133/</a></p>
                 </section>
                 <section>
                     <h2>Sites de Votes</h2>
