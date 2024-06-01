@@ -21,7 +21,7 @@
                 <p class="mod-description"><?= $mod->getDescription(); ?></p>
                 <h3>Fonctionnalités :</h3>
                 <p>Les stacks sont donc réglés par puissance désormais.</p>
-                <img src="<?= SITE_URL . IMG_MODS_DIR ?>/mod-stack-changes-inventory-537x343.webp" width="537" height="343" alt="Un inventaire contenant chaque type de balles du jeu ett où l'on peut voir les nouvelles valeurs pour chaque pile de munition.">
+                <img src="<?= SITE_URL . IMG_DIR ?>/mod-stack-changes-inventory-537x343.webp" width="537" height="343" alt="Un inventaire contenant chaque type de balles du jeu ett où l'on peut voir les nouvelles valeurs pour chaque pile de munition.">
                 <p>Je vous met une comparatif des stack en dessous :</p>
             </div>
             <div class="medium tables">
