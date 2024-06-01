@@ -126,3 +126,7 @@
 #output-table td {
     text-align: center;
 }
+
+.pills-list {
+    padding-left: clamp(1rem, 5vw, 2rem);
+}
