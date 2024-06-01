@@ -1,0 +1,22 @@
+h2 {
+    font-family: Inter, sans-serif;
+    color: var(--txt-secondary-color);
+    font-size: 1.5rem;
+    border-bottom: 2px solid lightgray;
+}
+
+.dogs-list {
+    padding-left: 0;
+}
+
+.dogs-list > li {
+    list-style-type: none;
+}
+
+.dogs-list__item-title {
+    font-size: 1.25rem;
+
+    margin-left: 0;
+    padding-left: 0;
+    border-bottom: 1px solid lightgray;
+}
