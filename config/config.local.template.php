@@ -7,7 +7,7 @@
     Exemple : informations sur la base de données, nom de domaine etc ...
 
     Ce fichier étant un template, il vous faudra remplir les informations mentionnées ci-dessus puis
-    renommer le fichier en 'config.local.php' car c'est ce fichier là qui sera ensuite utilisé par l'application
+    renommer/copier le fichier en 'config.local.php' car c'est ce fichier là qui sera ensuite utilisé par l'application
 */
 
 // Nom de domaine avec slash de fin (ex: http://localhost/public/ ou  https://wikipedia.org/)
