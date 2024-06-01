@@ -85,8 +85,7 @@
                     <img src="<?= SITE_URL . IMG_DIR; ?>/staff-okaniyoshiii-331x331.webp" width="331" height="331" alt="Tête du zombie nommé Arlene." loading="lazy" srcset="
                         <?= SITE_URL . IMG_DIR; ?>/staff-okaniyoshiii-331x331.webp 331w,
                         <?= SITE_URL . IMG_DIR; ?>/staff-okaniyoshiii-300x300.webp 300w" sizes="(max-width: 340px) 300px, 400px">
-                    <figcaption><a href="#">OkaniYoshiii</a><br>Moddeur de la communauté des Fraternels et gérant du
-                        site internet</figcaption>
+                    <figcaption><a href="#">OkaniYoshiii</a><br>Moddeur et gérant du site internet</figcaption>
                 </figure>
                 <figure>
                     <img src="<?= SITE_URL . IMG_DIR; ?>/staff-bodarn-432x432.webp" width="432" height="432" alt="Tête du zombie nommé Skateboarder." loading="lazy" srcset="
@@ -100,30 +99,14 @@
                         <?= SITE_URL . IMG_DIR; ?>/staff-anarchique-300x300.webp 300w" sizes="(max-width: 340px) 300px, 400px">
                     <figcaption><a href="#">Anarchique</a><br>Modérateur</figcaption>
                 </figure>
-                {# <figure>
-                    <img src="<?= SITE_URL . IMG_DIR; ?>" width="" height="" alt="" loading="lazy" srcset="
-                        <?= SITE_URL . IMG_DIR; ?>,
-                        <?= SITE_URL . IMG_DIR; ?>" sizes="(max-width: 340px) 300px, 400px">
+                <figure>
+                    <img src="<?= SITE_URL . IMG_DIR; ?>/staff-lonemash-450x450.webp" width="" height="" alt="" loading="lazy">
                     <figcaption><a href="#">Lonemash</a><br>Organisateur d'évenements</figcaption>
                 </figure>
                 <figure>
-                    <img src="<?= SITE_URL . IMG_DIR; ?>" width="" height="" alt="" loading="lazy" srcset="
-                        <?= SITE_URL . IMG_DIR; ?>,
-                        <?= SITE_URL . IMG_DIR; ?>" sizes="(max-width: 340px) 300px, 400px">
-                    <figcaption><a href="#">Taido</a><br>Guide</figcaption>
+                    <img src="<?= SITE_URL . IMG_DIR; ?>/staff-nantais.webp" width="" height="" alt="" loading="lazy">
+                    <figcaption><a href="#">LeNantais</a><br>Builder/Ingénieur</figcaption>
                 </figure>
-                <figure>
-                    <img src="<?= SITE_URL . IMG_DIR; ?>" width="" height="" alt="" loading="lazy" srcset="
-                        <?= SITE_URL . IMG_DIR; ?>,
-                        <?= SITE_URL . IMG_DIR; ?>" sizes="(max-width: 340px) 300px, 400px">
-                    <figcaption><a href="#">LeNantais</a><br>Builder</figcaption>
-                </figure>
-                <figure>
-                    <img src="<?= SITE_URL . IMG_DIR; ?>" width="" height="" alt="" loading="lazy" srcset="
-                        <?= SITE_URL . IMG_DIR; ?>,
-                        <?= SITE_URL . IMG_DIR; ?>" sizes="(max-width: 340px) 300px, 400px">
-                    <figcaption><a href="#">LynxDarkray</a><br>Builder</figcaption>
-                </figure> #}
             </div>
             <div class="wide staff-responses">
                 <div>

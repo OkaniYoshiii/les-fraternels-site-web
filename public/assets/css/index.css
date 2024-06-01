@@ -166,7 +166,7 @@ section:not(:first-child), section > div {
 }
 
 .server-infos {
-    background: url(../images/others/7daystodie-wallpaper-fight-1920x1080.webp) center/cover no-repeat;
+    background: url(../images/7daystodie-wallpaper-fight-1920x1080.webp) center/cover no-repeat;
     padding-block: clamp(3rem, 5vw, 6rem);
 }
 
