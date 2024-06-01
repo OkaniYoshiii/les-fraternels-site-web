@@ -13,7 +13,7 @@
                     <p>Date de publication: <span><time datetime="<?= $mod->getReleaseDate(); ?>"><?= date('d/m/Y', strtotime($mod->getReleaseDate())); ?></time></span></p>
                 </div>
                 <div class="mod-info">
-                    <p>Version actuelle: <span>1.0.0</span></p>
+                    <p><s>Version actuelle: <span>1.0.0</span><s></p>
                 </div>
             </div>
         </div>
