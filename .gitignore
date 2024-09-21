@@ -1,11 +1,4 @@
-node_modules/
-*.ts
-original-images/
-package-lock.json
-package.json
-*.sql
-site_config.php
-db_config.php
-site_config.php
-*.htaccess
+node_modules
+vendor
 *.htpasswd
+config/config.local.php
