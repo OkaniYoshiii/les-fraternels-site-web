@@ -30,7 +30,8 @@ class Database {
         return $mods;
     }
 
-    public function queryFilteredMods(string $filter) : array {
+    public function queryFilteredMods(string $filter, bool $asObjects = true) : array
+    {
         if($this->unrecognizedURLParameters()) {
             $GLOBALS['errors'][] = 'Les filtres renseignées ne sont pas corrects. Affichage de l\'ensemble des Mods';
         }
@@ -72,9 +73,14 @@ class Database {
         } else {
             $statement = $this->pdo->query($query);
         }
+
         $mods = [];
-        while ($mod = $statement->fetchObject(Mod::class)) {
-            $mods[] = $mod;
+        if($asObjects) {
+            while ($mod = $statement->fetchObject(Mod::class)) {
+                $mods[] = $mod;
+            }
+        } else {
+            $mods = $statement->fetchAll(PDO::FETCH_ASSOC);
         }
 
         $statement = null;

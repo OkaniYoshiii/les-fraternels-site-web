@@ -14,7 +14,7 @@ class Core {
     public static function render() {
         $route = Router::getCurrentRoute();
 
-        if(is_null($route)) {
+        if($route === null) {
             require_once TEMPLATE_DIR . '/404.php';
             return;
         }
@@ -22,6 +22,11 @@ class Core {
         if($route->getController() !== null) {
             $controllerName = $route->getController();
             $controller = new $controllerName();
+
+            if(Request::getHeader('CONTENT_TYPE') === 'application/json') {
+                echo $controller->getJsonData();
+                die();
+            }
 
             $variables = $controller->getVariables();
             foreach($variables as $variable) {

@@ -31,7 +31,13 @@ class Router
             if($route->getMethod() !== Request::getMethod()) continue;
             if($route->getUri() !== Request::getUri()) continue;
 
-            self::$currentRoute = $route;
+            if(Request::getHeader('CONTENT_TYPE') === null && $route->getContentType() === 'text/html') {
+                self::$currentRoute = $route;
+            }
+
+            if(Request::getHeader('CONTENT_TYPE') === $route->getContentType()) {
+                self::$currentRoute = $route;
+            }
         }
     }
 
