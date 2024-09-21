@@ -117,6 +117,9 @@ section + section {
 }
 
 .hero-title .tags {
+    max-width: fit-content;
+    margin-inline: auto;
+    
     text-shadow: none;
     color: var(--txt-main-color);
     font-weight: bold;

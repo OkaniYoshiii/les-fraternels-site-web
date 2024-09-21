@@ -81,27 +81,32 @@
         <section>
             <h2 class="medium staff-title">Une Equipe à votre écoute</h2>
             <div class="wide staff-members">
-                <figure>
+                <div>
                     <img src="<?= SITE_URL . IMG_DIR; ?>/staff-okaniyoshiii-331x331.webp" width="331" height="331" alt="Tête du zombie nommé Arlene." loading="lazy" srcset="
                         <?= SITE_URL . IMG_DIR; ?>/staff-okaniyoshiii-331x331.webp 331w,
                         <?= SITE_URL . IMG_DIR; ?>/staff-okaniyoshiii-300x300.webp 300w" sizes="(max-width: 340px) 300px, 400px">
-                    <figcaption><a href="#">OkaniYoshiii</a><br>Moddeur de la communauté des Fraternels et gérant du
-                        site internet</figcaption>
-                </figure>
-                <figure>
+                    <p><a href="#">OkaniYoshiii</a><br>Moddeur et gérant du site internet</p>
+                </div>
+                <div>
                     <img src="<?= SITE_URL . IMG_DIR; ?>/staff-bodarn-432x432.webp" width="432" height="432" alt="Tête du zombie nommé Skateboarder." loading="lazy" srcset="
                         <?= SITE_URL . IMG_DIR; ?>/staff-bodarn-432x432.webp 432w,
                         <?= SITE_URL . IMG_DIR; ?>/staff-bodarn-300x300.webp 300w" sizes="(max-width: 340px) 300px, 400px">
-                    <figcaption><a href="#">Bodarn</a><br>Administrateur, modérateur et gérant des différents serveurs
-                    </figcaption>
-                </figure>
-                <figure>
+                    <p><a href="#">Bodarn</a><br>Administrateur des différents serveurs</p>
+                </div>
+                <div>
                     <img src="<?= SITE_URL . IMG_DIR; ?>/staff-anarchique-475x470.webp" width="475" height="470" alt="Un personnage de Saint's Seya (les Chevaliers du Zodiaque)." loading="lazy" srcset="
                         <?= SITE_URL . IMG_DIR; ?>/staff-anarchique-475x470.webp 475w,
                         <?= SITE_URL . IMG_DIR; ?>/staff-anarchique-300x300.webp 300w" sizes="(max-width: 340px) 300px, 400px">
-                    <figcaption><a href="#">Anarchique</a><br>Modérateur et conseiller principal de la communauté des
-                        Fraternels</figcaption>
-                </figure>
+                    <p><a href="#">Anarchique</a><br>Modérateur</p>
+                </div>
+                <div>
+                    <img src="<?= SITE_URL . IMG_DIR; ?>/staff-lonemash-450x450.webp" width="" height="" alt="" loading="lazy">
+                    <p><a href="#">Lonemash</a><br>Organisateur d'évenements</p>
+                </div>
+                <div>
+                    <img src="<?= SITE_URL . IMG_DIR; ?>/staff-nantais.webp" width="" height="" alt="" loading="lazy">
+                    <p><a href="#">LeNantais</a><br>Builder/Ingénieur</p>
+                </div>
             </div>
             <div class="wide staff-responses">
                 <div>

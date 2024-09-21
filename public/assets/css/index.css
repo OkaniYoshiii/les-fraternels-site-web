@@ -83,11 +83,10 @@ section:not(:first-child), section > div {
     inset: 0;
 
     height: 100%;
+    width: 100%;
 }
 
 .hero-banner__title {
-    
-
     color: white;
     text-shadow: 0 0 15px rgba(0,0,0,0.5);
     text-align: center;
@@ -167,7 +166,7 @@ section:not(:first-child), section > div {
 }
 
 .server-infos {
-    background: url(../images/others/7daystodie-wallpaper-fight-1920x1080.webp) center/cover no-repeat;
+    background: url(../images/7daystodie-wallpaper-fight-1920x1080.webp) center/cover no-repeat;
     padding-block: clamp(3rem, 5vw, 6rem);
 }
 
@@ -238,9 +237,14 @@ section:not(:first-child), section > div {
 
 .staff-members img {
     width: 100%;
+    max-width: 250px;
+
     aspect-ratio: 1;
     object-fit: cover;
+
     border-radius: 50%;
+
+    margin-inline: auto;
 }
 
 .staff-members figure {

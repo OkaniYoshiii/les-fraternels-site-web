@@ -13,6 +13,7 @@ class Autoloader
         if(self::isNamespaced($className)) {
             $last_backslash_pos = strrpos($className, '\\');
             $className = substr($className, $last_backslash_pos);
+            $className = str_replace('\\', '', $className);
         }; 
 
         foreach(SRC_FOLDERS as $folder)
