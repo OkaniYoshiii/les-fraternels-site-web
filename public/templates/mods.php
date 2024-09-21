@@ -20,7 +20,7 @@
             <h2 class="medium text-centered visually-hidden">Nos Mods</h2>
             <div class="mods-content wide">
                 <div class="narrow content-sidebar">
-                    <form action="/mods" method="get" autocomplete="off">
+                    <form class="mods-filters-form" action="/mods" method="get" autocomplete="off">
                         <div class="mods-filters">
                             <fieldset>
                                 <legend class="mods-selection-title">Filtrer par utilisation</legend>
