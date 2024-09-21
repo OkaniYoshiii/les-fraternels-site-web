@@ -4,18 +4,18 @@ namespace App\ValueObjects;
 
 class Request
 {
-    public string $uri;
-    public string $method;
-    public array $parameters;
+    private static string $uri;
+    private static string $method;
+    private static array $parameters;
 
-    public function __construct()
+    public static function init() : void
     {
-        $this->uri = explode('?',$_SERVER['REQUEST_URI'])[0];
-        $this->method = $_SERVER['REQUEST_METHOD'];
-        $this->setParameters();
+        self::$uri = explode('?',$_SERVER['REQUEST_URI'])[0];
+        self::$method = $_SERVER['REQUEST_METHOD'];
+        self::setParameters();
     }
 
-    private function setParameters() {
+    private static function setParameters() {
         $parameters = explode('?',$_SERVER['REQUEST_URI'])[1] ?? null;
         
         if(is_null($parameters)) return;
@@ -29,6 +29,26 @@ class Request
             unset($parameters[$index]);
             $parameters[$name] = $value;
         }
-        $this->parameters = $parameters;
+        self::$parameters = $parameters;
+    }
+
+    public static function getUri() : string
+    {
+        return self::$uri;
+    }
+
+    public static function getMethod() : string
+    {
+        return self::$method;
+    }
+
+    public static function getParameters() : array
+    {
+        return self::$parameters;
+    }
+
+    public static function getHeader(string $header) : ?string
+    {
+        return isset($_SERVER[$header]) ? $_SERVER[$header] : null;
     }
 }

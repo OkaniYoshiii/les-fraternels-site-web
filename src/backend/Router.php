@@ -2,34 +2,41 @@
 
 namespace App;
 
+use App\ValueObjects\Request;
 use App\ValueObjects\Route;
 
 class Router
 {
-    private array $routes;
+    private static array $routes;
+    private static ?Route $currentRoute = null;
 
-    public function __construct(string $routes_config_path)
+    public static function init(string $routes_config_path) : void 
     {
-        $this->setRoutes($routes_config_path);
+        self::initRoutes($routes_config_path);
+        self::initCurrentRoute();
     }
 
-    private function setRoutes(string $routes_config_path)
+    private static function initRoutes(string $routes_config_path) : void
     {
         if(!file_exists($routes_config_path)) throw new \Exception($routes_config_path . ' is not a valid path.');
     
         $routes = json_decode(file_get_contents($routes_config_path), true);
-        $this->routes = array_map(function($route) { return (array) new Route($route); }, $routes);
+        self::$routes = array_map(fn($route) => new Route($route), $routes);
     }
 
-    public function getCurrentRoute() : array|null {
-        $requestedRoute = ["method" => REQUEST['method'], "uri" => REQUEST['uri']];
-        foreach($this->routes as $route)
+    public static function initCurrentRoute() : void
+    {
+        foreach(self::$routes as $route)
         {
-            if($route['method'] !== $requestedRoute['method']) continue;
-            if($route['uri'] !== $requestedRoute['uri']) continue;
+            if($route->getMethod() !== Request::getMethod()) continue;
+            if($route->getUri() !== Request::getUri()) continue;
 
-            $currentRoute = $route;
+            self::$currentRoute = $route;
         }
-        return $currentRoute ?? null;
+    }
+
+    public static function getCurrentRoute() : ?Route
+    {
+        return self::$currentRoute;
     }
 }

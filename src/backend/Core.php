@@ -2,20 +2,25 @@
 
 namespace App;
 
+use App\ValueObjects\Request;
+
 class Core {
-    public function __construct()
+    public static function init() : void
     {
-        $this->render();
+        Request::init();
+        Router::init('../config/routes.json');
     }
 
-    private function render() {
-        if(is_null(ROUTE)) {
+    public static function render() {
+        $route = Router::getCurrentRoute();
+
+        if(is_null($route)) {
             require_once TEMPLATE_DIR . '/404.php';
             return;
         }
         
-        if(!is_null(ROUTE['controller']) && ROUTE['controller'] !== null) {
-            $controllerName = ROUTE['controller'];
+        if($route->getController() !== null) {
+            $controllerName = $route->getController();
             $controller = new $controllerName();
 
             $variables = $controller->getVariables();
@@ -25,6 +30,6 @@ class Core {
             }
         }
 
-        require_once TEMPLATE_DIR . ROUTE['template_file'];
+        require_once TEMPLATE_DIR . $route->getTemplateFile();
     }
 }
