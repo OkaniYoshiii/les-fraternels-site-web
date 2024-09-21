@@ -1,5 +1,7 @@
 <?php
 
+namespace App;
+
 class Core {
     public function __construct()
     {
@@ -12,7 +14,7 @@ class Core {
             return;
         }
         
-        if(!is_null(ROUTE['controller']) && ROUTE['controller'] !== 'default') {
+        if(!is_null(ROUTE['controller']) && ROUTE['controller'] !== null) {
             $controllerName = ROUTE['controller'];
             $controller = new $controllerName();
 

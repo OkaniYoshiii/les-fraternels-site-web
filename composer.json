@@ -1,5 +1,11 @@
 {
-    "require": {
-        "twig/twig": "^3.10"
-    }
+    "name": "okaniyoshiii/les-fraternels-site-web",
+    "description": "Site internet du serveur de jeu \"Les Fraternels\"",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/backend/"
+        }
+    },
+    "require": {}    
 }

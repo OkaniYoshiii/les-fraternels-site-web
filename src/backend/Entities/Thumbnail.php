@@ -1,5 +1,7 @@
 <?php
 
+namespace App\Entities;
+
 class Thumbnail {
     private string|null $source;
     private string $defaultSource = 'mod-thumbnail-default-800x450.webp';

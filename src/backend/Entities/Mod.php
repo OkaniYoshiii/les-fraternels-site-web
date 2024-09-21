@@ -1,6 +1,6 @@
 <?php 
 
-require_once ENTITIES_DIR . '/Thumbnail.php';
+namespace App\Entities;
 
 class Mod {
     private int $id;

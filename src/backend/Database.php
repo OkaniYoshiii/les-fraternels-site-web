@@ -1,6 +1,9 @@
 <?php 
 
-require_once ENTITIES_DIR . '/Mod.php';
+namespace App;
+
+use App\Entities\Mod;
+use PDO;
 
 class Database {
     private PDO|null $pdo;
@@ -18,7 +21,7 @@ class Database {
         GROUP BY mods.name;';
         $statement = $this->pdo->query($query);
         $mods = [];
-        while ($mod = $statement->fetchObject('Mod')) {
+        while ($mod = $statement->fetchObject(Mod::class)) {
             $mods[] = $mod;
         }
 
@@ -70,7 +73,7 @@ class Database {
             $statement = $this->pdo->query($query);
         }
         $mods = [];
-        while ($mod = $statement->fetchObject('Mod')) {
+        while ($mod = $statement->fetchObject(Mod::class)) {
             $mods[] = $mod;
         }
 
@@ -106,7 +109,7 @@ class Database {
         $statement->bindParam(':uri',$uri);
         $statement->execute();
 
-        $mod = $statement->fetchObject('Mod');
+        $mod = $statement->fetchObject(Mod::class);
 
         return $mod;
     }
@@ -127,7 +130,7 @@ class Database {
         LIMIT 3;';
         $statement = $this->pdo->query($query);
         $mods = [];
-        while ($mod = $statement->fetchObject('Mod')) {
+        while ($mod = $statement->fetchObject(Mod::class)) {
             $mods[] = $mod;
         }
 

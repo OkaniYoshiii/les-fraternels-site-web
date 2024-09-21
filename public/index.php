@@ -1,16 +1,13 @@
 <?php
 
+use App\Core;
+use App\ValueObjects\Request;
+
+require_once "../vendor/autoload.php";
+
 // CONFIG
 require_once '../config/config.global.php';
 
-// AUTOLOADER
-require_once APP_DIR . '/Autoloader.php';
-Autoloader::register();
-
-// REQUEST CONSTANT
-require_once '../src/objects/Request.php';
-
-use App\Objects\Request;
 define('REQUEST', (array) new Request());
 
 // CURRENT ROUTE CONSTANT

@@ -2,7 +2,7 @@
 
 namespace App;
 
-use App\Objects\Route;
+use App\ValueObjects\Route;
 
 class Router
 {

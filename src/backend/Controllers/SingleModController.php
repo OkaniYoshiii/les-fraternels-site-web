@@ -1,6 +1,8 @@
 <?php
 
-require_once MODELS_DIR . '/Database.php';
+namespace App\Controllers;
+
+use App\Database;
 
 class SingleModController {
     public function getVariables() {

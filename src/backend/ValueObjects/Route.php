@@ -1,13 +1,13 @@
 <?php
 
-namespace App\Objects;
+namespace App\ValueObjects;
 
 class Route
 {
     public string $method;
     public string $uri;
     public string $template_file;
-    public string $controller;
+    public ?string $controller;
 
     public function __construct(array $route)
     {

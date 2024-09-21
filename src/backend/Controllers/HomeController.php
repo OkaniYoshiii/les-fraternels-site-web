@@ -1,5 +1,9 @@
 <?php
 
+namespace App\Controllers;
+
+use App\Database;
+
 class HomeController {
     public function getVariables() {
         $db = new Database(DB_HOST, DB_NAME, DB_USER, DB_PWD);
