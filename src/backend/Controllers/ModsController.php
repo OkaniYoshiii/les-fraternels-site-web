@@ -3,6 +3,7 @@
 namespace App\Controllers;
 
 use App\Database;
+use App\Entities\Thumbnail;
 
 class ModsController {
     public function getVariables() {
@@ -25,6 +26,11 @@ class ModsController {
         $defaultCheckboxValues = ['mods' => 'all', 'tags' => 'all'];
         $mods = $db->queryFilteredMods($defaultCheckboxValues['mods'], false);
         $db->closeConnection();
+
+        $mods = array_map(function(array $mod) { 
+            if($mod['thumbnail_name'] === null) $mod['thumbnail_name'] = Thumbnail::DEFAULT_SOURCE;
+            return $mod;
+        }, $mods);
 
         return json_encode($mods);
     }

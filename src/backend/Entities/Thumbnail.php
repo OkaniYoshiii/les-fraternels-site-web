@@ -4,10 +4,11 @@ namespace App\Entities;
 
 class Thumbnail {
     private string|null $source;
-    private string $defaultSource = 'mod-thumbnail-default-800x450.webp';
     private array $dimensions;
     private int $width;
     private int $height;
+
+    public const DEFAULT_SOURCE = 'mod-thumbnail-default-800x450.webp';
 
     public function __construct(string|null $source) {
         $this->setSource($source);
@@ -18,7 +19,7 @@ class Thumbnail {
 
     private function setSource($source)
     {
-        $this->source = (!is_null($source)) ? IMG_DIR . '/' . $source : IMG_DIR . '/' . $this->defaultSource;
+        $this->source = (!is_null($source)) ? IMG_DIR . '/' . $source : IMG_DIR . '/' . self::DEFAULT_SOURCE;
     }
 
     public function getSource() : string
