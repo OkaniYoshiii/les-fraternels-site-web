@@ -1,5 +1,3 @@
-import { Thumbnail } from "./Thumbnail.js";
-
 export { Mod };
 
 class Mod

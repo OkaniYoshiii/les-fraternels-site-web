@@ -6,8 +6,7 @@ MODS.forEach((mod, index) => {
     if(mod instanceof HTMLElement) mod.style.setProperty('--animation-delay', 150 * index + 'ms');
 })
 
-async function fetchMods(parameters : Readonly<ModsFilterData|null> = null)
-{
+async function fetchMods(parameters : Readonly<ModsFilterData|null> = null) {
     const MODS_URL = new URL(window.location.href);
 
     if(parameters !== null) {
@@ -26,18 +25,22 @@ async function fetchMods(parameters : Readonly<ModsFilterData|null> = null)
     const RESPONSE = await fetch(MODS_URL, CONFIG);
     if(!RESPONSE.ok) console.error(`Le requête pour l\'url ${URL} a échouée`);
     const MODS = await RESPONSE.json();
+    
     return MODS;
 }
 
 const MODS_FILTERS_FORM = document.querySelector('form.mods-filters-form') as HTMLFormElement|null;
 MODS_FILTERS_FORM?.addEventListener('submit', (ev : SubmitEvent) => {
     ev.preventDefault();
+
     const FORM_DATA = new FormData(MODS_FILTERS_FORM);
     const ACTIVATED_MODS = FORM_DATA.get('activated-mods');
     const TAGS = FORM_DATA.get('tags');
+
     if(typeof ACTIVATED_MODS === 'string' && typeof TAGS === 'string') {
-        const FILTERS_DATA : ModsFilterData = { 'activated-mods' : ACTIVATED_MODS, 'tags' : TAGS };
-        fetchMods(FILTERS_DATA).then((mods) => {
+        const MODS_FILTER_DATA : ModsFilterData = { 'activated-mods' : ACTIVATED_MODS, 'tags' : TAGS };
+        
+        fetchMods(MODS_FILTER_DATA).then((mods) => {
             const MODS_WRAPPER = document.querySelector('.mods');
             
             if(MODS_WRAPPER === null) return;
@@ -53,7 +56,5 @@ MODS_FILTERS_FORM?.addEventListener('submit', (ev : SubmitEvent) => {
             const MODS_COUNT = document.querySelector('p.output > .mod-count');
             if(MODS_COUNT !== null) MODS_COUNT.textContent = mods.length; 
         });
-
-
     }
 });
