@@ -15,8 +15,6 @@ async function fetchMods(parameters : Readonly<ModsFilterData|null> = null)
         for(paramName in parameters) {
             MODS_URL.searchParams.append(paramName, parameters[paramName]);
         }
-
-        console.log(MODS_URL.toString());
     }
 
     const CONFIG = {
@@ -31,10 +29,6 @@ async function fetchMods(parameters : Readonly<ModsFilterData|null> = null)
     return MODS;
 }
 
-fetchMods().then((mods) => {
-    console.log(mods);
-});
-
 const MODS_FILTERS_FORM = document.querySelector('form.mods-filters-form') as HTMLFormElement|null;
 MODS_FILTERS_FORM?.addEventListener('submit', (ev : SubmitEvent) => {
     ev.preventDefault();
@@ -43,6 +37,23 @@ MODS_FILTERS_FORM?.addEventListener('submit', (ev : SubmitEvent) => {
     const TAGS = FORM_DATA.get('tags');
     if(typeof ACTIVATED_MODS === 'string' && typeof TAGS === 'string') {
         const FILTERS_DATA : ModsFilterData = { 'activated-mods' : ACTIVATED_MODS, 'tags' : TAGS };
-        fetchMods(FILTERS_DATA).then((mods) => console.log(mods));
+        fetchMods(FILTERS_DATA).then((mods) => {
+            const MODS_WRAPPER = document.querySelector('.mods');
+            
+            if(MODS_WRAPPER === null) return;
+
+            MODS_WRAPPER.innerHTML = '';
+
+            mods.forEach((jsonMod : JSONMod, index : number) => {
+                const MOD = (new Mod(jsonMod)).element;
+                MOD.style.setProperty('--animation-delay', `${index * 150}ms`);
+                MODS_WRAPPER.appendChild(MOD);
+            })
+
+            const MODS_COUNT = document.querySelector('p.output > .mod-count');
+            if(MODS_COUNT !== null) MODS_COUNT.textContent = mods.length; 
+        });
+
+
     }
 });

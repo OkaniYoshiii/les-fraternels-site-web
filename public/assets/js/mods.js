@@ -7,6 +7,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
+import { Mod } from "./entities/Mod.js";
 const MODS = document.querySelectorAll('.mod');
 MODS.forEach((mod, index) => {
     if (mod instanceof HTMLElement)
@@ -20,7 +21,6 @@ function fetchMods(parameters = null) {
             for (paramName in parameters) {
                 MODS_URL.searchParams.append(paramName, parameters[paramName]);
             }
-            console.log(MODS_URL.toString());
         }
         const CONFIG = {
             headers: {
@@ -35,9 +35,6 @@ function fetchMods(parameters = null) {
         return MODS;
     });
 }
-fetchMods().then((mods) => {
-    console.log(mods);
-});
 const MODS_FILTERS_FORM = document.querySelector('form.mods-filters-form');
 MODS_FILTERS_FORM === null || MODS_FILTERS_FORM === void 0 ? void 0 : MODS_FILTERS_FORM.addEventListener('submit', (ev) => {
     ev.preventDefault();
@@ -46,7 +43,19 @@ MODS_FILTERS_FORM === null || MODS_FILTERS_FORM === void 0 ? void 0 : MODS_FILTE
     const TAGS = FORM_DATA.get('tags');
     if (typeof ACTIVATED_MODS === 'string' && typeof TAGS === 'string') {
         const FILTERS_DATA = { 'activated-mods': ACTIVATED_MODS, 'tags': TAGS };
-        fetchMods(FILTERS_DATA).then((mods) => console.log(mods));
+        fetchMods(FILTERS_DATA).then((mods) => {
+            const MODS_WRAPPER = document.querySelector('.mods');
+            if (MODS_WRAPPER === null)
+                return;
+            MODS_WRAPPER.innerHTML = '';
+            mods.forEach((jsonMod, index) => {
+                const MOD = (new Mod(jsonMod)).element;
+                MOD.style.setProperty('--animation-delay', `${index * 150}ms`);
+                MODS_WRAPPER.appendChild(MOD);
+            });
+            const MODS_COUNT = document.querySelector('p.output > .mod-count');
+            if (MODS_COUNT !== null)
+                MODS_COUNT.textContent = mods.length;
+        });
     }
 });
-export {};
